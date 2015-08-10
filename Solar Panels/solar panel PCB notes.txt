@@ -1,0 +1,8 @@
+20130930 Design - v3
+
+Area for thermistors: 1cm radius?
+solar cell connection polarity?
+vias aren't showing up?
+
+connectors ( from digikey) :
+

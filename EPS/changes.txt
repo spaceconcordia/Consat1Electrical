@@ -1,0 +1,79 @@
+from v0.1 to v0.2:
+------------------
+
+fixed PMOS switches (Q3,Q4,Q5,Q6,Q7,Q8) so that Source is +V, Drain to GND
+added decoupling caps(C9,C10) from Vin to GND for IC3 & IC4 (regs)
+added Vin caps(C11,C12) from L1 & L2 to GND for IC3 & IC4 (regs)
+changed L1 from 3.9uH (SLF12575T-3R9) to 18uH (DR125-180)
+changed L2 from 22uH (B82464G4223M ) to 47uH (DR125-470)
+added D3,D4 schottky barrier diode (PMEG3050EP)
+changed diode type of D1 and D2 from CMS06 to PMEG3050EP
+changed Iprg from VCC to GND for IC3 & IC4 (regs)
+updated pinouts of space-concordia-custom/SI7485DP
+created SOT23-8 package for space-concordia-custom library
+updated package of space-concordia-custom/LT3872 to use SOT23-8 package
+
+from v0.2 to v0.2.1:
+------------------
+
+updated Headers H1 and H2, new devices and pinouts
+increased trace size for battery power line, 5v power line and 15v power line
+add connection from BATTERY_EXT_CHARGE_8V on H2:21 to Vin of MIC79110s
+Add D6,D7(PMEG3050EP) blocking diodes from external charge to Solar Panel Vin
+
+from v0.2.1 to v0.3:
+------------------
+
+Added INA219(IC5) to monitor battery voltage/current output
+Added R13,R14,R15 & C13 ( INA219 sensor network )
+Added C14, CI5 decoupling capacitor
+Replaced D5(BZX48) with D5(BZV49)
+
+from v0.3 to v0.4:
+------------------
+
+Added D8
+
+from v0.4 to v0.5
+------------------
+
+Added D9,D10
+rerouted C14 ground line
+Connected AGND ( regulator ground ) to GNDA ( system ground ) *this was an error
+Replaced D5 from 3.3V BZV49 to 4.1V KDZ39B
+Changed value of R2 from 68 to 350
+Added Q9
+Added IC6
+Added R25, R26, R27, R28
+Added Q10
+
+from v0.5 to v0.6
+------------------
+
+Changed Q9 from PMOS to NMOS
+Removed D8,D9,D10
+Removed R3,R10,R11
+Removed Q3,Q4,Q5
+Added C15
+Removed Q10,Q7
+Removed D5
+Removed R2,R12
+Added IC8
+Changed R13 value from 0.05 to 0.01
+Moved external power input from -R13 to +R13
+
+from v0.6 to v0.7
+------------------
+
+Added IC9
+Added R12, R29, R30, R31, R32, R33, R34, R35, R36, R37, R38, R39
+Added C17,C18,C19,C20
+Added IC10, IC11
+Added Q
+Updated Pad layout for si7485 and si74448
+
+from v0.7 to v1.0
+------------------
+
+Removed D6, D7 ( removed external battery charge line, all external power now comes from one line )
+Removed C17, C18 ( duplicate Vdd conditioning for AD7998 )

@@ -1,0 +1,89 @@
+Partlist exported from B:/Space Concordia/Spacecraft/Power/designs and diagrams/eps-complete-v1.0/eps-v1-0.sch at 10/27/2013 6:07:14 PM
+
+Assembly variant: 
+
+Part Value            Device            Package          Description                               
+C1   1.8nF            C-USC0805         C0805            CAPACITOR, American symbol                
+C2   47pF             C-USC0805         C0805            CAPACITOR, American symbol                
+C3   100pF            C-USC0805         C0805            CAPACITOR, American symbol                
+C4   10uF             CPOL-USD/7343-31R D/7343-31R       POLARIZED CAPACITOR, American symbol      
+C5   2.2nF            C-USC0805         C0805            CAPACITOR, American symbol                
+C6   100pF            C-USC0805         C0805            CAPACITOR, American symbol                
+C7   100pF            C-USC0805         C0805            CAPACITOR, American symbol                
+C8   10uF             CPOL-USD/7343-31R D/7343-31R       POLARIZED CAPACITOR, American symbol      
+C9   0.1uF            C-USC0805         C0805            CAPACITOR, American symbol                
+C10  0.1uF            C-USC0805         C0805            CAPACITOR, American symbol                
+C11  10uF             CPOL-USD/7343-31R D/7343-31R       POLARIZED CAPACITOR, American symbol      
+C12  10uF             CPOL-USD/7343-31R D/7343-31R       POLARIZED CAPACITOR, American symbol      
+C13  0.1uF            C-USC0805         C0805            CAPACITOR, American symbol                
+C14  0.1uF            C-USC0805         C0805            CAPACITOR, American symbol                
+C15  0.1uF            C-USC0805         C0805            CAPACITOR, American symbol                
+C16  0.1uF            C-USC0805         C0805            CAPACITOR, American symbol                
+C19  1uF              C-USC0805         C0805            CAPACITOR, American symbol                
+C20  0.1uF            C-USC0805         C0805            CAPACITOR, American symbol                
+D1   PMEG3050EP       PMEG3050EP        SOD128           PMEG3050EP                                
+D2   PMEG3050EP       PMEG3050EP        SOD128           PMEG3050EP                                
+D3   PMEG3050EP       PMEG3050EP        SOD128           PMEG3050EP                                
+D4   PMEG3050EP       PMEG3050EP        SOD128           PMEG3050EP                                
+H1   ESQ-125-XX-X-D   ESQ-125-XX-X-D    ESQ-125-XX-X-D   ELEVATED SOCKET, .100 inch(2.54mm) PITCH  
+H2   ESQ-125-XX-X-D   ESQ-125-XX-X-D    ESQ-125-XX-X-D   ELEVATED SOCKET, .100 inch(2.54mm) PITCH  
+IC1  MIC79110         MIC79110          MLF10-EP         Micrel 79110                              
+IC2  MIC79110         MIC79110          MLF10-EP         Micrel 79110                              
+IC3  LT3872           LT3872            TSOT23-8         Linear Technologies LT3872 Boost Regulator
+IC4  LT3872           LT3872            TSOT23-8         Linear Technologies LT3872 Boost Regulator
+IC5  INA291-D         INA291-D          SO08             INA219-DCN                                
+IC6  NCS2202          NCS2202           SOT23-5          NCS2202 Comparator                        
+IC7  NCS2202          NCS2202           SOT23-5          NCS2202 Comparator                        
+IC8  TLV70233DBVR     TLV70233DBVR      SOT23-5          TLV70233 LDO Regulator                    
+IC9  AD7998           AD7998            TSSOP-20         AD7998                                    
+IC10 MAX4374-10UMAX   MAX4374-10UMAX    10UMAX           MAX4373                                   
+IC11 TLV70228DBV      TLV70228DBV       SOT23-5          TLV70228 LDO Regulator                    
+L1   DR125-180        DR125-180         DR125            DR125-180                                 
+L2   DR125-470        DR125-470         DR125            DR125-180                                 
+Q1   SI7448DP         SI7448DP          PPAK-SO08-EP     Si7448DP                                  
+Q2   SI7448DP         SI7448DP          PPAK-SO08-EP     Si7448DP                                  
+Q3   SI7448DP         SI7448DP          PPAK-SO08-EP     Si7448DP                                  
+Q4   SI7485DP         SI7485DP          PPAK-SO08-EP     Si7485DP                                  
+Q6   SI7485DP         SI7485DP          PPAK-SO08-EP     Si7485DP                                  
+Q8   SI7485DP         SI7485DP          PPAK-SO08-EP     Si7485DP                                  
+Q9   SI7448DP         SI7448DP          PPAK-SO08-EP     Si7448DP                                  
+R1   63.4k            R-US_M1206        M1206            RESISTOR, American symbol                 
+R2   250k             R-US_M1206        M1206            RESISTOR, American symbol                 
+R3   200k             R-US_M1206        M1206            RESISTOR, American symbol                 
+R4   17.4k            R-US_M1206        M1206            RESISTOR, American symbol                 
+R5   20k              R-US_M1206        M1206            RESISTOR, American symbol                 
+R6   20k              R-US_M1206        M1206            RESISTOR, American symbol                 
+R7   23.2k            R-US_M1206        M1206            RESISTOR, American symbol                 
+R8   10k              R-US_M1206        M1206            RESISTOR, American symbol                 
+R9   64.9k            R-US_M1206        M1206            RESISTOR, American symbol                 
+R10  150k             R-US_M1206        M1206            RESISTOR, American symbol                 
+R11  10k              R-US_M1206        M1206            RESISTOR, American symbol                 
+R12  100k             R-US_M1206        M1206            RESISTOR, American symbol                 
+R13  0.01             R-US_M1206        M1206            RESISTOR, American symbol                 
+R14  10               R-US_M1206        M1206            RESISTOR, American symbol                 
+R15  10               R-US_M1206        M1206            RESISTOR, American symbol                 
+R16  2000             R-US_M1206        M1206            RESISTOR, American symbol                 
+R17  333              R-US_M1206        M1206            RESISTOR, American symbol                 
+R18  3.16Meg          R-US_M1206        M1206            RESISTOR, American symbol                 
+R19  1Meg             R-US_M1206        M1206            RESISTOR, American symbol                 
+R20  2000             R-US_M1206        M1206            RESISTOR, American symbol                 
+R21  333              R-US_M1206        M1206            RESISTOR, American symbol                 
+R22  3.16Meg          R-US_M1206        M1206            RESISTOR, American symbol                 
+R23  1Meg             R-US_M1206        M1206            RESISTOR, American symbol                 
+R24  20k              R-US_M1206        M1206            RESISTOR, American symbol                 
+R25  250k             R-US_M1206        M1206            RESISTOR, American symbol                 
+R26  200k             R-US_M1206        M1206            RESISTOR, American symbol                 
+R27  150k             R-US_M1206        M1206            RESISTOR, American symbol                 
+R28  10k              R-US_M1206        M1206            RESISTOR, American symbol                 
+R29  7.3k             R-US_M1206        M1206            RESISTOR, American symbol                 
+R30  6.8k             R-US_M1206        M1206            RESISTOR, American symbol                 
+R31  3.2k             R-US_M1206        M1206            RESISTOR, American symbol                 
+R32  2.7k             R-US_M1206        M1206            RESISTOR, American symbol                 
+R33  1Meg             R-US_M1206        M1206            RESISTOR, American symbol                 
+R34  2Meg             R-US_M1206        M1206            RESISTOR, American symbol                 
+R35  1Meg             R-US_M1206        M1206            RESISTOR, American symbol                 
+R36  2Meg             R-US_M1206        M1206            RESISTOR, American symbol                 
+R37  0.03             R-US_M1206        M1206            RESISTOR, American symbol                 
+R38  20k              R-US_M1206        M1206            RESISTOR, American symbol                 
+R39  20k              R-US_M1206        M1206            RESISTOR, American symbol                 
+U$1  EPS_PCB_THRM_PAD EPS_PCB_THRM_PAD  EPS_PCB_THRM_PAD Consat-1 EPS PCB Thermal Pad              

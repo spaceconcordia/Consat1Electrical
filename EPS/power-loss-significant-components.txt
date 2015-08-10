@@ -1,0 +1,12 @@
+Power/Heat dissipation in high current components:
+
+	Max power dissipation
+L1	0.0754W		( = I^2 * DRC)
+L2	0.037W		( = I^2 * DRC)
+IC1	7W		( = (Peak_SP_V - Vbatt_min_charge ) * Peak_SP_I )
+IC2	7W		( = (Peak_SP_V - Vbatt_min_charge ) * Peak_SP_I )
+Q1	0.018W		( = I^2 * Rdson )
+Q2	0.0045W		( = I^2 * Rdson )
+Q3	0.0015W		( = I^2 * Rdson )
+Q6	0.73W		( = I^2 * Rdson )
+Q9	0.0015W		( = I^2 * Rdson )

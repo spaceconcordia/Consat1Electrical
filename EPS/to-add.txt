@@ -1,0 +1,22 @@
+ad7889 with measurement points to:
+
++battery thermistor 1
++battery thermistor 2
++solar panel Vsense 1 ( tgt = 5uA for 15v, therefore Req = 3Meg,  )
++solar panel Vsense 1
+
+
+additional external ground to umbilical cable for charging
++current reset circuit with dedicated 3v regulator
++external hiccough reset line
++increase power transistor PCB footprint
+
+
+reset radio line - resetled? setled? max radio current?
+
+
+check if AD219 has bi-directional current flow sense
+double check VD for battery heater control
+add thermal layers!
+add the line to send a current warning to the Q6
+add documentation layer, with name, schematic, icon, etc
