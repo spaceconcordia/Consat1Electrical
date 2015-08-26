@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3117,7 +3117,6 @@ Low profile connectors, straight&lt;p&gt;
 <part name="X7" library="con-subd" deviceset="M15VP" device=""/>
 <part name="X8" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
 <part name="X9" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
-<part name="X10" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
@@ -3168,6 +3167,20 @@ Low profile connectors, straight&lt;p&gt;
 <wire x1="-231.14" y1="78.74" x2="-474.98" y2="78.74" width="0.1524" layer="152" style="longdash"/>
 <wire x1="-474.98" y1="78.74" x2="-474.98" y2="284.48" width="0.1524" layer="152" style="longdash"/>
 <text x="-472.44" y="287.02" size="2.54" layer="152">TOP 1U</text>
+<text x="-170.18" y="269.24" size="1.778" layer="152">Note: Need find connectors for internal elec bay connections of:
+* battery +/-
+* battery thermistors
+* battery heating element +/-</text>
+<text x="-10.16" y="167.64" size="1.778" layer="152">Note:
+The JTAG connector may note be implemented. Need to check manufactured PCB</text>
+<wire x1="116.84" y1="-208.28" x2="360.68" y2="-208.28" width="0.1524" layer="152" style="longdash"/>
+<wire x1="116.84" y1="-208.28" x2="116.84" y2="35.56" width="0.1524" layer="152" style="longdash"/>
+<wire x1="360.68" y1="-208.28" x2="360.68" y2="35.56" width="0.1524" layer="152" style="longdash"/>
+<wire x1="116.84" y1="35.56" x2="360.68" y2="35.56" width="0.1524" layer="152" style="longdash"/>
+<text x="119.38" y="38.1" size="2.54" layer="152">BOTTOM 1U</text>
+<text x="43.18" y="-116.84" size="1.778" layer="152">Bottom DB25-1</text>
+<text x="43.18" y="-162.56" size="1.778" layer="152">Bottom DB25-2</text>
+<text x="66.04" y="-127" size="1.778" layer="95">SOLAR_PANEL_2_4</text>
 </plain>
 <instances>
 <instance part="H2" gate="G$1" x="-3.81" y="2.54"/>
@@ -3177,14 +3190,13 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="+3V11" gate="G$1" x="52.07" y="-12.7" rot="R270"/>
 <instance part="+3V12" gate="G$1" x="52.07" y="-10.16" rot="R270"/>
 <instance part="X1" gate="-1" x="-157.48" y="213.36"/>
-<instance part="X2" gate="-1" x="172.72" y="111.76"/>
-<instance part="X3" gate="-1" x="172.72" y="38.1"/>
-<instance part="X5" gate="-1" x="200.66" y="114.3"/>
-<instance part="X6" gate="-1" x="200.66" y="38.1"/>
+<instance part="X2" gate="-1" x="50.8" y="-137.16"/>
+<instance part="X3" gate="-1" x="50.8" y="-182.88"/>
+<instance part="X5" gate="-1" x="147.32" y="-137.16"/>
+<instance part="X6" gate="-1" x="147.32" y="-180.34"/>
 <instance part="X7" gate="G$1" x="-421.64" y="215.9"/>
-<instance part="X8" gate="G1" x="-160.02" y="50.8"/>
+<instance part="X8" gate="G1" x="-142.24" y="55.88"/>
 <instance part="X9" gate="G1" x="-325.12" y="154.94" rot="R180"/>
-<instance part="X10" gate="G1" x="213.36" y="-5.08" rot="R180"/>
 <instance part="SUPPLY11" gate="GND" x="-66.04" y="68.58" rot="R270"/>
 <instance part="SUPPLY16" gate="GND" x="59.69" y="68.58" rot="R90"/>
 <instance part="SUPPLY19" gate="GND" x="-66.04" y="119.38" rot="R270"/>
@@ -3198,7 +3210,7 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="SUPPLY18" gate="GND" x="58.42" y="93.98" rot="R90"/>
 <instance part="SUPPLY28" gate="GND" x="-66.04" y="78.74" rot="R270"/>
 <instance part="SUPPLY29" gate="GND" x="58.42" y="78.74" rot="R90"/>
-<instance part="X11" gate="G1" x="-124.46" y="50.8" rot="R180"/>
+<instance part="X11" gate="G1" x="-106.68" y="55.88" rot="R180"/>
 <instance part="X12" gate="G1" x="-147.32" y="33.02"/>
 <instance part="X13" gate="G1" x="-147.32" y="12.7"/>
 <instance part="X14" gate="G1" x="-96.52" y="33.02" rot="R180"/>
@@ -3224,8 +3236,8 @@ Low profile connectors, straight&lt;p&gt;
 <instance part="U$2" gate="G$1" x="-33.02" y="246.38"/>
 <instance part="X4" gate="-1" x="-325.12" y="213.36"/>
 <instance part="SUPPLY5" gate="GND" x="-337.82" y="190.5"/>
-<instance part="SV1" gate="1" x="38.1" y="-185.42"/>
-<instance part="SV2" gate="1" x="38.1" y="-154.94"/>
+<instance part="SV1" gate="1" x="-25.4" y="-180.34"/>
+<instance part="SV2" gate="1" x="-25.4" y="-139.7"/>
 </instances>
 <busses>
 </busses>
@@ -3885,12 +3897,19 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="H1" gate="G$1" pin="29"/>
 <wire x1="-15.24" y1="-81.28" x2="-43.18" y2="-81.28" width="0.1524" layer="91"/>
 <label x="-40.64" y="-81.28" size="1.778" layer="95"/>
+<label x="66.04" y="-124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="86.36" y1="-124.46" x2="58.42" y2="-124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SOLAR_PANEL_2_4" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="-45.72" x2="38.1" y2="-45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="58.42" y1="-127" x2="86.36" y2="-127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Q6_GPIO_8" class="0">
@@ -4037,6 +4056,10 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="H1" gate="G$1" pin="31"/>
 <wire x1="-15.24" y1="-83.82" x2="-43.18" y2="-83.82" width="0.1524" layer="91"/>
 <label x="-40.64" y="-83.82" size="1.778" layer="95"/>
+<label x="66.04" y="-134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="86.36" y1="-134.62" x2="58.42" y2="-134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -4174,6 +4197,10 @@ Low profile connectors, straight&lt;p&gt;
 <pinref part="H1" gate="G$1" pin="30"/>
 <wire x1="7.62" y1="-81.28" x2="45.72" y2="-81.28" width="0.1524" layer="91"/>
 <label x="17.78" y="-81.28" size="1.778" layer="95"/>
+<label x="66.04" y="-137.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="58.42" y1="-137.16" x2="86.36" y2="-137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="POW_9V" class="0">
@@ -4588,8 +4615,8 @@ Low profile connectors, straight&lt;p&gt;
 <segment>
 <pinref part="X11" gate="G1" pin="1"/>
 <pinref part="X8" gate="G1" pin="1"/>
-<wire x1="-127" y1="50.8" x2="-157.48" y2="50.8" width="0.1524" layer="91"/>
-<label x="-154.94" y="50.8" size="1.778" layer="95"/>
+<wire x1="-109.22" y1="55.88" x2="-139.7" y2="55.88" width="0.1524" layer="91"/>
+<label x="-137.16" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-327.66" y1="154.94" x2="-368.3" y2="154.94" width="0.1524" layer="91" style="longdash"/>
@@ -4601,11 +4628,11 @@ Low profile connectors, straight&lt;p&gt;
 <net name="DIPLEX_TO_ANT_GND" class="0">
 <segment>
 <pinref part="X11" gate="G1" pin="2"/>
-<wire x1="-127" y1="53.34" x2="-142.24" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="53.34" x2="-142.24" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="58.42" x2="-124.46" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="58.42" x2="-124.46" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="X8" gate="G1" pin="2"/>
-<wire x1="-142.24" y1="48.26" x2="-157.48" y2="48.26" width="0.1524" layer="91"/>
-<label x="-154.94" y="48.26" size="1.778" layer="95"/>
+<wire x1="-124.46" y1="53.34" x2="-139.7" y2="53.34" width="0.1524" layer="91"/>
+<label x="-137.16" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-347.98" y1="152.4" x2="-368.3" y2="152.4" width="0.1524" layer="91" style="longdash"/>
@@ -4648,4 +4675,10 @@ Low profile connectors, straight&lt;p&gt;
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
