@@ -2728,6 +2728,90 @@ Source: http://www.molex.com</description>
 <hole x="17.3" y="2.29" drill="3"/>
 <hole x="-17.3" y="2.29" drill="3"/>
 </package>
+<package name="7395-02">
+<description>&lt;b&gt;MOLEX 2.54mm KK RA CONNECTOR&lt;/b&gt;
+&lt;br&gt;Fixed Orientation</description>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-1.905" width="0.254" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="1.905" y2="-1.905" width="0.254" layer="21"/>
+<wire x1="1.905" y1="-1.905" x2="1.905" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="0.635" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="0.635" y2="-1.905" width="0.254" layer="21"/>
+<wire x1="0.635" y1="-1.905" x2="-0.635" y2="-1.905" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="-1.905" x2="-0.635" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="-1.905" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.905" y2="-1.905" width="0.254" layer="21"/>
+<wire x1="-1.905" y1="-1.905" x2="-2.54" y2="-1.905" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="-2.54" y2="-5.08" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="-5.08" x2="-1.651" y2="-5.08" width="0.254" layer="21"/>
+<wire x1="-1.651" y1="-5.08" x2="1.27" y2="-5.08" width="0.254" layer="21"/>
+<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="21"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="-13.081" width="0.254" layer="21"/>
+<wire x1="1.27" y1="-13.081" x2="1.016" y2="-13.589" width="0.254" layer="21"/>
+<wire x1="1.016" y1="-13.589" x2="-0.0508" y2="-13.589" width="0.254" layer="21"/>
+<wire x1="-1.27" y1="-5.08" x2="-1.27" y2="-13.081" width="0.254" layer="21"/>
+<wire x1="-1.27" y1="-13.081" x2="-1.016" y2="-13.589" width="0.254" layer="21"/>
+<wire x1="-1.016" y1="-13.589" x2="-0.0508" y2="-13.589" width="0.254" layer="21"/>
+<wire x1="-0.0508" y1="-13.589" x2="0.0508" y2="-13.589" width="0.254" layer="21"/>
+<wire x1="1.27" y1="-5.08" x2="0.889" y2="-5.08" width="0.254" layer="51"/>
+<wire x1="-1.651" y1="-5.08" x2="-1.651" y2="-11.303" width="0.254" layer="21"/>
+<wire x1="-1.651" y1="-11.303" x2="-1.3208" y2="-11.6586" width="0.254" layer="21"/>
+<wire x1="1.651" y1="-5.08" x2="1.651" y2="-11.303" width="0.254" layer="21"/>
+<wire x1="1.651" y1="-11.303" x2="1.3208" y2="-11.6586" width="0.254" layer="21"/>
+<pad name="1" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="2.6401" y="2.9479" size="1.016" layer="25" ratio="10" rot="R180">&gt;NAME</text>
+<text x="0.7859" y="-3.4021" size="1.27" layer="21" ratio="14" rot="R270">1</text>
+<text x="-1.7033" y="-3.2751" size="1.27" layer="21" ratio="14" rot="R270">2</text>
+<text x="3.4021" y="-2.4399" size="0.8128" layer="27" ratio="10" rot="R270">&gt;VALUE</text>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-2.5146" x2="1.524" y2="-0.2794" layer="51"/>
+<rectangle x1="-1.524" y1="-2.5146" x2="-1.016" y2="-0.2794" layer="51"/>
+</package>
+<package name="6410-02">
+<description>&lt;b&gt;MOLEX 2.54mm KK  CONNECTOR&lt;/b&gt;</description>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="2.921" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="2.921" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="2.921" x2="-1.27" y2="2.921" width="0.254" layer="21"/>
+<wire x1="-1.016" y1="2.921" x2="-1.27" y2="2.921" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="2.921" x2="0" y2="2.921" width="0.254" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.921" width="0.254" layer="21"/>
+<wire x1="2.54" y1="2.921" x2="0" y2="2.921" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.921" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="-2.921" x2="0" y2="-2.921" width="0.254" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.921" width="0.254" layer="21"/>
+<wire x1="2.54" y1="-2.921" x2="1.905" y2="-2.921" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-2.921" x2="0.635" y2="-2.921" width="0.254" layer="21"/>
+<wire x1="0.635" y1="-2.921" x2="0" y2="-2.921" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="-2.921" x2="-1.905" y2="-2.921" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-2.921" x2="-1.905" y2="-2.921" width="0.254" layer="21"/>
+<wire x1="-1.905" y1="-2.921" x2="-1.905" y2="-2.286" width="0.254" layer="21"/>
+<wire x1="-1.905" y1="-2.286" x2="-0.635" y2="-2.286" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="-2.286" x2="-0.635" y2="-2.921" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="-2.921" x2="0.635" y2="-2.921" width="0.254" layer="21"/>
+<wire x1="0.635" y1="-2.921" x2="0.635" y2="-2.286" width="0.254" layer="21"/>
+<wire x1="0.635" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="21"/>
+<wire x1="1.905" y1="-2.286" x2="1.905" y2="-2.921" width="0.254" layer="21"/>
+<wire x1="1.905" y1="-2.921" x2="2.54" y2="-2.921" width="0.254" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="2.921" width="0.254" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-1.016" y2="1.905" width="0.254" layer="21"/>
+<wire x1="-1.016" y1="1.905" x2="1.016" y2="1.905" width="0.254" layer="21"/>
+<wire x1="1.016" y1="1.905" x2="1.27" y2="1.905" width="0.254" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.27" y2="2.921" width="0.254" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-1.016" y2="1.397" width="0.254" layer="21"/>
+<wire x1="-1.016" y1="2.921" x2="-1.016" y2="1.905" width="0.254" layer="21"/>
+<wire x1="-1.016" y1="1.397" x2="1.016" y2="1.397" width="0.254" layer="21"/>
+<wire x1="1.016" y1="1.397" x2="1.27" y2="1.905" width="0.254" layer="21"/>
+<wire x1="1.016" y1="2.921" x2="1.016" y2="1.905" width="0.254" layer="21"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.5131" y="3.2751" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.2751" y="-0.6111" size="1.27" layer="21" ratio="14">1</text>
+<text x="-3.7099" y="-0.6873" size="1.27" layer="21" ratio="14">2</text>
+<text x="-2.5131" y="-4.5989" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -2779,6 +2863,44 @@ Source: http://www.molex.com</description>
 <connect gate="-7" pin="S" pad="7"/>
 <connect gate="-8" pin="S" pad="8"/>
 <connect gate="-9" pin="S" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="22-?-02" prefix="J">
+<description>&lt;b&gt;CONNECTOR&lt;/b&gt;&lt;p&gt;
+wire to board 2.54 mm (.1 inch) pitch header</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="05-7028" package="7395-02">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="9731601" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="27-2021" package="6410-02">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -3093,6 +3215,108 @@ Low profile connectors, straight&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="switch-coto">
+<description>&lt;b&gt;COTO TECHNOLOGY&lt;/b&gt;&lt;p&gt;
+Reed switch&lt;br&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="CT10-XXXX-A2">
+<description>&lt;b&gt;CT10 Series Molded Switch&lt;/b&gt;&lt;p&gt;
+Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
+<wire x1="-6.275" y1="1.1" x2="6.3" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="6.3" y1="1.1" x2="6.3" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="6.3" y1="-1.1" x2="-6.3" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-6.3" y1="-1.1" x2="-6.3" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="-6.5" y1="-1.3" x2="-6.5" y2="1.3" width="0" layer="20"/>
+<wire x1="-6.5" y1="1.3" x2="6.5" y2="1.3" width="0" layer="20"/>
+<wire x1="6.5" y1="1.3" x2="6.5" y2="-1.3" width="0" layer="20"/>
+<wire x1="6.5" y1="-1.3" x2="-6.5" y2="-1.3" width="0" layer="20"/>
+<smd name="1" x="-7.5" y="0" dx="1.8" dy="1.8" layer="1"/>
+<smd name="2" x="7.5" y="0" dx="1.8" dy="1.8" layer="1"/>
+<text x="-8.32" y="1.3302" size="1.27" layer="25">&gt;NAME</text>
+<text x="-8.32" y="-3.1082" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-7.85" y1="-0.575" x2="-6.25" y2="0.575" layer="51"/>
+<rectangle x1="6.3" y1="-0.575" x2="7.85" y2="0.575" layer="51"/>
+</package>
+<package name="CT10-XXXX-G1">
+<description>&lt;b&gt;CT10 Series Molded Switch&lt;/b&gt;&lt;p&gt;
+Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
+<wire x1="-6.275" y1="1.1" x2="6.3" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="6.3" y1="1.1" x2="6.3" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="6.3" y1="-1.1" x2="-6.3" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-6.3" y1="-1.1" x2="-6.3" y2="1.1" width="0.2032" layer="21"/>
+<smd name="1" x="-7.625" y="0" dx="1.8" dy="1.8" layer="1"/>
+<smd name="2" x="7.625" y="0" dx="1.8" dy="1.8" layer="1"/>
+<text x="-8.32" y="1.3302" size="1.27" layer="25">&gt;NAME</text>
+<text x="-8.32" y="-3.1082" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-8.2" y1="-0.575" x2="-6.4" y2="0.575" layer="51"/>
+<rectangle x1="6.4" y1="-0.575" x2="8.2" y2="0.575" layer="51"/>
+</package>
+<package name="CT10-XXXX-G4">
+<description>&lt;b&gt;CT10 Series Molded Switch&lt;/b&gt;&lt;p&gt;
+Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
+<wire x1="-6.275" y1="1.1" x2="6.3" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="6.3" y1="1.1" x2="6.3" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="6.3" y1="-1.1" x2="-6.3" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-6.3" y1="-1.1" x2="-6.3" y2="1.1" width="0.2032" layer="21"/>
+<smd name="1" x="-9.2" y="0" dx="1.8" dy="1.8" layer="1"/>
+<smd name="2" x="9.225" y="0" dx="1.8" dy="1.8" layer="1"/>
+<text x="-8.32" y="1.3302" size="1.27" layer="25">&gt;NAME</text>
+<text x="-8.32" y="-3.1082" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-9.8" y1="-0.575" x2="-6.4" y2="0.575" layer="51"/>
+<rectangle x1="6.4" y1="-0.575" x2="9.8" y2="0.575" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SWITCH-NO">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<circle x="-2.54" y="0" radius="0.2839" width="0" layer="94"/>
+<circle x="2.54" y="0" radius="0.2839" width="0" layer="94"/>
+<text x="-3.81" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CT10-XXXX-" prefix="SW">
+<description>&lt;b&gt;CT10 Series Molded Switch&lt;/b&gt;&lt;p&gt;
+Source: www.cotorelay.com .. Coto_Technology__CT10-1530-G1.pdf</description>
+<gates>
+<gate name="G$1" symbol="SWITCH-NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="A2" package="CT10-XXXX-A2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="G1" package="CT10-XXXX-G1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="G4" package="CT10-XXXX-G4">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3145,6 +3369,10 @@ Low profile connectors, straight&lt;p&gt;
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SV1" library="con-ml" deviceset="ML16" device=""/>
 <part name="SV2" library="con-ml" deviceset="ML16" device=""/>
+<part name="SW1" library="switch-coto" deviceset="CT10-XXXX-" device="A2"/>
+<part name="SW2" library="switch-coto" deviceset="CT10-XXXX-" device="A2"/>
+<part name="SW3" library="switch-coto" deviceset="CT10-XXXX-" device="A2"/>
+<part name="J1" library="con-molex" deviceset="22-?-02" device="27-2021"/>
 </parts>
 <sheets>
 <sheet>
@@ -3181,6 +3409,13 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <text x="43.18" y="-116.84" size="1.778" layer="152">Bottom DB25-1</text>
 <text x="43.18" y="-162.56" size="1.778" layer="152">Bottom DB25-2</text>
 <text x="66.04" y="-127" size="1.778" layer="95">SOLAR_PANEL_2_4</text>
+<text x="-368.3" y="274.32" size="1.778" layer="152">*Todo: find actual switches used and create custom part</text>
+<text x="-393.7" y="266.7" size="1.778" layer="152">*Note: Custom
+RBF assembly</text>
+<text x="-279.4" y="203.2" size="1.778" layer="152">*Note: Assuming Pin8(tx-)
+&amp;10(rx-) are rs232 ground </text>
+<text x="312.42" y="-185.42" size="1.778" layer="152">*Note: AHRM - find connector
+used and correct the part #</text>
 </plain>
 <instances>
 <instance part="H2" gate="G$1" x="-3.81" y="2.54"/>
@@ -3238,6 +3473,11 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <instance part="SUPPLY5" gate="GND" x="-337.82" y="190.5"/>
 <instance part="SV1" gate="1" x="-25.4" y="-180.34"/>
 <instance part="SV2" gate="1" x="-25.4" y="-139.7"/>
+<instance part="SW1" gate="G$1" x="-363.22" y="266.7"/>
+<instance part="SW2" gate="G$1" x="-363.22" y="254"/>
+<instance part="SW3" gate="G$1" x="-386.08" y="259.08"/>
+<instance part="J1" gate="-1" x="322.58" y="-172.72"/>
+<instance part="J1" gate="-2" x="322.58" y="-177.8"/>
 </instances>
 <busses>
 </busses>
@@ -3804,9 +4044,17 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <label x="-15.24" y="248.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-281.94" y1="226.06" x2="-317.5" y2="226.06" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-281.94" y1="226.06" x2="-317.5" y2="226.06" width="0.1524" layer="91"/>
 <label x="-304.8" y="226.06" size="1.778" layer="95"/>
 <pinref part="X4" gate="-1" pin="1"/>
+<label x="-340.36" y="266.7" size="1.778" layer="95"/>
+<label x="-340.36" y="254" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-322.58" y1="266.7" x2="-358.14" y2="266.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-322.58" y1="254" x2="-358.14" y2="254" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Q6_I2C_SDA_1" class="0">
@@ -4086,9 +4334,13 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <label x="-15.24" y="254" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-281.94" y1="223.52" x2="-317.5" y2="223.52" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-281.94" y1="223.52" x2="-317.5" y2="223.52" width="0.1524" layer="91"/>
 <label x="-304.8" y="223.52" size="1.778" layer="95"/>
 <pinref part="X4" gate="-1" pin="2"/>
+<label x="-426.72" y="259.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-391.16" y1="259.08" x2="-426.72" y2="259.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -4122,14 +4374,13 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <label x="-22.86" y="194.31" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-317.5" y1="215.9" x2="-281.94" y2="215.9" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-317.5" y1="215.9" x2="-281.94" y2="215.9" width="0.1524" layer="91"/>
 <label x="-304.8" y="215.9" size="1.778" layer="95"/>
 <pinref part="X4" gate="-1" pin="5"/>
+<label x="-405.13" y="218.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-414.02" y1="220.98" x2="-391.16" y2="220.98" width="0.1524" layer="91" style="longdash"/>
-<label x="-408.94" y="220.98" size="1.778" layer="95"/>
-<pinref part="X7" gate="G$1" pin="2"/>
+<wire x1="-414.02" y1="218.44" x2="-386.08" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Q6_GPIO_0" class="0">
@@ -4182,14 +4433,13 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <label x="-22.86" y="199.39" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-281.94" y1="218.44" x2="-317.5" y2="218.44" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-281.94" y1="218.44" x2="-317.5" y2="218.44" width="0.1524" layer="91"/>
 <label x="-304.8" y="218.44" size="1.778" layer="95"/>
 <pinref part="X4" gate="-1" pin="4"/>
+<label x="-468.63" y="218.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-391.16" y1="223.52" x2="-414.02" y2="223.52" width="0.1524" layer="91" style="longdash"/>
-<label x="-408.94" y="223.52" size="1.778" layer="95"/>
-<pinref part="X7" gate="G$1" pin="1"/>
+<wire x1="-429.26" y1="218.44" x2="-468.63" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SLR_PNL_GND" class="0">
@@ -4317,13 +4567,8 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <label x="-358.14" y="226.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-332.74" y1="226.06" x2="-355.6" y2="226.06" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-332.74" y1="226.06" x2="-355.6" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="X4" gate="-1" pin="14"/>
-</segment>
-<segment>
-<wire x1="-391.16" y1="218.44" x2="-414.02" y2="218.44" width="0.1524" layer="91" style="longdash"/>
-<label x="-408.94" y="218.44" size="1.778" layer="95"/>
-<pinref part="X7" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="PA3_JTAG_TCK" class="0">
@@ -4341,13 +4586,13 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <label x="-358.14" y="220.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-332.74" y1="220.98" x2="-354.948203125" y2="221.111878125" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-332.74" y1="220.98" x2="-354.948203125" y2="221.111878125" width="0.1524" layer="91"/>
 <pinref part="X4" gate="-1" pin="16"/>
 </segment>
 <segment>
-<pinref part="X7" gate="G$1" pin="5"/>
-<wire x1="-414.02" y1="213.36" x2="-391.16" y2="213.36" width="0.1524" layer="91" style="longdash"/>
-<label x="-408.94" y="213.36" size="1.778" layer="95"/>
+<pinref part="X7" gate="G$1" pin="8"/>
+<wire x1="-414.02" y1="205.74" x2="-386.08" y2="205.74" width="0.1524" layer="91"/>
+<label x="-405.13" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="~PA3_JTAG_TRST" class="0">
@@ -4362,14 +4607,13 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <pinref part="X1" gate="-1" pin="18"/>
 </segment>
 <segment>
-<wire x1="-332.74" y1="215.9" x2="-361.95" y2="215.9" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-332.74" y1="215.9" x2="-361.95" y2="215.9" width="0.1524" layer="91"/>
 <label x="-363.22" y="215.9" size="1.778" layer="95"/>
 <pinref part="X4" gate="-1" pin="18"/>
 </segment>
 <segment>
-<pinref part="X7" gate="G$1" pin="7"/>
-<wire x1="-414.02" y1="208.28" x2="-391.16" y2="208.28" width="0.1524" layer="91" style="longdash"/>
-<label x="-408.94" y="208.28" size="1.778" layer="95"/>
+<wire x1="-386.08" y1="210.82" x2="-414.02" y2="210.82" width="0.1524" layer="91"/>
+<label x="-405.13" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA3_JTAG_TDO" class="0">
@@ -4387,13 +4631,8 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <label x="-363.22" y="218.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-332.74" y1="218.44" x2="-361.95" y2="218.44" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-332.74" y1="218.44" x2="-361.95" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="X4" gate="-1" pin="17"/>
-</segment>
-<segment>
-<pinref part="X7" gate="G$1" pin="6"/>
-<wire x1="-414.02" y1="210.82" x2="-391.16" y2="210.82" width="0.1524" layer="91" style="longdash"/>
-<label x="-408.94" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA3_GPIO_8" class="0">
@@ -4433,13 +4672,8 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <label x="-358.14" y="223.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-332.74" y1="223.52" x2="-355.6" y2="223.52" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-332.74" y1="223.52" x2="-355.6" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="X4" gate="-1" pin="15"/>
-</segment>
-<segment>
-<wire x1="-391.16" y1="215.9" x2="-414.02" y2="215.9" width="0.1524" layer="91" style="longdash"/>
-<label x="-408.94" y="215.9" size="1.778" layer="95"/>
-<pinref part="X7" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="Q6_PC_RS232" class="0">
@@ -4447,23 +4681,21 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <pinref part="U$1" gate="G$1" pin="C42"/>
 <wire x1="22.86" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
 <label x="41.91" y="76.2" size="1.778" layer="95"/>
-<label x="-135.89" y="208.28" size="1.778" layer="95"/>
+<label x="-135.89" y="205.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-149.86" y1="208.28" x2="-114.3" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-1" pin="8"/>
+<label x="-303.53" y="205.74" size="1.778" layer="95"/>
+<label x="-394.97" y="220.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="-303.53" y="208.28" size="1.778" layer="95"/>
+<wire x1="-149.86" y1="205.74" x2="-114.3" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-317.5" y1="208.28" x2="-281.94" y2="208.28" width="0.1524" layer="91" style="longdash"/>
-<pinref part="X4" gate="-1" pin="8"/>
+<wire x1="-317.5" y1="205.74" x2="-281.94" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-317.5" y1="205.74" x2="-281.94" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X7" gate="G$1" pin="12"/>
-<wire x1="-429.26" y1="215.9" x2="-452.12" y2="215.9" width="0.1524" layer="91" style="longdash"/>
-<label x="-454.66" y="215.9" size="1.778" layer="95"/>
+<wire x1="-414.02" y1="220.98" x2="-386.08" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PC_Q6_RS232" class="0">
@@ -4471,23 +4703,21 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <pinref part="U$1" gate="G$1" pin="C44"/>
 <label x="41.91" y="73.66" size="1.778" layer="95"/>
 <wire x1="22.86" y1="73.66" x2="59.69" y2="73.66" width="0.1524" layer="91"/>
-<label x="-135.89" y="205.74" size="1.778" layer="95"/>
+<label x="-135.89" y="200.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-149.86" y1="205.74" x2="-113.03" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-1" pin="9"/>
+<label x="-303.53" y="200.66" size="1.778" layer="95"/>
+<label x="-394.97" y="223.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="-303.53" y="205.74" size="1.778" layer="95"/>
+<wire x1="-149.86" y1="200.66" x2="-115.57" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="-317.5" y1="205.74" x2="-283.21" y2="205.74" width="0.1524" layer="91" style="longdash"/>
-<pinref part="X4" gate="-1" pin="9"/>
+<wire x1="-317.5" y1="200.66" x2="-281.94" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="-317.5" y1="200.66" x2="-281.94" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X7" gate="G$1" pin="13"/>
-<wire x1="-429.26" y1="213.36" x2="-452.12" y2="213.36" width="0.1524" layer="91" style="longdash"/>
-<label x="-454.66" y="213.36" size="1.778" layer="95"/>
+<wire x1="-414.02" y1="223.52" x2="-386.08" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S6_JTAG_TMS" class="0">
@@ -4502,14 +4732,9 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <pinref part="X1" gate="-1" pin="21"/>
 </segment>
 <segment>
-<wire x1="-332.74" y1="208.28" x2="-360.68" y2="208.28" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-332.74" y1="208.28" x2="-360.68" y2="208.28" width="0.1524" layer="91"/>
 <label x="-363.22" y="208.28" size="1.778" layer="95"/>
 <pinref part="X4" gate="-1" pin="21"/>
-</segment>
-<segment>
-<pinref part="X7" gate="G$1" pin="9"/>
-<wire x1="-429.26" y1="223.52" x2="-452.12" y2="223.52" width="0.1524" layer="91" style="longdash"/>
-<label x="-454.66" y="223.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S6_JTAG_TCK" class="0">
@@ -4524,14 +4749,13 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <pinref part="X1" gate="-1" pin="22"/>
 </segment>
 <segment>
-<wire x1="-332.74" y1="205.74" x2="-360.68" y2="205.74" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-332.74" y1="205.74" x2="-360.68" y2="205.74" width="0.1524" layer="91"/>
 <label x="-363.22" y="205.74" size="1.778" layer="95"/>
 <pinref part="X4" gate="-1" pin="22"/>
 </segment>
 <segment>
-<pinref part="X7" gate="G$1" pin="10"/>
-<wire x1="-429.26" y1="220.98" x2="-452.12" y2="220.98" width="0.1524" layer="91" style="longdash"/>
-<label x="-454.66" y="220.98" size="1.778" layer="95"/>
+<wire x1="-386.08" y1="213.36" x2="-414.02" y2="213.36" width="0.1524" layer="91"/>
+<label x="-405.13" y="213.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S6_JTAG_TDO" class="0">
@@ -4546,14 +4770,9 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <pinref part="X1" gate="-1" pin="23"/>
 </segment>
 <segment>
-<wire x1="-332.74" y1="203.2" x2="-360.68" y2="203.2" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-332.74" y1="203.2" x2="-360.68" y2="203.2" width="0.1524" layer="91"/>
 <label x="-363.22" y="203.2" size="1.778" layer="95"/>
 <pinref part="X4" gate="-1" pin="23"/>
-</segment>
-<segment>
-<pinref part="X7" gate="G$1" pin="11"/>
-<wire x1="-429.26" y1="218.44" x2="-452.12" y2="218.44" width="0.1524" layer="91" style="longdash"/>
-<label x="-454.66" y="218.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S6_JTAG_TDI" class="0">
@@ -4568,14 +4787,13 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <pinref part="X1" gate="-1" pin="20"/>
 </segment>
 <segment>
-<wire x1="-332.74" y1="210.82" x2="-360.68" y2="210.82" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-332.74" y1="210.82" x2="-360.68" y2="210.82" width="0.1524" layer="91"/>
 <label x="-363.22" y="210.82" size="1.778" layer="95"/>
 <pinref part="X4" gate="-1" pin="20"/>
 </segment>
 <segment>
-<pinref part="X7" gate="G$1" pin="8"/>
-<wire x1="-414.02" y1="205.74" x2="-391.16" y2="205.74" width="0.1524" layer="91" style="longdash"/>
-<label x="-408.94" y="205.74" size="1.778" layer="95"/>
+<wire x1="-386.08" y1="215.9" x2="-414.02" y2="215.9" width="0.1524" layer="91"/>
+<label x="-405.13" y="215.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S6_JTAG_3V3" class="0">
@@ -4590,9 +4808,13 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <pinref part="X1" gate="-1" pin="24"/>
 </segment>
 <segment>
-<wire x1="-332.74" y1="200.66" x2="-360.68" y2="200.66" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-332.74" y1="200.66" x2="-360.68" y2="200.66" width="0.1524" layer="91"/>
 <label x="-363.22" y="200.66" size="1.778" layer="95"/>
 <pinref part="X4" gate="-1" pin="24"/>
+</segment>
+<segment>
+<wire x1="-386.08" y1="208.28" x2="-414.02" y2="208.28" width="0.1524" layer="91"/>
+<label x="-405.13" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HE100_TX_TO_DIPLEX_SIG" class="0">
@@ -4619,7 +4841,7 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <label x="-137.16" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-327.66" y1="154.94" x2="-368.3" y2="154.94" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-327.66" y1="154.94" x2="-368.3" y2="154.94" width="0.1524" layer="91"/>
 <label x="-363.22" y="154.94" size="1.778" layer="95"/>
 <pinref part="X9" gate="G1" pin="1"/>
 <pinref part="X17" gate="G1" pin="1"/>
@@ -4635,10 +4857,10 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <label x="-137.16" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-347.98" y1="152.4" x2="-368.3" y2="152.4" width="0.1524" layer="91" style="longdash"/>
-<wire x1="-347.98" y1="152.4" x2="-347.98" y2="157.48" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-347.98" y1="152.4" x2="-368.3" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-347.98" y1="152.4" x2="-347.98" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="X9" gate="G1" pin="2"/>
-<wire x1="-347.98" y1="157.48" x2="-327.66" y2="157.48" width="0.1524" layer="91" style="longdash"/>
+<wire x1="-347.98" y1="157.48" x2="-327.66" y2="157.48" width="0.1524" layer="91"/>
 <label x="-363.22" y="152.4" size="1.778" layer="95"/>
 <pinref part="X17" gate="G1" pin="2"/>
 </segment>
@@ -4668,6 +4890,33 @@ The JTAG connector may note be implemented. Need to check manufactured PCB</text
 <pinref part="U$2" gate="G$1" pin="X3"/>
 <wire x1="-27.94" y1="259.08" x2="17.78" y2="259.08" width="0.1524" layer="91"/>
 <label x="-20.32" y="259.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="SW1" gate="G$1" pin="1"/>
+<wire x1="-368.3" y1="266.7" x2="-373.38" y2="266.7" width="0.1524" layer="91"/>
+<wire x1="-373.38" y1="266.7" x2="-373.38" y2="259.08" width="0.1524" layer="91"/>
+<pinref part="SW2" gate="G$1" pin="1"/>
+<wire x1="-373.38" y1="259.08" x2="-373.38" y2="254" width="0.1524" layer="91"/>
+<wire x1="-373.38" y1="254" x2="-368.3" y2="254" width="0.1524" layer="91"/>
+<pinref part="SW3" gate="G$1" pin="2"/>
+<wire x1="-381" y1="259.08" x2="-373.38" y2="259.08" width="0.1524" layer="91"/>
+<junction x="-373.38" y="259.08"/>
+</segment>
+</net>
+<net name="CONTINUITY_1" class="0">
+<segment>
+<pinref part="X4" gate="-1" pin="12"/>
+<wire x1="-317.5" y1="198.12" x2="-281.94" y2="198.12" width="0.1524" layer="91"/>
+<label x="-303.53" y="198.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CONTINUITY_2" class="0">
+<segment>
+<pinref part="X4" gate="-1" pin="13"/>
+<wire x1="-317.5" y1="195.58" x2="-281.94" y2="195.58" width="0.1524" layer="91"/>
+<label x="-303.53" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
