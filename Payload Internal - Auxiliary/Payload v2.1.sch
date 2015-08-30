@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7130,6 +7130,8 @@ Block, Siemens and generic&lt;p&gt;
 <text x="-124.46" y="45.72" size="1.778" layer="95">POW_RADIO_VBATT</text>
 <text x="-128.27" y="66.04" size="1.778" layer="95">POW_RADIO_GND</text>
 <text x="-128.27" y="63.5" size="1.778" layer="95">POW_RADIO_GND</text>
+<text x="-287.02" y="106.68" size="1.778" layer="152">*Note: This is the "-X" 16pin Conn</text>
+<text x="-287.02" y="68.58" size="1.778" layer="152">*Note: This is the "+X" 16pin Conn</text>
 </plain>
 <instances>
 <instance part="U$8" gate="G$1" x="-279.4" y="-20.32" rot="R270"/>
