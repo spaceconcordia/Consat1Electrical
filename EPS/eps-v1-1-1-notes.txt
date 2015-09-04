@@ -1,0 +1,4 @@
+to test
+
+if power is applied to the BCRs, with no battery attached, will they provide current to the regulators?
+better BCRs

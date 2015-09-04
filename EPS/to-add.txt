@@ -1,22 +1,11 @@
-ad7889 with measurement points to:
+x change NCS2202 to NCS2200
+* |- alternately: find drop in replacement for NCS2200 that has higher tolerance on Vin ( LT1716HS5 )
+* remove R11 and R28
+* route the Iprg line on IC4
 
-+battery thermistor 1
-+battery thermistor 2
-+solar panel Vsense 1 ( tgt = 5uA for 15v, therefore Req = 3Meg,  )
-+solar panel Vsense 1
-
-
-additional external ground to umbilical cable for charging
-+current reset circuit with dedicated 3v regulator
-+external hiccough reset line
-+increase power transistor PCB footprint
-
-
-reset radio line - resetled? setled? max radio current?
-
-
-check if AD219 has bi-directional current flow sense
-double check VD for battery heater control
-add thermal layers!
-add the line to send a current warning to the Q6
-add documentation layer, with name, schematic, icon, etc
+* add always-on 3.3v regulator for very low power devices
+* add input and output filtering caps to ALL 
+find voltage reading chip that has high impedance inputs when it is powered down
+solar panel grounds and battery grounds are connected, does this need to change ( change through wiring harness )
+add line to enable external charging of batteries (through wiring harness?)
+connect 5V reg output to transciever RF amp? ( H2-46 )
