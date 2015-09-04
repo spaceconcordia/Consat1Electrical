@@ -1,0 +1,14 @@
+"Part";"Value";"Device";"Package";"Description";"MF";"MPN";"OC_FARNELL";"OC_NEWARK";
+"ANTENNA";"SMA-142-0701-801/806";"SMA-142-0701-801/806";"J502-ND-142-0701-801/806";"SMA 50 Ohm End Launch Jack Receptacle - Round Contact";"JOHNSON COMPONENTS";"142-0701-801";"1608592";"90F2624";
+"C1";"20pF";"C-USC1608";"C1608";"CAPACITOR, American symbol";"";"";"";"";
+"C2";"5pF";"C-USC2012";"C2012";"CAPACITOR, American symbol";"";"";"";"";
+"C3";"5pF";"C-USC2012";"C2012";"CAPACITOR, American symbol";"";"";"";"";
+"C4";"20pF";"C-USC1608";"C1608";"CAPACITOR, American symbol";"";"";"";"";
+"C5";"8pF";"C-USC2012";"C2012";"CAPACITOR, American symbol";"";"";"";"";
+"C6";"82nH";"C-USC1608";"C1608";"CAPACITOR, American symbol";"";"";"";"";
+"C7";"75nH";"C-USC1005";"C1005";"CAPACITOR, American symbol";"";"";"";"";
+"C8";"17nH";"C-USC1005";"C1005";"CAPACITOR, American symbol";"";"";"";"";
+"C9";"19nH";"C-USC1005";"C1005";"CAPACITOR, American symbol";"";"";"";"";
+"C10";"40nH";"C-USC1005";"C1005";"CAPACITOR, American symbol";"";"";"";"";
+"PORT-A";"SMA-142-0701-801/806";"SMA-142-0701-801/806";"J502-ND-142-0701-801/806";"SMA 50 Ohm End Launch Jack Receptacle - Round Contact";"JOHNSON COMPONENTS";"142-0701-801";"1608592";"90F2624";
+"PORT-B";"SMA-142-0701-801/806";"SMA-142-0701-801/806";"J502-ND-142-0701-801/806";"SMA 50 Ohm End Launch Jack Receptacle - Round Contact";"JOHNSON COMPONENTS";"142-0701-801";"1608592";"90F2624";
