@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.127" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -149,12 +149,31 @@
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+5V">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+3V3" prefix="+3V3">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -3685,6 +3704,15 @@ space rated(need reference)</description>
 <part name="SL1" library="con-amp-quick" deviceset="MA04" device=""/>
 <part name="SL2" library="con-amp-quick" deviceset="MA04" device=""/>
 <part name="SL3" library="con-amp-quick" deviceset="MA04" device=""/>
+<part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
+<part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
+<part name="P+1" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3776,6 +3804,13 @@ out actual part # and create model
 - payload PCB apparently has 2 4pin
 connectors but only 2 pins of each 
 are used?</text>
+<text x="-53.34" y="-195.58" size="1.778" layer="97">GND1</text>
+<text x="-53.34" y="-157.48" size="1.778" layer="97">THERMALGND</text>
+<text x="-53.34" y="-154.94" size="1.778" layer="97">GND3</text>
+<text x="-53.34" y="-154.94" size="1.778" layer="97">GND3</text>
+<text x="-53.34" y="-152.4" size="1.778" layer="97">GND2</text>
+<text x="-118.11" y="-180.34" size="1.778" layer="97">SOLAR_PANEL_GND</text>
+<text x="-118.11" y="-185.42" size="1.778" layer="97">SOLAR_PANEL_GND</text>
 </plain>
 <instances>
 <instance part="H2" gate="G$1" x="-3.81" y="2.54"/>
@@ -3834,7 +3869,7 @@ are used?</text>
 <instance part="SW3" gate="G$1" x="-386.08" y="259.08"/>
 <instance part="J1" gate="-1" x="322.58" y="-172.72"/>
 <instance part="J1" gate="-2" x="322.58" y="-177.8"/>
-<instance part="U$4" gate="G$1" x="-73.66" y="-185.42"/>
+<instance part="U$4" gate="G$1" x="-73.66" y="-185.42" smashed="yes"/>
 <instance part="U$5" gate="G$1" x="-73.66" y="-147.32"/>
 <instance part="X5" gate="-1" x="167.64" y="-139.7"/>
 <instance part="X6" gate="-1" x="167.64" y="-185.42"/>
@@ -3859,6 +3894,15 @@ are used?</text>
 <instance part="SL1" gate="G$1" x="287.02" y="-115.57" rot="R180"/>
 <instance part="SL2" gate="G$1" x="287.02" y="-115.57" rot="R180"/>
 <instance part="SL3" gate="G$1" x="287.02" y="-99.06" rot="R180"/>
+<instance part="SUPPLY6" gate="GND" x="-50.8" y="-200.66" smashed="yes"/>
+<instance part="SUPPLY7" gate="GND" x="-50.8" y="-162.56" smashed="yes"/>
+<instance part="SUPPLY8" gate="GND" x="-35.56" y="-154.94" smashed="yes" rot="R90"/>
+<instance part="SUPPLY9" gate="GND" x="-35.56" y="-152.4" smashed="yes" rot="R90"/>
+<instance part="SUPPLY10" gate="GND" x="-35.56" y="-144.78" smashed="yes" rot="R90"/>
+<instance part="SUPPLY12" gate="GND" x="-128.27" y="-180.34" smashed="yes" rot="R270"/>
+<instance part="SUPPLY13" gate="GND" x="-128.27" y="-185.42" smashed="yes" rot="R270"/>
+<instance part="+3V1" gate="G$1" x="-27.94" y="-139.7"/>
+<instance part="P+1" gate="1" x="-22.86" y="-142.24"/>
 </instances>
 <busses>
 </busses>
@@ -4049,18 +4093,8 @@ are used?</text>
 <segment>
 <wire x1="-165.1" y1="198.12" x2="-170.18" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-1" pin="25"/>
-</segment>
-<segment>
-<wire x1="-170.18" y1="198.12" x2="-170.18" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<wire x1="-332.74" y1="198.12" x2="-337.82" y2="198.12" width="0.1524" layer="91" style="longdash"/>
-<pinref part="X4" gate="-1" pin="25"/>
-</segment>
-<segment>
-<wire x1="-337.82" y1="198.12" x2="-337.82" y2="193.04" width="0.1524" layer="91" style="longdash"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+<wire x1="-170.18" y1="193.04" x2="-170.18" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-13.97" y1="-134.62" x2="10.16" y2="-134.62" width="0.1524" layer="91"/>
@@ -4079,8 +4113,9 @@ are used?</text>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="14"/>
-<wire x1="-60.96" y1="-144.78" x2="-50.8" y2="-144.78" width="0.1524" layer="91"/>
 <label x="-53.34" y="-144.78" size="1.778" layer="95"/>
+<pinref part="SUPPLY10" gate="GND" pin="GND"/>
+<wire x1="-38.1" y1="-144.78" x2="-60.96" y2="-144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="133.35" y1="-137.16" x2="157.48" y2="-137.16" width="0.1524" layer="91"/>
@@ -4113,6 +4148,44 @@ are used?</text>
 <label x="267.97" y="-101.6" size="1.778" layer="95"/>
 <pinref part="SL3" gate="G$1" pin="3"/>
 </segment>
+<segment>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+<pinref part="X4" gate="-1" pin="25"/>
+<wire x1="-337.82" y1="193.04" x2="-337.82" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-337.82" y1="198.12" x2="-332.74" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="9"/>
+<wire x1="-60.96" y1="-195.58" x2="-50.8" y2="-195.58" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="GND" pin="GND"/>
+<wire x1="-50.8" y1="-198.12" x2="-50.8" y2="-195.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-60.96" y1="-157.48" x2="-50.8" y2="-157.48" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="9"/>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+<wire x1="-50.8" y1="-157.48" x2="-50.8" y2="-160.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="11"/>
+<pinref part="SUPPLY9" gate="GND" pin="GND"/>
+<wire x1="-38.1" y1="-152.4" x2="-60.96" y2="-152.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="10"/>
+<pinref part="SUPPLY8" gate="GND" pin="GND"/>
+<wire x1="-38.1" y1="-154.94" x2="-60.96" y2="-154.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="2"/>
+<pinref part="SUPPLY12" gate="GND" pin="GND"/>
+<wire x1="-86.36" y1="-180.34" x2="-125.73" y2="-180.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="4"/>
+<pinref part="SUPPLY13" gate="GND" pin="GND"/>
+<wire x1="-125.73" y1="-185.42" x2="-86.36" y2="-185.42" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="BOTTOM_TEMP_SOLAR_PANEL-1" class="0">
 <segment>
@@ -4128,7 +4201,7 @@ are used?</text>
 <segment>
 <pinref part="U$5" gate="G$1" pin="5"/>
 <wire x1="-86.36" y1="-149.86" x2="-96.52" y2="-149.86" width="0.1524" layer="91"/>
-<label x="-121.92" y="-149.86" size="1.778" layer="95"/>
+<label x="-127" y="-149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="-190.5" x2="175.26" y2="-190.5" width="0.1524" layer="91"/>
@@ -4154,7 +4227,7 @@ are used?</text>
 <segment>
 <pinref part="U$5" gate="G$1" pin="6"/>
 <wire x1="-86.36" y1="-152.4" x2="-96.52" y2="-152.4" width="0.1524" layer="91"/>
-<label x="-121.92" y="-152.4" size="1.778" layer="95"/>
+<label x="-127" y="-152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="-180.34" x2="203.2" y2="-180.34" width="0.1524" layer="91"/>
@@ -4180,7 +4253,7 @@ are used?</text>
 <segment>
 <pinref part="U$5" gate="G$1" pin="8"/>
 <wire x1="-86.36" y1="-157.48" x2="-96.52" y2="-157.48" width="0.1524" layer="91"/>
-<label x="-121.92" y="-157.48" size="1.778" layer="95"/>
+<label x="-127" y="-157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="-175.26" x2="203.2" y2="-175.26" width="0.1524" layer="91"/>
@@ -4391,7 +4464,7 @@ are used?</text>
 <segment>
 <pinref part="U$5" gate="G$1" pin="7"/>
 <wire x1="-86.36" y1="-154.94" x2="-96.52" y2="-154.94" width="0.1524" layer="91"/>
-<label x="-121.92" y="-154.94" size="1.778" layer="95"/>
+<label x="-127" y="-154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="-185.42" x2="175.26" y2="-185.42" width="0.1524" layer="91"/>
@@ -4428,8 +4501,10 @@ are used?</text>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="13"/>
-<wire x1="-60.96" y1="-147.32" x2="-48.26" y2="-147.32" width="0.1524" layer="91"/>
 <label x="-53.34" y="-147.32" size="1.778" layer="95"/>
+<wire x1="-60.96" y1="-147.32" x2="-27.94" y2="-147.32" width="0.1524" layer="91"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="-27.94" y1="-147.32" x2="-27.94" y2="-142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="-137.16" x2="175.26" y2="-137.16" width="0.1524" layer="91"/>
@@ -4465,11 +4540,6 @@ are used?</text>
 <wire x1="53.34" y1="59.69" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="72.39" y1="59.69" x2="53.34" y2="59.69" width="0.1524" layer="91"/>
 <junction x="53.34" y="59.69"/>
-</segment>
-<segment>
-<pinref part="U$5" gate="G$1" pin="12"/>
-<wire x1="-60.96" y1="-149.86" x2="-50.8" y2="-149.86" width="0.1524" layer="91"/>
-<label x="-53.34" y="-149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POW_RADIO_3.3VSYS" class="0">
@@ -4874,7 +4944,7 @@ are used?</text>
 <segment>
 <pinref part="U$4" gate="G$1" pin="1"/>
 <wire x1="-86.36" y1="-177.8" x2="-93.98" y2="-177.8" width="0.1524" layer="91"/>
-<label x="-121.92" y="-177.8" size="1.778" layer="95"/>
+<label x="-116.84" y="-177.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="203.2" y1="-132.08" x2="180.34" y2="-132.08" width="0.1524" layer="91"/>
@@ -4915,7 +4985,7 @@ are used?</text>
 <segment>
 <pinref part="U$4" gate="G$1" pin="3"/>
 <wire x1="-86.36" y1="-182.88" x2="-93.98" y2="-182.88" width="0.1524" layer="91"/>
-<label x="-121.92" y="-182.88" size="1.778" layer="95"/>
+<label x="-116.84" y="-182.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="175.26" y1="-127" x2="180.34" y2="-127" width="0.1524" layer="91"/>
@@ -5107,16 +5177,6 @@ are used?</text>
 <pinref part="X2" gate="-1" pin="16"/>
 </segment>
 <segment>
-<wire x1="-93.98" y1="-180.34" x2="-86.36" y2="-180.34" width="0.1524" layer="91"/>
-<label x="-121.92" y="-180.34" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="-93.98" y1="-185.42" x2="-86.36" y2="-185.42" width="0.1524" layer="91"/>
-<label x="-121.92" y="-185.42" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="4"/>
-</segment>
-<segment>
 <wire x1="133.35" y1="-127" x2="157.48" y2="-127" width="0.1524" layer="91"/>
 <label x="133.35" y="-127" size="1.778" layer="95"/>
 <pinref part="X5" gate="-1" pin="15"/>
@@ -5297,11 +5357,6 @@ are used?</text>
 <pinref part="X3" gate="-1" pin="22"/>
 <wire x1="12.7" y1="-190.5" x2="8.89" y2="-190.5" width="0.1524" layer="91"/>
 <junction x="8.89" y="-190.5"/>
-</segment>
-<segment>
-<wire x1="-60.96" y1="-157.48" x2="-50.8" y2="-157.48" width="0.1524" layer="91"/>
-<label x="-53.34" y="-157.48" size="1.778" layer="95"/>
-<pinref part="U$5" gate="G$1" pin="9"/>
 </segment>
 <segment>
 <wire x1="135.89" y1="-193.04" x2="156.21" y2="-193.04" width="0.1524" layer="91"/>
@@ -5897,67 +5952,46 @@ are used?</text>
 <label x="-135.89" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="10"/>
-<wire x1="-60.96" y1="-154.94" x2="-50.8" y2="-154.94" width="0.1524" layer="91"/>
-<label x="-53.34" y="-154.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="11"/>
-<wire x1="-60.96" y1="-152.4" x2="-50.8" y2="-152.4" width="0.1524" layer="91"/>
-<label x="-53.34" y="-152.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$32" class="0">
+<net name="G-M-OUTPUT-AMPLITUDE" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="5"/>
 <wire x1="-86.36" y1="-187.96" x2="-93.98" y2="-187.96" width="0.1524" layer="91"/>
-<label x="-93.98" y="-187.96" size="1.778" layer="95"/>
+<label x="-124.46" y="-187.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="HV_OUTPUT1" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="6"/>
 <wire x1="-86.36" y1="-190.5" x2="-93.98" y2="-190.5" width="0.1524" layer="91"/>
-<label x="-93.98" y="-190.5" size="1.778" layer="95"/>
+<label x="-110.49" y="-190.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="VOLTAGE_SWEEP1" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="8"/>
 <wire x1="-86.36" y1="-195.58" x2="-93.98" y2="-195.58" width="0.1524" layer="91"/>
-<label x="-93.98" y="-195.58" size="1.778" layer="95"/>
+<label x="-116.84" y="-195.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$35" class="0">
+<net name="HV_OUTPUT2" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="7"/>
 <wire x1="-86.36" y1="-193.04" x2="-93.98" y2="-193.04" width="0.1524" layer="91"/>
-<label x="-93.98" y="-193.04" size="1.778" layer="95"/>
+<label x="-110.49" y="-193.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$37" class="0">
+<net name="VOLTAGE_SWEEP2" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="14"/>
 <wire x1="-60.96" y1="-182.88" x2="-53.34" y2="-182.88" width="0.1524" layer="91"/>
 <label x="-53.34" y="-182.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$39" class="0">
+<net name="PULSE1" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="13"/>
 <wire x1="-60.96" y1="-185.42" x2="-50.8" y2="-185.42" width="0.1524" layer="91"/>
 <label x="-53.34" y="-185.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PAYGND" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="9"/>
-<wire x1="-60.96" y1="-195.58" x2="-50.8" y2="-195.58" width="0.1524" layer="91"/>
-<label x="-53.34" y="-195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5972,9 +6006,23 @@ are used?</text>
 <pinref part="SL2" gate="G$1" pin="4"/>
 </segment>
 </net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="12"/>
+<label x="-53.34" y="-149.86" size="1.778" layer="95"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
+<wire x1="-60.96" y1="-149.86" x2="-22.86" y2="-149.86" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="-149.86" x2="-22.86" y2="-144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="108,1,7.62,-10.16,+3V3,,,,,"/>
+<approved hash="108,1,22.86,88.9,+3V3,,,,,"/>
+<approved hash="108,1,49.53,-10.16,+3V3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
