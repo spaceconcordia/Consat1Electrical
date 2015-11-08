@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.127" altunitdist="mm" altunit="mm"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.254" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -71,6 +71,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -3639,6 +3640,78 @@ space rated(need reference)</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="diode">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DO41-10">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2.54 mm, horizontal, grid 10.16 mm</description>
+<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0" x2="4.064" y2="0" width="0.762" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-4.064" y2="0" width="0.762" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="A" x="5.08" y="0" drill="1.1176"/>
+<pad name="C" x="-5.08" y="0" drill="1.1176"/>
+<text x="-2.032" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.032" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
+<rectangle x1="2.032" y1="-0.381" x2="3.937" y2="0.381" layer="21"/>
+<rectangle x1="-3.937" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="D">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
+<text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1N4004" prefix="D">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+general purpose rectifier, 1 A</description>
+<gates>
+<gate name="1" symbol="D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO41-10">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3713,6 +3786,10 @@ space rated(need reference)</description>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
+<part name="D1" library="diode" deviceset="1N4004" device=""/>
+<part name="D2" library="diode" deviceset="1N4004" device=""/>
+<part name="D3" library="diode" deviceset="1N4004" device=""/>
+<part name="D4" library="diode" deviceset="1N4004" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3765,7 +3842,6 @@ used and correct the part #</text>
 for SolarPanel1</text>
 <text x="147.32" y="17.78" size="1.778" layer="152">(Connect to DB25-Z-X pin20)</text>
 <text x="147.32" y="-12.7" size="1.778" layer="152">(Connect to DB25-Z-X pin21)</text>
-<text x="147.32" y="2.54" size="1.778" layer="152">(Connect to DB25-Z+X pin04)</text>
 <text x="147.32" y="10.16" size="1.778" layer="152">(Connect to DB25-Z+X pin17)</text>
 <text x="147.32" y="-5.08" size="1.778" layer="152">(Connect to DB25-Z-X pin07)</text>
 <text x="147.32" y="-20.32" size="1.778" layer="152">(Connect to DB25-Z-X pin08)</text>
@@ -3773,7 +3849,6 @@ for SolarPanel1</text>
 for SolarPanel2</text>
 <text x="204.47" y="17.78" size="1.778" layer="152">(Connect to DB25-Z-X pin03)</text>
 <text x="204.47" y="-12.7" size="1.778" layer="152">(Connect to DB25-Z-X pin19)</text>
-<text x="204.47" y="2.54" size="1.778" layer="152">(Connect to DB25-Z+X pin02)</text>
 <text x="204.47" y="10.16" size="1.778" layer="152">(Connect to DB25-Z+X pin16)</text>
 <text x="204.47" y="-5.08" size="1.778" layer="152">(Connect to DB25-Z-X pin18)</text>
 <text x="204.47" y="-20.32" size="1.778" layer="152">(Connect to DB25-Z-X pin04)</text>
@@ -3781,7 +3856,6 @@ for SolarPanel2</text>
 for SolarPanel3</text>
 <text x="261.62" y="17.78" size="1.778" layer="152">(Connect to DB25-Z-X pin05)</text>
 <text x="261.62" y="-12.7" size="1.778" layer="152">(Connect to DB25-Z-X pin17)</text>
-<text x="261.62" y="2.54" size="1.778" layer="152">(Connect to DB25-Z+X pin03)</text>
 <text x="261.62" y="10.16" size="1.778" layer="152">(Connect to DB25-Z+X pin15)</text>
 <text x="261.62" y="-5.08" size="1.778" layer="152">(Connect to DB25-Z-X pin16)</text>
 <text x="261.62" y="-20.32" size="1.778" layer="152">(Connect to DB25-Z-X pin06)</text>
@@ -3789,7 +3863,6 @@ for SolarPanel3</text>
 for SolarPanel4</text>
 <text x="320.04" y="17.78" size="1.778" layer="152">(Connect to DB25-Z-X pin01)</text>
 <text x="320.04" y="-12.7" size="1.778" layer="152">(Connect to DB25-Z-X pin02)</text>
-<text x="320.04" y="2.54" size="1.778" layer="152">(Connect to DB25-Z+X pin01)</text>
 <text x="320.04" y="10.16" size="1.778" layer="152">(Connect to DB25-Z+X pin14)</text>
 <text x="320.04" y="-5.08" size="1.778" layer="152">(Connect to DB25-Z-X pin14)</text>
 <text x="320.04" y="-20.32" size="1.778" layer="152">(Connect to DB25-Z-X pin15)</text>
@@ -3903,6 +3976,10 @@ are used?</text>
 <instance part="SUPPLY13" gate="GND" x="-128.27" y="-185.42" smashed="yes" rot="R270"/>
 <instance part="+3V1" gate="G$1" x="-27.94" y="-139.7"/>
 <instance part="P+1" gate="1" x="-22.86" y="-142.24"/>
+<instance part="D1" gate="1" x="157.48" y="-30.48"/>
+<instance part="D2" gate="1" x="218.44" y="-30.48"/>
+<instance part="D3" gate="1" x="274.32" y="-30.48"/>
+<instance part="D4" gate="1" x="327.66" y="-30.48"/>
 </instances>
 <busses>
 </busses>
@@ -4958,13 +5035,13 @@ are used?</text>
 <wire x1="180.34" y1="-132.08" x2="175.26" y2="-132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="5.08" x2="144.78" y2="5.08" width="0.1524" layer="91"/>
-<label x="147.32" y="5.08" size="1.778" layer="95"/>
+<wire x1="170.18" y1="-30.48" x2="160.02" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-30.48" x2="160.02" y2="-30.48" width="0.1524" layer="91"/>
+<label x="170.18" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="269.24" y1="5.08" x2="259.08" y2="5.08" width="0.1524" layer="91"/>
-<label x="261.62" y="5.08" size="1.778" layer="95"/>
-<pinref part="U$8" gate="G$1" pin="3"/>
+<wire x1="287.02" y1="-30.48" x2="276.86" y2="-30.48" width="0.1524" layer="91"/>
+<label x="287.02" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SOLAR_PANEL_2_4" class="0">
@@ -4998,12 +5075,13 @@ are used?</text>
 <pinref part="X5" gate="-1" pin="1"/>
 </segment>
 <segment>
-<wire x1="201.93" y1="5.08" x2="212.09" y2="5.08" width="0.1524" layer="91"/>
-<label x="204.47" y="5.08" size="1.778" layer="95"/>
+<wire x1="220.98" y1="-30.48" x2="228.6" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="-30.48" x2="228.6" y2="-30.48" width="0.1524" layer="91"/>
+<label x="228.6" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="317.5" y1="5.08" x2="327.66" y2="5.08" width="0.1524" layer="91"/>
-<label x="320.04" y="5.08" size="1.778" layer="95"/>
+<wire x1="330.2" y1="-30.48" x2="337.82" y2="-30.48" width="0.1524" layer="91"/>
+<label x="337.82" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Q6_GPIO_8" class="0">
@@ -6013,6 +6091,47 @@ are used?</text>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="-60.96" y1="-149.86" x2="-22.86" y2="-149.86" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="-149.86" x2="-22.86" y2="-144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SOLAR_PANEL_1" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="3"/>
+<wire x1="144.78" y1="5.08" x2="154.94" y2="5.08" width="0.1524" layer="91"/>
+<label x="147.32" y="5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="144.78" y1="-30.48" x2="154.94" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SOLAR_PANEL_2" class="0">
+<segment>
+<pinref part="U$7" gate="G$1" pin="3"/>
+<wire x1="201.93" y1="5.08" x2="212.09" y2="5.08" width="0.1524" layer="91"/>
+<label x="204.47" y="5.08" size="1.778" layer="95"/>
+<wire x1="201.93" y1="5.08" x2="212.09" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="205.74" y1="-30.48" x2="215.9" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SOLAR_PANEL_3" class="0">
+<segment>
+<pinref part="U$8" gate="G$1" pin="3"/>
+<wire x1="259.08" y1="5.08" x2="269.24" y2="5.08" width="0.1524" layer="91"/>
+<label x="261.62" y="5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="261.62" y1="-30.48" x2="271.78" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SOLAR_PANEL_4" class="0">
+<segment>
+<pinref part="U$9" gate="G$1" pin="3"/>
+<wire x1="317.5" y1="5.08" x2="327.66" y2="5.08" width="0.1524" layer="91"/>
+<label x="320.04" y="5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="314.96" y1="-30.48" x2="325.12" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
