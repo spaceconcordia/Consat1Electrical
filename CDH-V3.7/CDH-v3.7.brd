@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2733,7 +2733,7 @@ Block, Siemens and generic&lt;p&gt;
 <class number="0" name="default" width="0.4064" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewÃ¤hlt, dass sie fÃ¼r 
@@ -2819,6 +2819,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="8mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="*"/>
 <param name="PrefDir.2" value="0"/>
@@ -3055,8 +3058,8 @@ design rules under a new name.</description>
 </element>
 <element name="D1" library="diode" package="SOD523" value="BB141" x="13.857075" y="34.590778125"/>
 <element name="U$1" library="SFMC-125-02-S-D" package="SFMC-107-01-XX-D" value="SMFC" x="80.9711" y="36.04831875" rot="R90"/>
-<element name="H1" library="ESQ-126-XX-X-D" package="ESQ-125-XX-X-D" value="ESQ-125-XX-X-D" x="42.296990625" y="87.756909375" locked="yes"/>
-<element name="H2" library="ESQ-126-XX-X-D" package="ESQ-125-XX-X-D" value="ESQ-125-XX-X-D" x="42.30203125" y="82.693009375" locked="yes"/>
+<element name="H2" library="ESQ-126-XX-X-D" package="ESQ-125-XX-X-D" value="ESQ-125-XX-X-D" x="42.296990625" y="87.756909375" locked="yes"/>
+<element name="H1" library="ESQ-126-XX-X-D" package="ESQ-125-XX-X-D" value="ESQ-125-XX-X-D" x="42.30203125" y="82.693009375" locked="yes"/>
 <element name="U$4" library="analog-devices" package="SOT23-5" value="ADM6316/ADM6320" x="47.001315625" y="13.37354375" rot="R270"/>
 <element name="U$6" library="maxim" package="SO20L" value="DS3232" x="34.66514375" y="8.07523125"/>
 <element name="C17" library="rcl" package="C2012" value="0.1uF" x="20.80929375" y="17.465153125"/>
@@ -3098,8 +3101,8 @@ design rules under a new name.</description>
 <contactref element="C13" pad="1"/>
 <contactref element="D1" pad="A"/>
 <contactref element="U$1" pad="48"/>
-<contactref element="H1" pad="17"/>
-<contactref element="H1" pad="19"/>
+<contactref element="H2" pad="17"/>
+<contactref element="H2" pad="19"/>
 <contactref element="U$1" pad="1"/>
 <contactref element="U$1" pad="2"/>
 <contactref element="U$1" pad="27"/>
@@ -3112,22 +3115,22 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="2"/>
 <contactref element="R11" pad="2"/>
 <contactref element="C11" pad="2"/>
-<contactref element="H2" pad="41"/>
-<contactref element="H2" pad="45"/>
-<contactref element="H2" pad="49"/>
-<contactref element="H2" pad="48"/>
-<contactref element="H2" pad="44"/>
-<contactref element="H2" pad="52"/>
-<contactref element="H2" pad="19"/>
-<contactref element="H2" pad="23"/>
-<contactref element="H2" pad="27"/>
-<contactref element="H2" pad="15"/>
-<contactref element="H2" pad="34"/>
-<contactref element="H1" pad="16"/>
-<contactref element="H1" pad="22"/>
-<contactref element="H1" pad="26"/>
-<contactref element="H1" pad="4"/>
-<contactref element="H2" pad="37"/>
+<contactref element="H1" pad="41"/>
+<contactref element="H1" pad="45"/>
+<contactref element="H1" pad="49"/>
+<contactref element="H1" pad="48"/>
+<contactref element="H1" pad="44"/>
+<contactref element="H1" pad="52"/>
+<contactref element="H1" pad="19"/>
+<contactref element="H1" pad="23"/>
+<contactref element="H1" pad="27"/>
+<contactref element="H1" pad="15"/>
+<contactref element="H1" pad="34"/>
+<contactref element="H2" pad="16"/>
+<contactref element="H2" pad="22"/>
+<contactref element="H2" pad="26"/>
+<contactref element="H2" pad="4"/>
+<contactref element="H1" pad="37"/>
 <contactref element="R9" pad="2"/>
 <wire x1="77.86203125" y1="83.963009375" x2="75.32203125" y2="81.423009375" width="0.4064" layer="1"/>
 <wire x1="75.32203125" y1="81.423009375" x2="72.78203125" y2="83.963009375" width="0.4064" layer="1"/>
@@ -3400,7 +3403,7 @@ design rules under a new name.</description>
 <contactref element="ADC_TEMP_1" pad="9"/>
 <contactref element="R5" pad="1"/>
 <contactref element="C4" pad="2"/>
-<contactref element="H1" pad="9"/>
+<contactref element="H2" pad="9"/>
 <wire x1="24.516990625" y1="86.486909375" x2="25.8" y2="85.0439" width="0.4064" layer="1"/>
 <wire x1="25.8" y1="85.0439" x2="25.8" y2="74.96" width="0.4064" layer="1"/>
 <wire x1="58.232865625" y1="26.1145125" x2="58.235453125" y2="26.1145125" width="0.4064" layer="1"/>
@@ -3459,7 +3462,7 @@ design rules under a new name.</description>
 <contactref element="C3" pad="2"/>
 <contactref element="ADC_TEMP_1" pad="12"/>
 <contactref element="R6" pad="1"/>
-<contactref element="H1" pad="11"/>
+<contactref element="H2" pad="11"/>
 <wire x1="27.056990625" y1="86.486909375" x2="28.39" y2="84.758903125" width="0.4064" layer="1"/>
 <wire x1="61.925959375" y1="26.124353125" x2="61.930909375" y2="26.124353125" width="0.4064" layer="1"/>
 <wire x1="61.930909375" y1="26.124353125" x2="61.930909375" y2="22.781434375" width="0.4064" layer="1"/>
@@ -3518,7 +3521,7 @@ design rules under a new name.</description>
 <contactref element="ADC_TEMP_1" pad="11"/>
 <contactref element="R8" pad="1"/>
 <contactref element="C1" pad="2"/>
-<contactref element="H1" pad="15"/>
+<contactref element="H2" pad="15"/>
 <wire x1="32.136990625" y1="86.486909375" x2="33.2539" y2="85.235" width="0.4064" layer="16"/>
 <wire x1="33.2539" y1="85.235" x2="37.9" y2="85.29" width="0.4064" layer="16"/>
 <wire x1="37.9" y1="85.29" x2="38.415" y2="84.5" width="0.4064" layer="16"/>
@@ -3641,7 +3644,7 @@ design rules under a new name.</description>
 <contactref element="C13" pad="2"/>
 <contactref element="ADC_TEMP_2" pad="10"/>
 <contactref element="R14" pad="1"/>
-<contactref element="H1" pad="50"/>
+<contactref element="H2" pad="50"/>
 <wire x1="35.81860625" y1="25.991553125" x2="35.82816875" y2="25.991553125" width="0.4064" layer="1"/>
 <wire x1="35.82816875" y1="25.991553125" x2="35.82816875" y2="22.72039375" width="0.4064" layer="1"/>
 <wire x1="35.81860625" y1="25.991553125" x2="35.81860625" y2="24.395" width="0.4064" layer="1"/>
@@ -3724,7 +3727,7 @@ design rules under a new name.</description>
 <wire x1="35.0572" y1="72.1982" x2="35.0586" y2="69.0044" width="0.4064" layer="1"/>
 </signal>
 <signal name="POW_BATT_VOUT">
-<contactref element="H2" pad="35"/>
+<contactref element="H1" pad="35"/>
 <contactref element="U$3" pad="X2"/>
 <wire x1="60.66856875" y1="64.50643125" x2="57.6" y2="67.4" width="1.27" layer="1"/>
 <wire x1="57.6" y1="67.4" x2="57.6" y2="81.365040625" width="1.27" layer="1"/>
@@ -3735,7 +3738,7 @@ design rules under a new name.</description>
 <wire x1="78.07356875" y1="64.04643125" x2="80.78271875" y2="64.04643125" width="1.27" layer="1"/>
 </signal>
 <signal name="POW_BATT_GND">
-<contactref element="H2" pad="33"/>
+<contactref element="H1" pad="33"/>
 <contactref element="U$3" pad="X1"/>
 <wire x1="55.00203125" y1="81.423009375" x2="55.00203125" y2="61.74796875" width="1.27" layer="1"/>
 <wire x1="55.00203125" y1="61.74796875" x2="55.835" y2="59.8" width="1.27" layer="1"/>
@@ -3744,7 +3747,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_SPI_SDO_MOSI">
 <contactref element="U$1" pad="18"/>
-<contactref element="H1" pad="23"/>
+<contactref element="H2" pad="23"/>
 <wire x1="42.296990625" y1="86.486909375" x2="43.6" y2="85.1839" width="0.4064" layer="16"/>
 <wire x1="43.47" y1="56.545" x2="43.54" y2="56.53" width="0.4064" layer="16"/>
 <wire x1="80.3361" y1="30.33331875" x2="78.73168125" y2="30.33331875" width="0.4064" layer="16"/>
@@ -3768,7 +3771,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_SPI_CS1">
 <contactref element="U$1" pad="21"/>
-<contactref element="H1" pad="25"/>
+<contactref element="H2" pad="25"/>
 <wire x1="44.836990625" y1="86.486909375" x2="46.175" y2="85.1239" width="0.4064" layer="16"/>
 <wire x1="46.175" y1="85.1239" x2="46.165" y2="73.9648" width="0.4064" layer="16"/>
 <wire x1="81.6061" y1="32.87331875" x2="83.50831875" y2="32.87331875" width="0.4064" layer="16"/>
@@ -3807,7 +3810,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_GPIO_7">
 <contactref element="U$1" pad="25"/>
-<contactref element="H2" pad="9"/>
+<contactref element="H1" pad="9"/>
 <wire x1="24.52203125" y1="81.423009375" x2="24.55" y2="81.395040625" width="0.4064" layer="1"/>
 <wire x1="24.55" y1="81.395040625" x2="24.55" y2="67.665" width="0.4064" layer="1"/>
 <wire x1="81.6061" y1="35.41331875" x2="82.42831875" y2="35.41331875" width="0.4064" layer="16"/>
@@ -3857,7 +3860,7 @@ design rules under a new name.</description>
 <contactref element="ADC_TEMP_1" pad="14"/>
 <contactref element="R2" pad="1"/>
 <contactref element="C7" pad="2"/>
-<contactref element="H1" pad="3"/>
+<contactref element="H2" pad="3"/>
 <wire x1="16.896990625" y1="86.486909375" x2="16.896990625" y2="86.653009375" width="0.4064" layer="1"/>
 <wire x1="16.896990625" y1="86.653009375" x2="15.85" y2="87.7" width="0.4064" layer="1"/>
 <wire x1="15.85" y1="87.7" x2="12.75" y2="87.7" width="0.4064" layer="1"/>
@@ -3909,7 +3912,7 @@ design rules under a new name.</description>
 <contactref element="ADC_TEMP_1" pad="13"/>
 <contactref element="R4" pad="1"/>
 <contactref element="C5" pad="2"/>
-<contactref element="H1" pad="7"/>
+<contactref element="H2" pad="7"/>
 <wire x1="54.537278125" y1="26.1157375" x2="54.5404875" y2="26.1157375" width="0.4064" layer="1"/>
 <wire x1="54.5404875" y1="26.1157375" x2="54.5404875" y2="22.785928125" width="0.4064" layer="1"/>
 <wire x1="54.537278125" y1="26.1157375" x2="54.537278125" y2="24.44" width="0.4064" layer="1"/>
@@ -3985,7 +3988,7 @@ design rules under a new name.</description>
 <contactref element="ADC_TEMP_1" pad="8"/>
 <contactref element="R3" pad="1"/>
 <contactref element="C6" pad="2"/>
-<contactref element="H1" pad="5"/>
+<contactref element="H2" pad="5"/>
 <wire x1="19.436990625" y1="86.486909375" x2="19.436909375" y2="86.486909375" width="0.4064" layer="1"/>
 <wire x1="19.436909375" y1="86.486909375" x2="18.2" y2="85.25" width="0.4064" layer="1"/>
 <wire x1="18.2" y1="85.25" x2="13.25" y2="85.25" width="0.4064" layer="1"/>
@@ -4035,7 +4038,7 @@ design rules under a new name.</description>
 <contactref element="ADC_TEMP_1" pad="7"/>
 <contactref element="R1" pad="1"/>
 <contactref element="C8" pad="2"/>
-<contactref element="H1" pad="1"/>
+<contactref element="H2" pad="1"/>
 <wire x1="14.356990625" y1="86.486909375" x2="12.786909375" y2="86.486909375" width="0.4064" layer="1"/>
 <wire x1="12.786909375" y1="86.486909375" x2="11.2" y2="84.85" width="0.4064" layer="1"/>
 <wire x1="43.47719375" y1="22.782796875" x2="43.43" y2="22.782796875" width="0.4064" layer="1"/>
@@ -4076,7 +4079,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_SPI_CS0">
 <contactref element="U$1" pad="20"/>
-<contactref element="H1" pad="37"/>
+<contactref element="H2" pad="37"/>
 <wire x1="80.3361" y1="31.60331875" x2="78.86668125" y2="31.62331875" width="0.4064" layer="16"/>
 <wire x1="78.86668125" y1="31.62331875" x2="74.06" y2="37.08" width="0.4064" layer="16"/>
 <wire x1="74.06" y1="37.08" x2="74.06" y2="45.165" width="0.4064" layer="16"/>
@@ -4140,7 +4143,7 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="ADC_TEMP_1" pad="10"/>
 <contactref element="R7" pad="1"/>
-<contactref element="H1" pad="13"/>
+<contactref element="H2" pad="13"/>
 <wire x1="65.64315" y1="26.116903125" x2="65.6256875" y2="26.116903125" width="0.4064" layer="1"/>
 <wire x1="65.6256875" y1="24.51" x2="65.6256875" y2="22.77895" width="0.4064" layer="1"/>
 <wire x1="65.6256875" y1="26.116903125" x2="65.6256875" y2="24.51" width="0.4064" layer="1"/>
@@ -4274,8 +4277,8 @@ design rules under a new name.</description>
 <contactref element="R17" pad="2"/>
 <contactref element="ADC_TEMP_2" pad="16"/>
 <contactref element="ADC_TEMP_1" pad="16"/>
-<contactref element="H1" pad="38"/>
-<contactref element="H1" pad="36"/>
+<contactref element="H2" pad="38"/>
+<contactref element="H2" pad="36"/>
 <contactref element="U$1" pad="32"/>
 <contactref element="C17" pad="1"/>
 <contactref element="U$6" pad="4"/>
@@ -4464,8 +4467,8 @@ design rules under a new name.</description>
 </polygon>
 </signal>
 <signal name="POW_5V">
-<contactref element="H2" pad="28"/>
-<contactref element="H2" pad="26"/>
+<contactref element="H1" pad="28"/>
+<contactref element="H1" pad="26"/>
 <contactref element="U$1" pad="49"/>
 <contactref element="U$1" pad="50"/>
 <wire x1="44.84203125" y1="83.963009375" x2="47.38203125" y2="83.963009375" width="0.8128" layer="1"/>
@@ -4499,12 +4502,12 @@ design rules under a new name.</description>
 <wire x1="78.2134" y1="53.775" x2="76.9112" y2="55.1222" width="0.8128" layer="16"/>
 </signal>
 <signal name="POW_RADIO_3.3VSYS">
-<contactref element="H1" pad="28"/>
+<contactref element="H2" pad="28"/>
 </signal>
 <signal name="POW_RADIO_GND">
-<contactref element="H1" pad="30"/>
-<contactref element="H1" pad="32"/>
-<contactref element="H1" pad="29"/>
+<contactref element="H2" pad="30"/>
+<contactref element="H2" pad="32"/>
+<contactref element="H2" pad="29"/>
 <wire x1="49.9872" y1="89.0016" x2="49.9872" y2="86.5632" width="0.4064" layer="1"/>
 <wire x1="49.9872" y1="86.5632" x2="49.916990625" y2="86.486909375" width="0.4064" layer="1"/>
 <wire x1="49.9872" y1="89.0016" x2="49.916990625" y2="89.026909375" width="0.4064" layer="1"/>
@@ -4513,14 +4516,14 @@ design rules under a new name.</description>
 <wire x1="50.1904" y1="89.0016" x2="49.916990625" y2="89.026909375" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$22">
-<contactref element="H1" pad="34"/>
+<contactref element="H2" pad="34"/>
 </signal>
 <signal name="N$27">
-<contactref element="H1" pad="44"/>
+<contactref element="H2" pad="44"/>
 </signal>
 <signal name="Q6_SPI_SCLK">
 <contactref element="U$1" pad="17"/>
-<contactref element="H1" pad="21"/>
+<contactref element="H2" pad="21"/>
 <wire x1="88.6252" y1="29.2362" x2="83.3714" y2="30.295" width="0.4064" layer="1"/>
 <wire x1="88.5952" y1="23.368" x2="88.6252" y2="29.2362" width="0.4064" layer="1"/>
 <wire x1="88.5738" y1="8.9816" x2="88.5952" y2="23.368" width="0.4064" layer="1"/>
@@ -4594,7 +4597,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_SPI_SDI_MISO">
 <contactref element="U$1" pad="19"/>
-<contactref element="H1" pad="35"/>
+<contactref element="H2" pad="35"/>
 <wire x1="57.536990625" y1="86.486909375" x2="56.26508125" y2="85.215" width="0.4064" layer="16"/>
 <wire x1="56.26508125" y1="85.215" x2="54.24" y2="85.215" width="0.4064" layer="16"/>
 <wire x1="54.24" y1="85.215" x2="53.66" y2="84.635" width="0.4064" layer="16"/>
@@ -4686,7 +4689,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_AIN_1">
 <contactref element="U$1" pad="5"/>
-<contactref element="H2" pad="43"/>
+<contactref element="H1" pad="43"/>
 <wire x1="67.70203125" y1="81.423009375" x2="67.75" y2="81.375040625" width="0.4064" layer="1"/>
 <wire x1="67.75" y1="81.375040625" x2="67.75" y2="69" width="0.4064" layer="1"/>
 <wire x1="67.75" y1="69" x2="67.745" y2="68.995" width="0.4064" layer="1"/>
@@ -4717,7 +4720,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_AIN_0">
 <contactref element="U$1" pad="3"/>
-<contactref element="H2" pad="39"/>
+<contactref element="H1" pad="39"/>
 <wire x1="81.6061" y1="21.44331875" x2="82.37168125" y2="21.44331875" width="0.4064" layer="16"/>
 <wire x1="82.37168125" y1="21.44331875" x2="82.915" y2="20.9" width="0.4064" layer="16"/>
 <wire x1="82.915" y1="20.9" x2="82.915" y2="19.295" width="0.4064" layer="16"/>
@@ -4761,7 +4764,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_AOUT_0">
 <contactref element="U$1" pad="4"/>
-<contactref element="H2" pad="47"/>
+<contactref element="H1" pad="47"/>
 <wire x1="72.78203125" y1="81.423009375" x2="71.15" y2="79.790978125" width="0.4064" layer="1"/>
 <wire x1="71.15" y1="79.790978125" x2="71.15" y2="68.7" width="0.4064" layer="1"/>
 <wire x1="71.15" y1="68.7" x2="71.14" y2="68.69" width="0.4064" layer="1"/>
@@ -4788,7 +4791,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_AOUT_1">
 <contactref element="U$1" pad="6"/>
-<contactref element="H2" pad="51"/>
+<contactref element="H1" pad="51"/>
 <wire x1="77.86203125" y1="81.423009375" x2="74.15" y2="77.710978125" width="0.4064" layer="1"/>
 <wire x1="74.15" y1="77.710978125" x2="74.15" y2="69.95" width="0.4064" layer="1"/>
 <wire x1="74.15" y1="69.95" x2="74.22" y2="69.88" width="0.4064" layer="1"/>
@@ -4815,38 +4818,38 @@ design rules under a new name.</description>
 <wire x1="71.99" y1="59.83" x2="74.165" y2="61.1" width="0.4064" layer="16"/>
 </signal>
 <signal name="POW_RADIO_3.3V">
-<contactref element="H1" pad="27"/>
+<contactref element="H2" pad="27"/>
 </signal>
 <signal name="POW_3V3">
-<contactref element="H2" pad="20"/>
-<contactref element="H2" pad="16"/>
+<contactref element="H1" pad="20"/>
+<contactref element="H1" pad="16"/>
 <wire x1="32.14203125" y1="83.963009375" x2="33.355040625" y2="82.75" width="0.4064" layer="16"/>
 <wire x1="33.355040625" y1="82.75" x2="36.1" y2="82.75" width="0.4064" layer="16"/>
 <wire x1="36.1" y1="82.75" x2="37.22203125" y2="83.87203125" width="0.4064" layer="16"/>
 <wire x1="37.22203125" y1="83.87203125" x2="37.22203125" y2="83.963009375" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$81">
-<contactref element="H1" pad="40"/>
+<contactref element="H2" pad="40"/>
 </signal>
 <signal name="N$82">
-<contactref element="H1" pad="42"/>
+<contactref element="H2" pad="42"/>
 </signal>
 <signal name="POW_RADIO_VBATT">
-<contactref element="H1" pad="46"/>
-<contactref element="H1" pad="45"/>
+<contactref element="H2" pad="46"/>
+<contactref element="H2" pad="45"/>
 <wire x1="70.236990625" y1="89.026909375" x2="70.236990625" y2="86.486909375" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$78">
-<contactref element="H1" pad="39"/>
+<contactref element="H2" pad="39"/>
 </signal>
 <signal name="N$79">
-<contactref element="H1" pad="41"/>
+<contactref element="H2" pad="41"/>
 </signal>
 <signal name="N$80">
-<contactref element="H1" pad="43"/>
+<contactref element="H2" pad="43"/>
 </signal>
 <signal name="MECH_DEPLOY_SWITCH_-V">
-<contactref element="H1" pad="33"/>
+<contactref element="H2" pad="33"/>
 <contactref element="U$2" pad="X5"/>
 <wire x1="54.996990625" y1="86.486909375" x2="56.3" y2="85.1839" width="0.4064" layer="1"/>
 <wire x1="87.122" y1="56.102" x2="84.924" y2="58.3" width="0.4064" layer="1"/>
@@ -4869,7 +4872,7 @@ design rules under a new name.</description>
 <contactref element="ADC_TEMP_1" pad="18"/>
 <contactref element="U$1" pad="14"/>
 <contactref element="U$6" pad="17"/>
-<contactref element="H1" pad="18"/>
+<contactref element="H2" pad="18"/>
 <wire x1="34.676990625" y1="89.026909375" x2="33.4" y2="87.74991875" width="0.4064" layer="1"/>
 <wire x1="32.76014375" y1="13.10443125" x2="32.76014375" y2="15.15514375" width="0.4064" layer="1"/>
 <wire x1="32.76014375" y1="15.15514375" x2="32.765" y2="16.395" width="0.4064" layer="1"/>
@@ -4925,7 +4928,7 @@ design rules under a new name.</description>
 <via x="74.039" y="33.006" extent="1-16" drill="0.5"/>
 </signal>
 <signal name="Q6_I2C_SCL_1">
-<contactref element="H1" pad="20"/>
+<contactref element="H2" pad="20"/>
 <contactref element="ADC_TEMP_1" pad="19"/>
 <contactref element="ADC_TEMP_2" pad="19"/>
 <contactref element="U$1" pad="13"/>
@@ -4997,7 +5000,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_GPIO_10">
 <contactref element="U$1" pad="16"/>
-<contactref element="H2" pad="32"/>
+<contactref element="H1" pad="32"/>
 <wire x1="52.46203125" y1="83.963009375" x2="51.15" y2="82.650978125" width="0.4064" layer="1"/>
 <wire x1="50.755" y1="73.955" x2="49.5" y2="71.46" width="0.4064" layer="1"/>
 <wire x1="49.5" y1="71.46" x2="49.5" y2="57.095" width="0.4064" layer="1"/>
@@ -5027,7 +5030,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_GPIO_2">
 <contactref element="U$1" pad="15"/>
-<contactref element="H1" pad="24"/>
+<contactref element="H2" pad="24"/>
 <wire x1="42.296990625" y1="89.026909375" x2="43.635" y2="87.6889" width="0.4064" layer="1"/>
 <wire x1="43.635" y1="87.6889" x2="43.635" y2="79.225" width="0.4064" layer="1"/>
 <wire x1="43.635" y1="79.225" x2="43.57" y2="79.16" width="0.4064" layer="1"/>
@@ -5133,29 +5136,29 @@ design rules under a new name.</description>
 <wire x1="74.5248" y1="7.7116" x2="76.7896" y2="10.5664" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$83">
-<contactref element="H2" pad="46"/>
+<contactref element="H1" pad="46"/>
 </signal>
 <signal name="Q6_RADIO_UART_RX">
-<contactref element="H2" pad="18"/>
+<contactref element="H1" pad="18"/>
 </signal>
 <signal name="Q6_RADIO_UART_TX">
-<contactref element="H2" pad="17"/>
+<contactref element="H1" pad="17"/>
 </signal>
 <signal name="ANTENNA_DEPLOYMENT_+V">
-<contactref element="H2" pad="1"/>
+<contactref element="H1" pad="1"/>
 </signal>
 <signal name="ANTENNA_DEPLOYMENT_GND">
-<contactref element="H2" pad="3"/>
+<contactref element="H1" pad="3"/>
 </signal>
 <signal name="SOLAR_PANEL_1_3">
-<contactref element="H2" pad="29"/>
+<contactref element="H1" pad="29"/>
 </signal>
 <signal name="SOLAR_PANEL_2_4">
-<contactref element="H2" pad="2"/>
+<contactref element="H1" pad="2"/>
 </signal>
 <signal name="Q6_GPIO_8">
 <contactref element="U$1" pad="12"/>
-<contactref element="H2" pad="11"/>
+<contactref element="H1" pad="11"/>
 <wire x1="27.06203125" y1="81.423009375" x2="27.1" y2="81.385040625" width="0.4064" layer="1"/>
 <wire x1="27.1" y1="81.385040625" x2="27.1" y2="58.995" width="0.4064" layer="1"/>
 <wire x1="80.3361" y1="26.52331875" x2="78.02668125" y2="26.52331875" width="0.4064" layer="16"/>
@@ -5186,7 +5189,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_GPIO_13">
 <contactref element="U$1" pad="22"/>
-<contactref element="H2" pad="36"/>
+<contactref element="H1" pad="36"/>
 <wire x1="57.54203125" y1="83.963009375" x2="58.85" y2="82.655040625" width="0.4064" layer="1"/>
 <wire x1="58.85" y1="82.655040625" x2="58.85" y2="70.25" width="0.4064" layer="1"/>
 <wire x1="58.85" y1="70.25" x2="58.845" y2="70.245" width="0.4064" layer="1"/>
@@ -5217,7 +5220,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_GPIO_14">
 <contactref element="U$1" pad="24"/>
-<contactref element="H2" pad="38"/>
+<contactref element="H1" pad="38"/>
 <wire x1="60.08203125" y1="83.963009375" x2="61.4" y2="82.645040625" width="0.4064" layer="1"/>
 <wire x1="61.4" y1="82.645040625" x2="61.4" y2="67.55" width="0.4064" layer="1"/>
 <wire x1="61.4" y1="67.55" x2="61.89" y2="67.06" width="0.4064" layer="1"/>
@@ -5248,7 +5251,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_GPIO_15">
 <contactref element="U$1" pad="26"/>
-<contactref element="H2" pad="40"/>
+<contactref element="H1" pad="40"/>
 <wire x1="62.62203125" y1="83.963009375" x2="63.95" y2="82.635040625" width="0.4064" layer="1"/>
 <wire x1="63.95" y1="82.635040625" x2="63.95" y2="68.65" width="0.4064" layer="1"/>
 <wire x1="63.95" y1="68.65" x2="63.945" y2="68.645" width="0.4064" layer="1"/>
@@ -5277,7 +5280,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_GPIO_6">
 <contactref element="U$1" pad="23"/>
-<contactref element="H2" pad="7"/>
+<contactref element="H1" pad="7"/>
 <wire x1="21.98203125" y1="81.423009375" x2="22" y2="81.405040625" width="0.4064" layer="1"/>
 <wire x1="22" y1="81.405040625" x2="22" y2="59.1312" width="0.4064" layer="1"/>
 <wire x1="81.6061" y1="34.14331875" x2="82.56331875" y2="34.14331875" width="0.4064" layer="16"/>
@@ -5399,7 +5402,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="PC_Q6_RS232">
 <contactref element="U$1" pad="44"/>
-<contactref element="H2" pad="21"/>
+<contactref element="H1" pad="21"/>
 <wire x1="80.3361" y1="46.84331875" x2="79.08168125" y2="46.84331875" width="0.4064" layer="16"/>
 <wire x1="79.08168125" y1="46.84331875" x2="78.145" y2="47.78" width="0.4064" layer="16"/>
 <wire x1="78.145" y1="47.78" x2="78.03" y2="50.985" width="0.4064" layer="16"/>
@@ -5437,7 +5440,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_PC_RS232">
 <contactref element="U$1" pad="42"/>
-<contactref element="H2" pad="25"/>
+<contactref element="H1" pad="25"/>
 <wire x1="44.84203125" y1="81.423009375" x2="44.84203125" y2="75.24203125" width="0.4064" layer="16"/>
 <wire x1="44.84203125" y1="75.24203125" x2="44.8" y2="75.2" width="0.4064" layer="16"/>
 <wire x1="80.0608" y1="45.5168" x2="80.264" y2="45.5168" width="0.4064" layer="16"/>
@@ -5490,7 +5493,7 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="3"/>
 </signal>
 <signal name="BATTERY_HEATER_+V">
-<contactref element="H2" pad="4"/>
+<contactref element="H1" pad="4"/>
 <contactref element="U$2" pad="X6"/>
 <wire x1="16.90203125" y1="83.963009375" x2="15.65" y2="82.710978125" width="0.4064" layer="1"/>
 <wire x1="15.65" y1="82.710978125" x2="15.65" y2="76.55" width="0.4064" layer="1"/>
@@ -5506,7 +5509,7 @@ design rules under a new name.</description>
 <wire x1="57.07" y1="53.765" x2="57.285" y2="53.775" width="0.8128" layer="1"/>
 </signal>
 <signal name="BATTERY_HEATER_-V">
-<contactref element="H2" pad="6"/>
+<contactref element="H1" pad="6"/>
 <contactref element="U$2" pad="X7"/>
 <wire x1="19.44203125" y1="83.963009375" x2="18.155" y2="82.735978125" width="0.4064" layer="1"/>
 <wire x1="18.155" y1="82.735978125" x2="18.175" y2="75.13" width="0.4064" layer="1"/>
@@ -5526,7 +5529,7 @@ design rules under a new name.</description>
 <wire x1="18.2" y1="58.545" x2="18.635" y2="58.11" width="0.8128" layer="1"/>
 </signal>
 <signal name="BATTERY_THRMSTOR_+V">
-<contactref element="H2" pad="8"/>
+<contactref element="H1" pad="8"/>
 <contactref element="U$2" pad="X8"/>
 <wire x1="87.122" y1="44.102" x2="88.915" y2="46.05" width="0.4064" layer="1"/>
 <wire x1="88.915" y1="46.05" x2="88.915" y2="65.185" width="0.4064" layer="1"/>
@@ -5563,7 +5566,7 @@ design rules under a new name.</description>
 <via x="47.1606" y="72.5888" extent="1-16" drill="0.5"/>
 </signal>
 <signal name="BATTERY_THRMSTOR_-V">
-<contactref element="H2" pad="10"/>
+<contactref element="H1" pad="10"/>
 <contactref element="U$2" pad="X9"/>
 <wire x1="87.122" y1="40.102" x2="89.775" y2="42.94" width="0.4064" layer="1"/>
 <wire x1="89.775" y1="42.94" x2="89.775" y2="68.1" width="0.4064" layer="1"/>
@@ -5586,16 +5589,16 @@ design rules under a new name.</description>
 <via x="76.6064" y="84.9376" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="N$2">
-<contactref element="H2" pad="42"/>
+<contactref element="H1" pad="42"/>
 </signal>
 <signal name="SOLAR_PANEL_GND">
-<contactref element="H2" pad="31"/>
+<contactref element="H1" pad="31"/>
 </signal>
 <signal name="N$15">
-<contactref element="H1" pad="47"/>
+<contactref element="H2" pad="47"/>
 </signal>
 <signal name="MECH_DEPLOY_SWITCH_+V">
-<contactref element="H1" pad="31"/>
+<contactref element="H2" pad="31"/>
 <contactref element="U$2" pad="X4"/>
 <wire x1="52.456990625" y1="86.486909375" x2="53.665" y2="85.2939" width="0.4064" layer="1"/>
 <wire x1="53.665" y1="85.2939" x2="53.665" y2="76.965" width="0.4064" layer="1"/>
@@ -5609,10 +5612,10 @@ design rules under a new name.</description>
 <wire x1="54.455" y1="62.03" x2="54.1275" y2="62.2225" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$11">
-<contactref element="H1" pad="2"/>
+<contactref element="H2" pad="2"/>
 </signal>
 <signal name="N$13">
-<contactref element="H1" pad="49"/>
+<contactref element="H2" pad="49"/>
 </signal>
 <signal name="N$7">
 <contactref element="U$6" pad="6"/>
@@ -5621,7 +5624,7 @@ design rules under a new name.</description>
 <contactref element="U$6" pad="5"/>
 </signal>
 <signal name="EXTERNAL_POWER_+V">
-<contactref element="H1" pad="51"/>
+<contactref element="H2" pad="51"/>
 <contactref element="U$3" pad="X4"/>
 <wire x1="77.856990625" y1="86.486909375" x2="79.813090625" y2="84.881909375" width="1.27" layer="16"/>
 <wire x1="79.813090625" y1="84.881909375" x2="83.54" y2="79.81" width="1.27" layer="16"/>
@@ -5631,7 +5634,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_GPIO_0">
 <contactref element="U$1" pad="11"/>
-<contactref element="H2" pad="13"/>
+<contactref element="H1" pad="13"/>
 <wire x1="86.6178" y1="14.8754" x2="86.5778" y2="25.1486" width="0.4064" layer="16"/>
 <wire x1="86.6496" y1="14.4072" x2="86.6178" y2="14.8754" width="0.4064" layer="16"/>
 <wire x1="86.6446" y1="9.294" x2="86.6496" y2="14.4072" width="0.4064" layer="16"/>
@@ -5726,13 +5729,13 @@ design rules under a new name.</description>
 <wire x1="46.224534375" y1="8.36135" x2="46.224534375" y2="2.21946875" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$5">
-<contactref element="H1" pad="48"/>
+<contactref element="H2" pad="48"/>
 </signal>
 <signal name="N$84">
-<contactref element="H2" pad="50"/>
+<contactref element="H1" pad="50"/>
 </signal>
 <signal name="THERMALGND1">
-<contactref element="H2" pad="5"/>
+<contactref element="H1" pad="5"/>
 <contactref element="ADC_TEMP_1" pad="1"/>
 <contactref element="ADC_TEMP_1" pad="3"/>
 <contactref element="ADC_TEMP_1" pad="20"/>
@@ -5797,7 +5800,7 @@ design rules under a new name.</description>
 <via x="5.2832" y="3.175" extent="1-16" drill="3.2"/>
 </signal>
 <signal name="EXTERNAL_POWER_GND">
-<contactref element="H1" pad="52"/>
+<contactref element="H2" pad="52"/>
 <contactref element="U$3" pad="X3"/>
 <wire x1="84.05" y1="70.55" x2="81.54643125" y2="68.04643125" width="1.27" layer="1"/>
 <wire x1="81.54643125" y1="68.04643125" x2="80.78271875" y2="68.04643125" width="1.27" layer="1"/>
@@ -5807,17 +5810,17 @@ design rules under a new name.</description>
 <wire x1="84.05" y1="80.43" x2="84.05" y2="70.55" width="1.27" layer="1"/>
 </signal>
 <signal name="SLR_PNL_GND">
-<contactref element="H2" pad="30"/>
+<contactref element="H1" pad="30"/>
 </signal>
 <signal name="POW_9V">
-<contactref element="H2" pad="22"/>
-<contactref element="H2" pad="24"/>
+<contactref element="H1" pad="22"/>
+<contactref element="H1" pad="24"/>
 <wire x1="42.2656" y1="83.9216" x2="39.8272" y2="83.9216" width="0.4064" layer="1"/>
 <wire x1="39.8272" y1="83.9216" x2="39.76203125" y2="83.963009375" width="0.4064" layer="1"/>
 <wire x1="42.2656" y1="83.9216" x2="42.30203125" y2="83.963009375" width="0.4064" layer="1"/>
 </signal>
 <signal name="BATTERY_THRMSTOR2_+V">
-<contactref element="H2" pad="12"/>
+<contactref element="H1" pad="12"/>
 <contactref element="U$2" pad="X10"/>
 <wire x1="27.06203125" y1="83.963009375" x2="28.325040625" y2="82.7" width="0.4064" layer="16"/>
 <wire x1="28.325040625" y1="82.7" x2="30.25" y2="82.7" width="0.4064" layer="16"/>
@@ -5860,22 +5863,22 @@ design rules under a new name.</description>
 <wire x1="16.559965625" y1="13.594965625" x2="16.505" y2="13.54" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$654643543">
-<contactref element="H2" pad="14"/>
+<contactref element="H1" pad="14"/>
 </signal>
 <signal name="N$1">
-<contactref element="H1" pad="6"/>
+<contactref element="H2" pad="6"/>
 </signal>
 <signal name="N$4">
-<contactref element="H1" pad="8"/>
+<contactref element="H2" pad="8"/>
 </signal>
 <signal name="N$6">
-<contactref element="H1" pad="10"/>
+<contactref element="H2" pad="10"/>
 </signal>
 <signal name="N$9">
-<contactref element="H1" pad="12"/>
+<contactref element="H2" pad="12"/>
 </signal>
 <signal name="N$17">
-<contactref element="H1" pad="14"/>
+<contactref element="H2" pad="14"/>
 </signal>
 </signals>
 <errors>

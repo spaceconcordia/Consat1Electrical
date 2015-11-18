@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3693,7 +3693,6 @@ space rated(need reference)</description>
 <text x="35.56" y="-91.44" size="1.778" layer="95">ANT_CTL</text>
 <text x="17.78" y="-45.72" size="1.778" layer="95">SOLAR_PANEL_2_4</text>
 <text x="35.46" y="-93.59" size="1.778" layer="95">3V3_CTL</text>
-<text x="27.94" y="-106.68" size="1.778" layer="95">Q6_GPIO_10</text>
 <text x="35.56" y="124.46" size="1.778" layer="95">Q6_AOUT_0</text>
 <text x="35.56" y="121.92" size="1.778" layer="95">Q6_AOUT_1</text>
 <text x="-15.24" y="88.9" size="2.1844" layer="95">Q6-Connector</text>
