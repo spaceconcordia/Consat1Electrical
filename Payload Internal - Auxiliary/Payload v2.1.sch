@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7330,7 +7330,7 @@ Block, Siemens and generic&lt;p&gt;
 <segment>
 <pinref part="U$3" gate="G$1" pin="5"/>
 <wire x1="-292.1" y1="91.44" x2="-302.26" y2="91.44" width="0.1524" layer="91"/>
-<label x="-327.66" y="91.44" size="1.778" layer="95"/>
+<label x="-332.74" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BOTTOM_TEMP_SOLAR_PANEL-2" class="0">
@@ -7342,7 +7342,7 @@ Block, Siemens and generic&lt;p&gt;
 <segment>
 <pinref part="U$3" gate="G$1" pin="6"/>
 <wire x1="-292.1" y1="88.9" x2="-302.26" y2="88.9" width="0.1524" layer="91"/>
-<label x="-327.66" y="88.9" size="1.778" layer="95"/>
+<label x="-332.74" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BOTTOM_TEMP_SOLAR_PANEL-4" class="0">
@@ -7354,7 +7354,7 @@ Block, Siemens and generic&lt;p&gt;
 <segment>
 <pinref part="U$3" gate="G$1" pin="8"/>
 <wire x1="-292.1" y1="83.82" x2="-302.26" y2="83.82" width="0.1524" layer="91"/>
-<label x="-327.66" y="83.82" size="1.778" layer="95"/>
+<label x="-332.74" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ELEC_BAY_TEMP_1" class="0">
@@ -7478,7 +7478,7 @@ Block, Siemens and generic&lt;p&gt;
 <segment>
 <pinref part="U$3" gate="G$1" pin="7"/>
 <wire x1="-292.1" y1="86.36" x2="-302.26" y2="86.36" width="0.1524" layer="91"/>
-<label x="-327.66" y="86.36" size="1.778" layer="95"/>
+<label x="-332.74" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
