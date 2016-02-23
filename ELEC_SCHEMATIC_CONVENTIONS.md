@@ -19,7 +19,7 @@ All schematics and PCB drawings need to be properly attributed and dated.
 
 1. A frame with the document information subframe must outline all schematic documents.
 2. The document information subframe will contain the information
-    1. Reference to Consat1 and the title of the design in the format “ConSat1/<Title>”.
+    1. Reference to Consat1 and the title of the design in the format “ConSat1/[Title]”.
     2. Name of the initial creator.
     3. Name of the person who last updated the design
     4. Date that the drawing was last updated.
