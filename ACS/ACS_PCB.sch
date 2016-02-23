@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -908,7 +908,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C3" library="SparkFun" deviceset="CAP" device="0402-CAP" value="4.7uF"/>
 <part name="R1" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
 <part name="R2" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
-<part name="JP1" library="harwin" deviceset="M80-879" device="" value=""/>
+<part name="J1" library="harwin" deviceset="M80-879" device="" value=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
@@ -928,7 +928,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="C3" gate="G$1" x="83.82" y="96.52"/>
 <instance part="R1" gate="G$1" x="134.62" y="116.84" rot="R90"/>
 <instance part="R2" gate="G$1" x="142.24" y="116.84" rot="R90"/>
-<instance part="JP1" gate="G$1" x="40.64" y="114.3"/>
+<instance part="J1" gate="G$1" x="40.64" y="114.3"/>
 <instance part="SUPPLY1" gate="GND" x="68.58" y="119.38"/>
 <instance part="SUPPLY2" gate="GND" x="83.82" y="88.9"/>
 <instance part="SUPPLY3" gate="GND" x="93.98" y="88.9"/>
@@ -937,7 +937,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <busses>
 </busses>
 <nets>
-<net name="VCC" class="0">
+<net name="+3V3" class="0">
 <segment>
 <wire x1="127" y1="114.3" x2="129.54" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="114.3" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
@@ -968,10 +968,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="53.34" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
 <label x="58.42" y="116.84" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="SCL" class="0">
+<net name="Q6_I2C_SCL_1" class="0">
 <segment>
 <wire x1="127" y1="109.22" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="111.76" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
@@ -984,10 +984,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="53.34" y1="106.68" x2="63.5" y2="106.68" width="0.1524" layer="91"/>
 <label x="58.42" y="106.68" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="4"/>
+<pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 </net>
-<net name="SDA" class="0">
+<net name="Q6_I2C_SDA_1" class="0">
 <segment>
 <wire x1="127" y1="106.68" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="106.68" x2="142.24" y2="111.76" width="0.1524" layer="91"/>
@@ -1000,7 +1000,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="53.34" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
 <label x="58.42" y="111.76" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="3"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -1035,7 +1035,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="53.34" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
 <label x="58.42" y="121.92" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 </segment>
 <segment>
