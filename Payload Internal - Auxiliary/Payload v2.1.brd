@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2588,6 +2588,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="8mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="-"/>
 <param name="PrefDir.2" value="0"/>
@@ -2759,8 +2762,8 @@ design rules under a new name.</description>
 <element name="H1" library="ESQ-126-XX-X-D" package="ESQ-125-XX-X-D" value="ESQ-125-XX-X-D" x="42.350153125" y="82.7146125" locked="yes"/>
 <element name="R3" library="resistor" package="R2012" value="" x="19.763640625" y="42.906115625" rot="R180"/>
 <element name="R4" library="resistor" package="R2012" value="" x="14.72803125" y="37.9328625" rot="R90"/>
-<element name="U$1" library="harwin" package="M80-866XXXX" value="M80-866XXXX" x="84.057015625" y="55.10553125" rot="R90"/>
-<element name="U$3" library="harwin" package="M80-866XXXX" value="M80-866XXXX" x="84.04103125" y="36.829096875" rot="R90"/>
+<element name="J31" library="harwin" package="M80-866XXXX" value="M80-866XXXX" x="84.057015625" y="55.10553125" rot="R90"/>
+<element name="J30" library="harwin" package="M80-866XXXX" value="M80-866XXXX" x="84.04103125" y="36.829096875" rot="R90"/>
 <element name="R10" library="varistor" package="RS-2,5" value="THERMISTOR-2,5" x="42.10403125" y="36.579171875" rot="R270"/>
 </elements>
 <signals>
@@ -2801,7 +2804,7 @@ design rules under a new name.</description>
 <contactref element="H2" pad="26"/>
 <contactref element="H2" pad="4"/>
 <contactref element="H1" pad="37"/>
-<contactref element="U$3" pad="14"/>
+<contactref element="J30" pad="14"/>
 <contactref element="H2" pad="29"/>
 <contactref element="H2" pad="32"/>
 <contactref element="H2" pad="30"/>
@@ -2903,7 +2906,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="BOTTOM_TEMP_SOLAR_PANEL-1">
 <contactref element="H2" pad="9"/>
-<contactref element="U$3" pad="5"/>
+<contactref element="J30" pad="5"/>
 <wire x1="24.576940625" y1="86.51731875" x2="24.576940625" y2="86.43605625" width="0.4064" layer="16"/>
 <wire x1="24.576940625" y1="86.43605625" x2="25.88009375" y2="85.26014375" width="0.4064" layer="16"/>
 <wire x1="25.88009375" y1="85.26014375" x2="25.88009375" y2="74.084434375" width="0.4064" layer="16"/>
@@ -2931,7 +2934,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="BOTTOM_TEMP_SOLAR_PANEL-2">
 <contactref element="H2" pad="11"/>
-<contactref element="U$3" pad="6"/>
+<contactref element="J30" pad="6"/>
 <wire x1="27.116940625" y1="86.51731875" x2="27.176996875" y2="86.51731875" width="0.4064" layer="16"/>
 <wire x1="27.176996875" y1="86.51731875" x2="28.412965625" y2="85.28135" width="0.4064" layer="16"/>
 <wire x1="28.412965625" y1="85.28135" x2="28.412965625" y2="75.95335625" width="0.4064" layer="16"/>
@@ -2961,7 +2964,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="BOTTOM_TEMP_SOLAR_PANEL-4">
 <contactref element="H2" pad="15"/>
-<contactref element="U$3" pad="8"/>
+<contactref element="J30" pad="8"/>
 <wire x1="32.196940625" y1="86.51731875" x2="32.196940625" y2="86.41830625" width="0.4064" layer="1"/>
 <wire x1="32.196940625" y1="86.41830625" x2="30.95051875" y2="84.959815625" width="0.4064" layer="1"/>
 <wire x1="30.95051875" y1="84.959815625" x2="30.95051875" y2="76.76131875" width="0.4064" layer="1"/>
@@ -3041,7 +3044,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="TOP_TEMP_SOLAR_PANEL-2">
 <contactref element="H2" pad="3"/>
-<contactref element="U$3" pad="2"/>
+<contactref element="J30" pad="2"/>
 <wire x1="16.956940625" y1="86.51731875" x2="16.956940625" y2="86.395146875" width="0.4064" layer="16"/>
 <wire x1="16.956940625" y1="86.395146875" x2="18.205928125" y2="85.146159375" width="0.4064" layer="16"/>
 <wire x1="18.205928125" y1="85.146159375" x2="18.205928125" y2="75.0971625" width="0.4064" layer="16"/>
@@ -3079,7 +3082,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="TOP_TEMP_SOLAR_PANEL-4">
 <contactref element="H2" pad="7"/>
-<contactref element="U$3" pad="4"/>
+<contactref element="J30" pad="4"/>
 <wire x1="22.036940625" y1="86.51731875" x2="22.036940625" y2="86.42993125" width="0.4064" layer="16"/>
 <wire x1="22.036940625" y1="86.42993125" x2="23.253115625" y2="85.21375625" width="0.4064" layer="16"/>
 <wire x1="23.253115625" y1="85.21375625" x2="23.253115625" y2="75.097159375" width="0.4064" layer="16"/>
@@ -3111,7 +3114,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="TOP_TEMP_SOLAR_PANEL-3">
 <contactref element="H2" pad="5"/>
-<contactref element="U$3" pad="3"/>
+<contactref element="J30" pad="3"/>
 <wire x1="19.496940625" y1="86.51731875" x2="19.496940625" y2="86.401271875" width="0.4064" layer="16"/>
 <wire x1="19.496940625" y1="86.401271875" x2="20.790490625" y2="85.171340625" width="0.4064" layer="16"/>
 <wire x1="20.790490625" y1="85.171340625" x2="20.790490625" y2="74.874490625" width="0.4064" layer="16"/>
@@ -3143,7 +3146,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="TOP_TEMP_SOLAR_PANEL-1">
 <contactref element="H2" pad="1"/>
-<contactref element="U$3" pad="1"/>
+<contactref element="J30" pad="1"/>
 <wire x1="14.416940625" y1="86.51731875" x2="14.179271875" y2="86.51731875" width="0.4064" layer="16"/>
 <wire x1="14.179271875" y1="86.51731875" x2="12.85224375" y2="85.190290625" width="0.4064" layer="16"/>
 <wire x1="12.85224375" y1="85.190290625" x2="12.85224375" y2="75.76358125" width="0.4064" layer="16"/>
@@ -3184,7 +3187,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="BOTTOM_TEMP_SOLAR_PANEL-3">
 <contactref element="H2" pad="13"/>
-<contactref element="U$3" pad="7"/>
+<contactref element="J30" pad="7"/>
 <wire x1="29.656940625" y1="86.51731875" x2="29.656940625" y2="86.44830625" width="0.4064" layer="16"/>
 <wire x1="29.656940625" y1="86.44830625" x2="30.846428125" y2="85.25881875" width="0.4064" layer="16"/>
 <wire x1="30.846428125" y1="59.569871875" x2="30.83453125" y2="59.557975" width="0.4064" layer="16"/>
@@ -3213,7 +3216,7 @@ design rules under a new name.</description>
 <contactref element="R8" pad="2"/>
 <contactref element="R4" pad="2"/>
 <contactref element="R3" pad="2"/>
-<contactref element="U$3" pad="13"/>
+<contactref element="J30" pad="13"/>
 <wire x1="57.596940625" y1="89.05731875" x2="60.136940625" y2="89.05731875" width="0.4064" layer="16"/>
 <wire x1="60.136940625" y1="89.05731875" x2="60.136940625" y2="89.98918125" width="0.4064" layer="16"/>
 <wire x1="60.136940625" y1="89.98918125" x2="61.061959375" y2="90.9142" width="0.4064" layer="16"/>
@@ -3277,7 +3280,7 @@ design rules under a new name.</description>
 <signal name="POW_5V">
 <contactref element="H1" pad="28"/>
 <contactref element="H1" pad="26"/>
-<contactref element="U$3" pad="12"/>
+<contactref element="J30" pad="12"/>
 <contactref element="H2" pad="45"/>
 <contactref element="H2" pad="46"/>
 <wire x1="70.296940625" y1="89.05731875" x2="70.296940625" y2="86.51731875" width="0.4064" layer="1"/>
@@ -3318,7 +3321,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_AIN_0">
 <contactref element="H1" pad="39"/>
-<contactref element="U$1" pad="11"/>
+<contactref element="J31" pad="11"/>
 <wire x1="62.670153125" y1="81.4446125" x2="62.670153125" y2="75.6157875" width="0.4064" layer="16"/>
 <wire x1="62.670153125" y1="75.6157875" x2="62.610325" y2="75.555959375" width="0.4064" layer="16"/>
 <wire x1="62.610325" y1="75.555959375" x2="62.610325" y2="72.040234375" width="0.4064" layer="16"/>
@@ -3341,7 +3344,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="Q6_AOUT_0">
 <contactref element="H1" pad="47"/>
-<contactref element="U$1" pad="10"/>
+<contactref element="J31" pad="10"/>
 <wire x1="72.830153125" y1="81.4446125" x2="72.830153125" y2="75.592665625" width="0.4064" layer="16"/>
 <wire x1="72.830153125" y1="75.592665625" x2="72.83440625" y2="75.5884125" width="0.4064" layer="16"/>
 <wire x1="72.83440625" y1="75.5884125" x2="72.83440625" y2="71.291225" width="0.4064" layer="16"/>
@@ -3397,7 +3400,7 @@ design rules under a new name.</description>
 <signal name="Q6_I2C_SDA_1">
 <contactref element="H2" pad="18"/>
 <contactref element="R3" pad="1"/>
-<contactref element="U$3" pad="16"/>
+<contactref element="J30" pad="16"/>
 <wire x1="34.736940625" y1="89.05731875" x2="34.736940625" y2="88.27051875" width="0.4064" layer="1"/>
 <wire x1="34.736940625" y1="88.27051875" x2="33.50143125" y2="87.21905" width="0.4064" layer="1"/>
 <wire x1="33.50143125" y1="87.21905" x2="33.48953125" y2="79.57789375" width="0.4064" layer="1"/>
@@ -3424,7 +3427,7 @@ design rules under a new name.</description>
 <signal name="Q6_I2C_SCL_1">
 <contactref element="H2" pad="20"/>
 <contactref element="R4" pad="1"/>
-<contactref element="U$3" pad="15"/>
+<contactref element="J30" pad="15"/>
 <wire x1="37.276940625" y1="89.05731875" x2="37.23833125" y2="89.05731875" width="0.4064" layer="1"/>
 <wire x1="37.23833125" y1="89.05731875" x2="36.222459375" y2="88.041446875" width="0.4064" layer="1"/>
 <wire x1="36.222459375" y1="88.041446875" x2="36.222459375" y2="87.976596875" width="0.4064" layer="1"/>
@@ -3521,7 +3524,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="ANTENNA_DEPLOYMENT_+V">
 <contactref element="H1" pad="1"/>
-<contactref element="U$1" pad="16"/>
+<contactref element="J31" pad="16"/>
 <wire x1="14.410153125" y1="81.4446125" x2="14.410153125" y2="76.932584375" width="0.4064" layer="16"/>
 <wire x1="14.410153125" y1="76.932584375" x2="14.4205375" y2="76.9222" width="0.4064" layer="16"/>
 <wire x1="14.4205375" y1="76.9222" x2="14.34896875" y2="75.816096875" width="0.4064" layer="16"/>
@@ -3544,7 +3547,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="ANTENNA_DEPLOYMENT_GND">
 <contactref element="H1" pad="3"/>
-<contactref element="U$1" pad="15"/>
+<contactref element="J31" pad="15"/>
 <wire x1="16.950153125" y1="81.4446125" x2="16.950153125" y2="76.860628125" width="0.4064" layer="16"/>
 <wire x1="16.950153125" y1="76.860628125" x2="16.9216" y2="76.832075" width="0.4064" layer="16"/>
 <wire x1="16.9216" y1="76.832075" x2="16.9216" y2="75.198375" width="0.4064" layer="16"/>
@@ -3574,7 +3577,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SOLAR_PANEL_1_3">
 <contactref element="H1" pad="29"/>
-<contactref element="U$1" pad="1"/>
+<contactref element="J31" pad="1"/>
 <wire x1="83.057015625" y1="48.10553125" x2="80.6733" y2="48.10553125" width="1.016" layer="1"/>
 <wire x1="80.6733" y1="48.10553125" x2="80.491740625" y2="47.923971875" width="0.4064" layer="1"/>
 <via x="80.491740625" y="47.923971875" extent="1-16" drill="0.6"/>
@@ -3615,7 +3618,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SOLAR_PANEL_2_4">
 <contactref element="H1" pad="2"/>
-<contactref element="U$1" pad="3"/>
+<contactref element="J31" pad="3"/>
 <wire x1="15.7382375" y1="75.62276875" x2="15.558396875" y2="75.60773125" width="0.4064" layer="16"/>
 <wire x1="15.558396875" y1="75.60773125" x2="15.51304375" y2="75.42000625" width="0.4064" layer="16"/>
 <wire x1="15.51304375" y1="75.42000625" x2="14.410090625" y2="74.166896875" width="1.016" layer="16"/>
@@ -3746,32 +3749,32 @@ design rules under a new name.</description>
 <contactref element="H2" pad="48"/>
 </signal>
 <signal name="N$18">
-<contactref element="U$3" pad="10"/>
+<contactref element="J30" pad="10"/>
 </signal>
 <signal name="N$20">
-<contactref element="U$3" pad="11"/>
+<contactref element="J30" pad="11"/>
 </signal>
 <signal name="N$32">
-<contactref element="U$1" pad="5"/>
+<contactref element="J31" pad="5"/>
 </signal>
 <signal name="N$33">
-<contactref element="U$1" pad="6"/>
+<contactref element="J31" pad="6"/>
 </signal>
 <signal name="N$34">
-<contactref element="U$1" pad="8"/>
+<contactref element="J31" pad="8"/>
 </signal>
 <signal name="N$35">
-<contactref element="U$1" pad="7"/>
+<contactref element="J31" pad="7"/>
 </signal>
 <signal name="N$37">
-<contactref element="U$1" pad="14"/>
+<contactref element="J31" pad="14"/>
 </signal>
 <signal name="N$39">
-<contactref element="U$1" pad="13"/>
+<contactref element="J31" pad="13"/>
 </signal>
 <signal name="THERMALGND">
 <contactref element="H1" pad="5"/>
-<contactref element="U$3" pad="9"/>
+<contactref element="J30" pad="9"/>
 <wire x1="19.490153125" y1="81.4446125" x2="19.490153125" y2="76.786909375" width="0.4064" layer="16"/>
 <wire x1="19.490153125" y1="76.786909375" x2="19.467725" y2="76.696884375" width="0.4064" layer="16"/>
 <wire x1="19.467725" y1="76.696884375" x2="19.467725" y2="74.60011875" width="0.4064" layer="16"/>
@@ -3805,7 +3808,7 @@ design rules under a new name.</description>
 <via x="52.809484375" y="38.2016" extent="1-16" drill="0.5"/>
 </signal>
 <signal name="PAYGND">
-<contactref element="U$1" pad="9"/>
+<contactref element="J31" pad="9"/>
 </signal>
 <signal name="N$6">
 <via x="9.062225" y="88.85175625" extent="1-16" drill="3.3"/>
@@ -3822,7 +3825,7 @@ design rules under a new name.</description>
 <signal name="9V">
 <contactref element="H1" pad="22"/>
 <contactref element="H1" pad="24"/>
-<contactref element="U$1" pad="12"/>
+<contactref element="J31" pad="12"/>
 <wire x1="39.810153125" y1="83.9846125" x2="42.350153125" y2="83.9846125" width="0.4064" layer="1"/>
 <wire x1="42.350153125" y1="83.9846125" x2="42.350153125" y2="83.96220625" width="0.4064" layer="16"/>
 <wire x1="42.350153125" y1="83.96220625" x2="43.58311875" y2="82.7803625" width="0.4064" layer="16"/>
@@ -3848,7 +3851,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SOLAR_PANEL_GND_1">
 <contactref element="H1" pad="30"/>
-<contactref element="U$1" pad="2"/>
+<contactref element="J31" pad="2"/>
 <wire x1="49.970153125" y1="83.9846125" x2="51.215721875" y2="83.9846125" width="0.4064" layer="16"/>
 <wire x1="51.215721875" y1="83.9846125" x2="51.215721875" y2="76.94901875" width="0.4064" layer="16"/>
 <wire x1="51.215721875" y1="76.94901875" x2="59.55271875" y2="76.94901875" width="0.4064" layer="16"/>
@@ -3877,7 +3880,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SOLAR_PANEL_GND_2">
 <contactref element="H1" pad="31"/>
-<contactref element="U$1" pad="4"/>
+<contactref element="J31" pad="4"/>
 <wire x1="52.510153125" y1="81.4446125" x2="52.510153125" y2="77.743253125" width="0.4064" layer="16"/>
 <wire x1="52.510153125" y1="77.743253125" x2="60.46936875" y2="77.743253125" width="0.4064" layer="16"/>
 <wire x1="60.46936875" y1="77.743253125" x2="60.522378125" y2="77.77504375" width="0.4064" layer="16"/>
