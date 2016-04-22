@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5895,7 +5895,7 @@ TX 438MHz</text>
 <wire x1="45.72" y1="33.02" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="HE100_TX_TO_DIPLEX_SIG" class="0">
 <segment>
 <pinref part="J11" gate="G1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -5903,7 +5903,7 @@ TX 438MHz</text>
 <wire x1="20.32" y1="58.42" x2="20.32" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="HE100_RX_TO_DIPLEX_SIG" class="0">
 <segment>
 <pinref part="J10" gate="G1" pin="1"/>
 <wire x1="119.38" y1="30.48" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
@@ -5933,7 +5933,7 @@ TX 438MHz</text>
 <junction x="78.74" y="58.42"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="DIPLEX_TO_ANT_SIG" class="0">
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>

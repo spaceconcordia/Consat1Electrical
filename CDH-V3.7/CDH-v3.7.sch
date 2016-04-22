@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9074,7 +9074,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-154.94" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="~PA3_JAG_TRST" class="0">
+<net name="~PA3_JTAG_TRST" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="C34"/>
 <wire x1="-76.2" y1="91.44" x2="-46.99" y2="91.44" width="0.1524" layer="91"/>
@@ -9237,6 +9237,11 @@ Block, Siemens and generic&lt;p&gt;
 <wire x1="-114.3" y1="-68.58" x2="-142.24" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-139.7" y="-68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="H1" gate="G$1" pin="30"/>
+<wire x1="-91.44" y1="-66.04" x2="-53.34" y2="-66.04" width="0.1524" layer="91"/>
+<label x="-81.28" y="-66.04" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$15" class="0">
 <segment>
@@ -9271,7 +9276,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-154.94" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="EXTERNAL_POWER_+V" class="0">
+<net name="EXTERNAL_POWER_GND" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="51"/>
 <wire x1="-114.3" y1="-15.24" x2="-157.48" y2="-15.24" width="0.1524" layer="91"/>
@@ -9361,7 +9366,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="154.94" y="-31.75" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="EXTERNAL_POWER_GND" class="0">
+<net name="EXTERNAL_POWER_V+" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="52"/>
 <wire x1="-91.44" y1="-15.24" x2="-55.88" y2="-15.24" width="0.1524" layer="91"/>
@@ -9371,13 +9376,6 @@ Block, Siemens and generic&lt;p&gt;
 <pinref part="J3" gate="G$1" pin="X3"/>
 <wire x1="-237.49" y1="-24.13" x2="-195.58" y2="-24.13" width="0.1524" layer="91"/>
 <label x="-233.68" y="-24.13" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SLR_PNL_GND" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="30"/>
-<wire x1="-91.44" y1="-66.04" x2="-53.34" y2="-66.04" width="0.1524" layer="91"/>
-<label x="-81.28" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POW_9V" class="0">
