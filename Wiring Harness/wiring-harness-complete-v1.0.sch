@@ -4678,6 +4678,11 @@ are used?</text>
 <wire x1="52.07" y1="109.22" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
 <label x="35.56" y="109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="H1" gate="G$1" pin="50"/>
+<wire x1="7.62" y1="-106.68" x2="46.99" y2="-106.68" width="0.1524" layer="91"/>
+<label x="17.78" y="-106.68" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="Q6_GPIO_2" class="0">
 <segment>
@@ -5144,13 +5149,6 @@ are used?</text>
 <pinref part="H2" gate="G$1" pin="48"/>
 <wire x1="7.62" y1="-25.4" x2="43.18" y2="-25.4" width="0.1524" layer="91"/>
 <label x="35.56" y="-25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$84" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="50"/>
-<wire x1="7.62" y1="-106.68" x2="46.99" y2="-106.68" width="0.1524" layer="91"/>
-<label x="17.78" y="-106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="THERMALGND1" class="0">

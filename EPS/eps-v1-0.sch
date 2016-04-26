@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.127" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15240,21 +15240,6 @@ dim: 60mm x 4mm</description>
 <label x="391.16" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$84" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="50"/>
-<pinref part="R38" gate="G$1" pin="1"/>
-<pinref part="IC10" gate="G$1" pin="COT1"/>
-<wire x1="137.16" y1="20.32" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="20.32" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
-<junction x="157.48" y="20.32"/>
-<wire x1="157.48" y1="20.32" x2="165.1" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="20.32" x2="165.1" y2="-13.97" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="-13.97" x2="445.77" y2="-13.97" width="0.1524" layer="91"/>
-<wire x1="445.77" y1="-13.97" x2="445.77" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="445.77" y1="12.7" x2="388.62" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="Q6_GPIO_8" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="11"/>
@@ -15403,6 +15388,19 @@ dim: 60mm x 4mm</description>
 <segment>
 <pinref part="H1" gate="G$1" pin="32"/>
 <wire x1="388.62" y1="35.56" x2="391.16" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="H1" gate="G$1" pin="50"/>
+<pinref part="R38" gate="G$1" pin="1"/>
+<pinref part="IC10" gate="G$1" pin="COT1"/>
+<wire x1="137.16" y1="20.32" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="20.32" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
+<junction x="157.48" y="20.32"/>
+<wire x1="157.48" y1="20.32" x2="165.1" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="20.32" x2="165.1" y2="-13.97" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="-13.97" x2="445.77" y2="-13.97" width="0.1524" layer="91"/>
+<wire x1="445.77" y1="-13.97" x2="445.77" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="445.77" y1="12.7" x2="388.62" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Q6_AIN_0" class="0">

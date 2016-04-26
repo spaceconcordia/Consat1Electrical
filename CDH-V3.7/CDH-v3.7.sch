@@ -8643,7 +8643,7 @@ Block, Siemens and generic&lt;p&gt;
 <junction x="-45.72" y="64.77"/>
 </segment>
 </net>
-<net name="POW_RADIO_3.3VSYS" class="0">
+<net name="POW_RADIO_3V3_SYS" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="28"/>
 <wire x1="-91.44" y1="15.24" x2="-58.42" y2="15.24" width="0.1524" layer="91"/>
@@ -8751,7 +8751,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-139.7" y="-93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="POW_RADIO_3.3V" class="0">
+<net name="POW_RADIO_3V3" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="27"/>
 <wire x1="-114.3" y1="15.24" x2="-157.48" y2="15.24" width="0.1524" layer="91"/>
@@ -8895,6 +8895,11 @@ Block, Siemens and generic&lt;p&gt;
 <pinref part="H1" gate="G$1" pin="32"/>
 <wire x1="-91.44" y1="-68.58" x2="-53.34" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-81.28" y="-68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="H1" gate="G$1" pin="50"/>
+<wire x1="-91.44" y1="-91.44" x2="-52.07" y2="-91.44" width="0.1524" layer="91"/>
+<label x="-81.28" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Q6_GPIO_2" class="0">
@@ -9200,7 +9205,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-226.06" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BATTERY_THRMSTOR_+V" class="0">
+<net name="BATTERY_THRMSTOR1_+V" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="8"/>
 <wire x1="-91.44" y1="-38.1" x2="-60.96" y2="-38.1" width="0.1524" layer="91"/>
@@ -9310,13 +9315,6 @@ Block, Siemens and generic&lt;p&gt;
 <pinref part="H2" gate="G$1" pin="48"/>
 <wire x1="-91.44" y1="-10.16" x2="-55.88" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-63.5" y="-10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$84" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="50"/>
-<wire x1="-91.44" y1="-91.44" x2="-52.07" y2="-91.44" width="0.1524" layer="91"/>
-<label x="-81.28" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="THERMALGND1" class="0">

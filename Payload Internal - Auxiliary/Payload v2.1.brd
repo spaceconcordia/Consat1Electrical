@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2770,14 +2770,8 @@ design rules under a new name.</description>
 <signal name="N$15">
 <contactref element="H2" pad="47"/>
 </signal>
-<signal name="N$19">
-<contactref element="H2" pad="37"/>
-</signal>
 <signal name="N$22">
 <contactref element="H2" pad="34"/>
-</signal>
-<signal name="N$90">
-<contactref element="H2" pad="23"/>
 </signal>
 <signal name="N$27">
 <contactref element="H2" pad="44"/>
@@ -3014,9 +3008,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="POW_BATT_GND">
 <contactref element="H1" pad="33"/>
-</signal>
-<signal name="Q6_SPI_SDO_MOSI">
-<contactref element="H2" pad="8"/>
 </signal>
 <signal name="Q6_SPI_CS1">
 <contactref element="H2" pad="12"/>
@@ -3277,7 +3268,7 @@ design rules under a new name.</description>
 <vertex x="0.32268125" y="91.711446875"/>
 </polygon>
 </signal>
-<signal name="POW_5V">
+<signal name="POW_RADIO_VBATT">
 <contactref element="H1" pad="28"/>
 <contactref element="H1" pad="26"/>
 <contactref element="J30" pad="12"/>
@@ -3306,15 +3297,6 @@ design rules under a new name.</description>
 <wire x1="87.954775" y1="40.732396875" x2="85.04103125" y2="39.829096875" width="0.4064" layer="1"/>
 <wire x1="81.331828125" y1="85.45493125" x2="81.331828125" y2="77.2444875" width="0.4064" layer="1"/>
 <wire x1="81.331828125" y1="77.2444875" x2="82.066653125" y2="76.5096625" width="0.4064" layer="1"/>
-</signal>
-<signal name="N$89.">
-<contactref element="H2" pad="21"/>
-</signal>
-<signal name="Q6_SPI_SCLK">
-<contactref element="H2" pad="6"/>
-</signal>
-<signal name="Q6_SPI_SDI_MISO">
-<contactref element="H2" pad="10"/>
 </signal>
 <signal name="Q6_AIN_1">
 <contactref element="H1" pad="43"/>
@@ -3363,15 +3345,8 @@ design rules under a new name.</description>
 <signal name="Q6_AOUT_1">
 <contactref element="H1" pad="51"/>
 </signal>
-<signal name="N$91">
-<contactref element="H2" pad="25"/>
-</signal>
 <signal name="POW_RADIO_3.3V">
-<contactref element="H2" pad="27"/>
 <contactref element="H1" pad="16"/>
-<contactref element="H2" pad="28"/>
-<wire x1="47.436940625" y1="89.05731875" x2="47.436940625" y2="86.51731875" width="0.4064" layer="16"/>
-<wire x1="47.436940625" y1="86.51731875" x2="47.436940625" y2="85.83329375" width="0.4064" layer="16"/>
 <wire x1="47.436940625" y1="85.83329375" x2="46.88775" y2="85.26289375" width="0.4064" layer="16"/>
 <wire x1="46.88775" y1="85.26289375" x2="33.48964375" y2="85.26289375" width="0.4064" layer="16"/>
 <wire x1="33.48964375" y1="85.26289375" x2="32.190153125" y2="83.9846125" width="0.4064" layer="16"/>
@@ -3715,7 +3690,7 @@ design rules under a new name.</description>
 <signal name="BATTERY_HEATER_-V">
 <contactref element="H1" pad="6"/>
 </signal>
-<signal name="BATTERY_THRMSTOR_+V">
+<signal name="BATTERY_THRMSTOR1_+V">
 <contactref element="H1" pad="8"/>
 </signal>
 <signal name="BATTERY_THRMSTOR_-V">
@@ -3733,16 +3708,16 @@ design rules under a new name.</description>
 <signal name="N$13">
 <contactref element="H2" pad="49"/>
 </signal>
-<signal name="N$4">
+<signal name="Q6_SPI_SDI_MISO">
 <contactref element="H2" pad="35"/>
 </signal>
-<signal name="EXTERNAL_POWER_GND">
+<signal name="EXTERNAL_POWER_V+">
 <contactref element="H2" pad="52"/>
 </signal>
 <signal name="Q6_GPIO_0">
 <contactref element="H1" pad="13"/>
 </signal>
-<signal name="EXTERNAL_POWER_+V">
+<signal name="EXTERNAL_POWER_GND">
 <contactref element="H2" pad="51"/>
 </signal>
 <signal name="N$5">
@@ -3772,7 +3747,7 @@ design rules under a new name.</description>
 <signal name="N$39">
 <contactref element="J31" pad="13"/>
 </signal>
-<signal name="THERMALGND">
+<signal name="THERMALGND1">
 <contactref element="H1" pad="5"/>
 <contactref element="J30" pad="9"/>
 <wire x1="19.490153125" y1="81.4446125" x2="19.490153125" y2="76.786909375" width="0.4064" layer="16"/>
@@ -3810,19 +3785,19 @@ design rules under a new name.</description>
 <signal name="PAYGND">
 <contactref element="J31" pad="9"/>
 </signal>
-<signal name="N$6">
+<signal name="N$60">
 <via x="9.062225" y="88.85175625" extent="1-16" drill="3.3"/>
 </signal>
-<signal name="N$7">
+<signal name="N$61">
 <via x="82.728596875" y="88.855203125" extent="1-16" drill="3.3"/>
 </signal>
-<signal name="N$8">
+<signal name="N$63">
 <via x="85.261796875" y="3.130459375" extent="1-16" drill="3.3"/>
 </signal>
-<signal name="N$9">
+<signal name="N$62">
 <via x="5.259753125" y="3.12559375" extent="1-16" drill="3.3"/>
 </signal>
-<signal name="9V">
+<signal name="POW_9V">
 <contactref element="H1" pad="22"/>
 <contactref element="H1" pad="24"/>
 <contactref element="J31" pad="12"/>
@@ -3846,7 +3821,7 @@ design rules under a new name.</description>
 <wire x1="43.53055625" y1="51.72485625" x2="45.01678125" y2="51.72485625" width="1.016" layer="1"/>
 <wire x1="45.01678125" y1="51.72485625" x2="45.1386375" y2="51.8467125" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$6546">
+<signal name="N$654643543">
 <contactref element="H1" pad="14"/>
 </signal>
 <signal name="SOLAR_PANEL_GND_1">
@@ -3910,8 +3885,29 @@ design rules under a new name.</description>
 <wire x1="86.60369375" y1="50.8875125" x2="85.8217125" y2="50.10553125" width="0.4064" layer="1"/>
 <wire x1="85.8217125" y1="50.10553125" x2="85.057015625" y2="50.10553125" width="0.4064" layer="1"/>
 </signal>
-<signal name="BATTERY_THERMSTOR_2+">
+<signal name="BATTERY_THRMSTOR2_+V">
 <contactref element="H1" pad="12"/>
+</signal>
+<signal name="POW_RADIO_3V3">
+<contactref element="H2" pad="27"/>
+</signal>
+<signal name="POW_RADIO_3V3_SYS">
+<contactref element="H2" pad="28"/>
+</signal>
+<signal name="N$6">
+<contactref element="H2" pad="10"/>
+</signal>
+<signal name="Q6_SPI_SDO_MOSI">
+<contactref element="H2" pad="23"/>
+</signal>
+<signal name="N$1">
+<contactref element="H2" pad="6"/>
+</signal>
+<signal name="N$4">
+<contactref element="H2" pad="8"/>
+</signal>
+<signal name="Q6_SPI_SCLK">
+<contactref element="H2" pad="21"/>
 </signal>
 </signals>
 </board>
