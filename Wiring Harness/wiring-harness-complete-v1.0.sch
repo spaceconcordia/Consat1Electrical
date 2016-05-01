@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3531,6 +3531,7 @@ space rated(need reference)</description>
 <part name="J41" library="con-subd" deviceset="M25" device="VP"/>
 <part name="J42" library="con-subd" deviceset="M25" device="VP"/>
 <part name="J44" library="con-subd" deviceset="M15VP" device=""/>
+<part name="J17" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
 <part name="J18" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
@@ -3545,6 +3546,11 @@ space rated(need reference)</description>
 <part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
+<part name="J12" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
+<part name="J11" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
+<part name="J10" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
+<part name="J15" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
+<part name="J16" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
 <part name="X16" library="con-molex" deviceset="5566-14" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
@@ -3570,12 +3576,6 @@ space rated(need reference)</description>
 <part name="SL2" library="con-amp-quick" deviceset="MA04" device=""/>
 <part name="SL3" library="con-amp-quick" deviceset="MA04" device=""/>
 <part name="J1" library="harwin" deviceset="M80-879" device="" value=""/>
-<part name="J17" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
-<part name="J12" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
-<part name="J15" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
-<part name="J16" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
-<part name="J10" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
-<part name="J11" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
 </parts>
 <sheets>
 <sheet>
@@ -3688,6 +3688,7 @@ are used?</text>
 <instance part="J41" gate="-1" x="20.32" y="-137.16"/>
 <instance part="J42" gate="-1" x="20.32" y="-182.88"/>
 <instance part="J44" gate="G$1" x="-421.64" y="215.9"/>
+<instance part="J17" gate="G1" x="-195.58" y="-81.28"/>
 <instance part="J18" gate="G1" x="-325.12" y="154.94" rot="R180"/>
 <instance part="SUPPLY11" gate="GND" x="-66.04" y="68.58" rot="R270"/>
 <instance part="SUPPLY16" gate="GND" x="59.69" y="68.58" rot="R90"/>
@@ -3702,6 +3703,11 @@ are used?</text>
 <instance part="SUPPLY18" gate="GND" x="58.42" y="93.98" rot="R90"/>
 <instance part="SUPPLY28" gate="GND" x="-66.04" y="78.74" rot="R270"/>
 <instance part="SUPPLY29" gate="GND" x="58.42" y="78.74" rot="R90"/>
+<instance part="J12" gate="G1" x="-160.02" y="-81.28" rot="R180"/>
+<instance part="J11" gate="G1" x="-132.08" y="-71.12"/>
+<instance part="J10" gate="G1" x="-132.08" y="-91.44"/>
+<instance part="J15" gate="G1" x="-81.28" y="-71.12" rot="R180"/>
+<instance part="J16" gate="G1" x="-81.28" y="-91.44" rot="R180"/>
 <instance part="X16" gate="-1" x="-22.86" y="175.26"/>
 <instance part="X16" gate="-2" x="-22.86" y="172.72"/>
 <instance part="X16" gate="-3" x="-22.86" y="170.18"/>
@@ -3750,12 +3756,6 @@ are used?</text>
 <instance part="SL2" gate="G$1" x="287.02" y="-115.57" rot="R180"/>
 <instance part="SL3" gate="G$1" x="287.02" y="-99.06" rot="R180"/>
 <instance part="J1" gate="G$1" x="304.8" y="-66.04"/>
-<instance part="J17" gate="G1" x="-193.04" y="-81.28"/>
-<instance part="J12" gate="G1" x="-157.48" y="-81.28" rot="R180"/>
-<instance part="J15" gate="G1" x="-81.28" y="-71.12" rot="R180"/>
-<instance part="J16" gate="G1" x="-81.28" y="-91.44" rot="R180"/>
-<instance part="J10" gate="G1" x="-132.08" y="-91.44"/>
-<instance part="J11" gate="G1" x="-132.08" y="-71.12"/>
 </instances>
 <busses>
 </busses>
@@ -4371,7 +4371,7 @@ are used?</text>
 <label x="-53.34" y="-149.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="POW_RADIO_3V3_SYS" class="0">
+<net name="POW_RADIO_3.3VSYS" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="28"/>
 <wire x1="7.62" y1="0" x2="40.64" y2="0" width="0.1524" layer="91"/>
@@ -4490,10 +4490,6 @@ are used?</text>
 <wire x1="-60.96" y1="-193.04" x2="-50.8" y2="-193.04" width="0.1524" layer="91"/>
 <label x="-53.34" y="-193.04" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="22.86" y1="124.46" x2="52.07" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="C4"/>
-</segment>
 </net>
 <net name="Q6_AOUT_1" class="0">
 <segment>
@@ -4501,12 +4497,8 @@ are used?</text>
 <wire x1="-15.24" y1="-109.22" x2="-43.18" y2="-109.22" width="0.1524" layer="91"/>
 <label x="-40.64" y="-109.22" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="22.86" y1="121.92" x2="53.34" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="C6"/>
-</segment>
 </net>
-<net name="POW_RADIO_3V3" class="0">
+<net name="POW_RADIO_3.3V" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="27"/>
 <wire x1="-15.24" y1="0" x2="-58.42" y2="0" width="0.1524" layer="91"/>
@@ -4677,11 +4669,6 @@ are used?</text>
 <pinref part="J4" gate="G$1" pin="C16"/>
 <wire x1="52.07" y1="109.22" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
 <label x="35.56" y="109.22" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="H1" gate="G$1" pin="50"/>
-<wire x1="7.62" y1="-106.68" x2="46.99" y2="-106.68" width="0.1524" layer="91"/>
-<label x="17.78" y="-106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Q6_GPIO_2" class="0">
@@ -4912,12 +4899,22 @@ are used?</text>
 </net>
 <net name="PC_PA3_RS232" class="0">
 <segment>
+<pinref part="H1" gate="G$1" pin="21"/>
+<wire x1="-15.24" y1="-71.12" x2="-43.18" y2="-71.12" width="0.1524" layer="91"/>
+<label x="-40.64" y="-71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="J4" gate="G$1" pin="C43"/>
 <wire x1="-33.02" y1="73.66" x2="-55.88" y2="73.66" width="0.1524" layer="91"/>
 <label x="-55.88" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA3_PC_RS232" class="0">
+<segment>
+<pinref part="H1" gate="G$1" pin="25"/>
+<wire x1="-15.24" y1="-76.2" x2="-43.18" y2="-76.2" width="0.1524" layer="91"/>
+<label x="-40.64" y="-76.2" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="C41"/>
 <wire x1="-33.02" y1="76.2" x2="-55.88" y2="76.2" width="0.1524" layer="91"/>
@@ -4948,16 +4945,16 @@ are used?</text>
 <label x="-15.24" y="238.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BATTERY_THRMSTOR1_+V" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="X8"/>
-<wire x1="-27.94" y1="233.68" x2="-10.16" y2="233.68" width="0.1524" layer="91"/>
-<label x="-15.24" y="233.68" size="1.778" layer="95"/>
-</segment>
+<net name="BATTERY_THRMSTOR_+V" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="8"/>
 <wire x1="7.62" y1="-53.34" x2="38.1" y2="-53.34" width="0.1524" layer="91"/>
 <label x="17.78" y="-53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="X8"/>
+<wire x1="-27.94" y1="233.68" x2="-10.16" y2="233.68" width="0.1524" layer="91"/>
+<label x="-15.24" y="233.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BATTERY_THRMSTOR_-V" class="0">
@@ -5106,7 +5103,7 @@ are used?</text>
 <label x="-55.88" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="EXTERNAL_POWER_V+" class="0">
+<net name="EXTERNAL_POWER_+V" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="52"/>
 <wire x1="7.62" y1="-30.48" x2="43.18" y2="-30.48" width="0.1524" layer="91"/>
@@ -5118,6 +5115,11 @@ are used?</text>
 <pinref part="J40" gate="-1" pin="5"/>
 </segment>
 <segment>
+<pinref part="J3" gate="G$1" pin="X4"/>
+<wire x1="-26.67" y1="194.31" x2="15.24" y2="194.31" width="0.1524" layer="91"/>
+<label x="-22.86" y="194.31" size="1.778" layer="95"/>
+</segment>
+<segment>
 <wire x1="-317.5" y1="215.9" x2="-281.94" y2="215.9" width="0.1524" layer="91"/>
 <label x="-304.8" y="215.9" size="1.778" layer="95"/>
 <pinref part="J43" gate="-1" pin="5"/>
@@ -5125,11 +5127,6 @@ are used?</text>
 </segment>
 <segment>
 <wire x1="-414.02" y1="218.44" x2="-386.08" y2="218.44" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="X3"/>
-<wire x1="-26.67" y1="199.39" x2="15.24" y2="199.39" width="0.1524" layer="91"/>
-<label x="-22.86" y="199.39" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Q6_GPIO_0" class="0">
@@ -5149,6 +5146,13 @@ are used?</text>
 <pinref part="H2" gate="G$1" pin="48"/>
 <wire x1="7.62" y1="-25.4" x2="43.18" y2="-25.4" width="0.1524" layer="91"/>
 <label x="35.56" y="-25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$84" class="0">
+<segment>
+<pinref part="H1" gate="G$1" pin="50"/>
+<wire x1="7.62" y1="-106.68" x2="46.99" y2="-106.68" width="0.1524" layer="91"/>
+<label x="17.78" y="-106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="THERMALGND1" class="0">
@@ -5285,6 +5289,11 @@ are used?</text>
 <pinref part="J40" gate="-1" pin="4"/>
 </segment>
 <segment>
+<pinref part="J3" gate="G$1" pin="X3"/>
+<wire x1="-26.67" y1="199.39" x2="15.24" y2="199.39" width="0.1524" layer="91"/>
+<label x="-22.86" y="199.39" size="1.778" layer="95"/>
+</segment>
+<segment>
 <wire x1="-281.94" y1="218.44" x2="-317.5" y2="218.44" width="0.1524" layer="91"/>
 <label x="-304.8" y="218.44" size="1.778" layer="95"/>
 <pinref part="J43" gate="-1" pin="4"/>
@@ -5292,11 +5301,6 @@ are used?</text>
 </segment>
 <segment>
 <wire x1="-429.26" y1="218.44" x2="-468.63" y2="218.44" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="X4"/>
-<wire x1="-26.67" y1="194.31" x2="15.24" y2="194.31" width="0.1524" layer="91"/>
-<label x="-22.86" y="194.31" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POW_9V" class="0">
@@ -5384,6 +5388,18 @@ are used?</text>
 <pinref part="H2" gate="G$1" pin="14"/>
 <wire x1="7.62" y1="17.78" x2="39.37" y2="17.78" width="0.1524" layer="91"/>
 <label x="12.7" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="Q6_AOUT_2" class="0">
+<segment>
+<wire x1="22.86" y1="124.46" x2="52.07" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="C4"/>
+</segment>
+</net>
+<net name="Q6_AOUT_3" class="0">
+<segment>
+<wire x1="22.86" y1="121.92" x2="53.34" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="C6"/>
 </segment>
 </net>
 <net name="PWR_CTRL" class="0">
@@ -5552,11 +5568,6 @@ are used?</text>
 <segment>
 <wire x1="-414.02" y1="220.98" x2="-386.08" y2="220.98" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="H1" gate="G$1" pin="25"/>
-<wire x1="-15.24" y1="-76.2" x2="-43.18" y2="-76.2" width="0.1524" layer="91"/>
-<label x="-40.64" y="-76.2" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="PC_Q6_RS232" class="0">
 <segment>
@@ -5578,11 +5589,6 @@ are used?</text>
 </segment>
 <segment>
 <wire x1="-414.02" y1="223.52" x2="-386.08" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="H1" gate="G$1" pin="21"/>
-<wire x1="-15.24" y1="-71.12" x2="-43.18" y2="-71.12" width="0.1524" layer="91"/>
-<label x="-40.64" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="S6_JTAG_TMS" class="0">
@@ -5684,35 +5690,43 @@ are used?</text>
 </net>
 <net name="HE100_TX_TO_DIPLEX_SIG" class="0">
 <segment>
-<pinref part="J11" gate="G1" pin="1"/>
 <pinref part="J15" gate="G1" pin="1"/>
-<wire x1="-129.54" y1="-71.12" x2="-83.82" y2="-71.12" width="0.1524" layer="91"/>
+<pinref part="J11" gate="G1" pin="1"/>
+<wire x1="-83.82" y1="-71.12" x2="-129.54" y2="-71.12" width="0.1524" layer="91"/>
 <label x="-127" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HE100_RX_TO_DIPLEX_SIG" class="0">
 <segment>
-<pinref part="J10" gate="G1" pin="1"/>
 <pinref part="J16" gate="G1" pin="1"/>
-<wire x1="-129.54" y1="-91.44" x2="-83.82" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="J10" gate="G1" pin="1"/>
+<wire x1="-83.82" y1="-91.44" x2="-129.54" y2="-91.44" width="0.1524" layer="91"/>
 <label x="-127" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIPLEX_TO_ANT_SIG" class="0">
+<segment>
+<pinref part="J12" gate="G1" pin="1"/>
+<pinref part="J17" gate="G1" pin="1"/>
+<wire x1="-162.56" y1="-81.28" x2="-193.04" y2="-81.28" width="0.1524" layer="91"/>
+<label x="-190.5" y="-81.28" size="1.778" layer="95"/>
+</segment>
 <segment>
 <wire x1="-327.66" y1="154.94" x2="-368.3" y2="154.94" width="0.1524" layer="91"/>
 <label x="-363.22" y="154.94" size="1.778" layer="95"/>
 <pinref part="J18" gate="G1" pin="1"/>
 <pinref part="J19" gate="G1" pin="1"/>
 </segment>
-<segment>
-<pinref part="J17" gate="G1" pin="1"/>
-<pinref part="J12" gate="G1" pin="1"/>
-<wire x1="-190.5" y1="-81.28" x2="-160.02" y2="-81.28" width="0.1524" layer="91"/>
-<label x="-187.96" y="-81.28" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="DIPLEX_TO_ANT_GND" class="0">
+<segment>
+<pinref part="J12" gate="G1" pin="2"/>
+<wire x1="-162.56" y1="-78.74" x2="-177.8" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="-78.74" x2="-177.8" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="J17" gate="G1" pin="2"/>
+<wire x1="-177.8" y1="-83.82" x2="-193.04" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-190.5" y="-83.82" size="1.778" layer="95"/>
+</segment>
 <segment>
 <wire x1="-347.98" y1="152.4" x2="-368.3" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="-347.98" y1="152.4" x2="-347.98" y2="157.48" width="0.1524" layer="91"/>
@@ -5720,14 +5734,6 @@ are used?</text>
 <wire x1="-347.98" y1="157.48" x2="-327.66" y2="157.48" width="0.1524" layer="91"/>
 <label x="-363.22" y="152.4" size="1.778" layer="95"/>
 <pinref part="J19" gate="G1" pin="2"/>
-</segment>
-<segment>
-<pinref part="J17" gate="G1" pin="2"/>
-<wire x1="-190.5" y1="-83.82" x2="-162.56" y2="-83.82" width="0.1524" layer="91"/>
-<wire x1="-162.56" y1="-83.82" x2="-162.56" y2="-78.74" width="0.1524" layer="91"/>
-<pinref part="J12" gate="G1" pin="2"/>
-<wire x1="-162.56" y1="-78.74" x2="-160.02" y2="-78.74" width="0.1524" layer="91"/>
-<label x="-187.96" y="-83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HE100_TX_TO_DIPLEX_GND" class="0">
