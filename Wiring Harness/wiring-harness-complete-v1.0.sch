@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3584,8 +3584,6 @@ space rated(need reference)</description>
 <text x="35.56" y="-91.44" size="1.778" layer="95">ANT_CTL</text>
 <text x="17.78" y="-45.72" size="1.778" layer="95">SOLAR_PANEL_2_4</text>
 <text x="35.46" y="-93.59" size="1.778" layer="95">3V3_CTL</text>
-<text x="35.56" y="124.46" size="1.778" layer="95">Q6_AOUT_0</text>
-<text x="35.56" y="121.92" size="1.778" layer="95">Q6_AOUT_1</text>
 <text x="-15.24" y="88.9" size="2.1844" layer="95">Q6-Connector</text>
 <wire x1="-200.66" y1="284.48" x2="93.98" y2="284.48" width="0.1524" layer="152" style="longdash"/>
 <wire x1="93.98" y1="284.48" x2="93.98" y2="-208.28" width="0.1524" layer="152" style="longdash"/>
@@ -4490,12 +4488,22 @@ are used?</text>
 <wire x1="-60.96" y1="-193.04" x2="-50.8" y2="-193.04" width="0.1524" layer="91"/>
 <label x="-53.34" y="-193.04" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="22.86" y1="124.46" x2="52.07" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="C4"/>
+<label x="35.56" y="124.46" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="Q6_AOUT_1" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="51"/>
 <wire x1="-15.24" y1="-109.22" x2="-43.18" y2="-109.22" width="0.1524" layer="91"/>
 <label x="-40.64" y="-109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="22.86" y1="121.92" x2="53.34" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="C6"/>
+<label x="35.56" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POW_RADIO_3.3V" class="0">
@@ -5115,11 +5123,6 @@ are used?</text>
 <pinref part="J40" gate="-1" pin="5"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="X4"/>
-<wire x1="-26.67" y1="194.31" x2="15.24" y2="194.31" width="0.1524" layer="91"/>
-<label x="-22.86" y="194.31" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="-317.5" y1="215.9" x2="-281.94" y2="215.9" width="0.1524" layer="91"/>
 <label x="-304.8" y="215.9" size="1.778" layer="95"/>
 <pinref part="J43" gate="-1" pin="5"/>
@@ -5127,6 +5130,11 @@ are used?</text>
 </segment>
 <segment>
 <wire x1="-414.02" y1="218.44" x2="-386.08" y2="218.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="X3"/>
+<wire x1="-26.67" y1="199.39" x2="15.24" y2="199.39" width="0.1524" layer="91"/>
+<label x="-22.86" y="199.39" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Q6_GPIO_0" class="0">
@@ -5289,11 +5297,6 @@ are used?</text>
 <pinref part="J40" gate="-1" pin="4"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$1" pin="X3"/>
-<wire x1="-26.67" y1="199.39" x2="15.24" y2="199.39" width="0.1524" layer="91"/>
-<label x="-22.86" y="199.39" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="-281.94" y1="218.44" x2="-317.5" y2="218.44" width="0.1524" layer="91"/>
 <label x="-304.8" y="218.44" size="1.778" layer="95"/>
 <pinref part="J43" gate="-1" pin="4"/>
@@ -5301,6 +5304,11 @@ are used?</text>
 </segment>
 <segment>
 <wire x1="-429.26" y1="218.44" x2="-468.63" y2="218.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="X4"/>
+<wire x1="-26.67" y1="194.31" x2="15.24" y2="194.31" width="0.1524" layer="91"/>
+<label x="-22.86" y="194.31" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POW_9V" class="0">
@@ -5388,18 +5396,6 @@ are used?</text>
 <pinref part="H2" gate="G$1" pin="14"/>
 <wire x1="7.62" y1="17.78" x2="39.37" y2="17.78" width="0.1524" layer="91"/>
 <label x="12.7" y="17.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="Q6_AOUT_2" class="0">
-<segment>
-<wire x1="22.86" y1="124.46" x2="52.07" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="C4"/>
-</segment>
-</net>
-<net name="Q6_AOUT_3" class="0">
-<segment>
-<wire x1="22.86" y1="121.92" x2="53.34" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="C6"/>
 </segment>
 </net>
 <net name="PWR_CTRL" class="0">

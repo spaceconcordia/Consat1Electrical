@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5385,7 +5385,7 @@ design rules under a new name.</description>
 <signal name="PA3_JTAG_TCK">
 <contactref element="J4" pad="29"/>
 </signal>
-<signal name="~PA3_JAG_TRST">
+<signal name="~PA3_JTAG_TRST">
 <contactref element="J4" pad="34"/>
 </signal>
 <signal name="PA3_JTAG_TDO">
@@ -5623,7 +5623,7 @@ design rules under a new name.</description>
 <signal name="N$8">
 <contactref element="U$6" pad="5"/>
 </signal>
-<signal name="EXTERNAL_POWER_+V">
+<signal name="EXTERNAL_POWER_GND">
 <contactref element="H2" pad="51"/>
 <contactref element="J3" pad="X4"/>
 <wire x1="77.856990625" y1="86.486909375" x2="79.813090625" y2="84.881909375" width="1.27" layer="16"/>
@@ -5799,7 +5799,7 @@ design rules under a new name.</description>
 <signal name="N$16">
 <via x="5.2832" y="3.175" extent="1-16" drill="3.2"/>
 </signal>
-<signal name="EXTERNAL_POWER_GND">
+<signal name="EXTERNAL_POWER_+V">
 <contactref element="H2" pad="52"/>
 <contactref element="J3" pad="X3"/>
 <wire x1="84.05" y1="70.55" x2="81.54643125" y2="68.04643125" width="1.27" layer="1"/>
