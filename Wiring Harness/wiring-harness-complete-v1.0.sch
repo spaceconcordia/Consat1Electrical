@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1.27" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3531,7 +3531,6 @@ space rated(need reference)</description>
 <part name="J41" library="con-subd" deviceset="M25" device="VP"/>
 <part name="J42" library="con-subd" deviceset="M25" device="VP"/>
 <part name="J44" library="con-subd" deviceset="M15VP" device=""/>
-<part name="J17" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
 <part name="J18" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
@@ -3546,11 +3545,6 @@ space rated(need reference)</description>
 <part name="SUPPLY18" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
-<part name="J12" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
-<part name="J11" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
-<part name="J10" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
-<part name="J15" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
-<part name="J16" library="con-coax" deviceset="SMA-" device="142-0701-871/880"/>
 <part name="X16" library="con-molex" deviceset="5566-14" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
@@ -3576,6 +3570,12 @@ space rated(need reference)</description>
 <part name="SL2" library="con-amp-quick" deviceset="MA04" device=""/>
 <part name="SL3" library="con-amp-quick" deviceset="MA04" device=""/>
 <part name="J1" library="harwin" deviceset="M80-879" device="" value=""/>
+<part name="J17" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
+<part name="J12" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
+<part name="J13" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
+<part name="J16" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
+<part name="J11" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
+<part name="J10" library="con-coax" deviceset="SMA-" device="142-0701-801/806"/>
 </parts>
 <sheets>
 <sheet>
@@ -3688,7 +3688,6 @@ are used?</text>
 <instance part="J41" gate="-1" x="20.32" y="-137.16"/>
 <instance part="J42" gate="-1" x="20.32" y="-182.88"/>
 <instance part="J44" gate="G$1" x="-421.64" y="215.9"/>
-<instance part="J17" gate="G1" x="-195.58" y="-81.28"/>
 <instance part="J18" gate="G1" x="-325.12" y="154.94" rot="R180"/>
 <instance part="SUPPLY11" gate="GND" x="-66.04" y="68.58" rot="R270"/>
 <instance part="SUPPLY16" gate="GND" x="59.69" y="68.58" rot="R90"/>
@@ -3703,11 +3702,6 @@ are used?</text>
 <instance part="SUPPLY18" gate="GND" x="58.42" y="93.98" rot="R90"/>
 <instance part="SUPPLY28" gate="GND" x="-66.04" y="78.74" rot="R270"/>
 <instance part="SUPPLY29" gate="GND" x="58.42" y="78.74" rot="R90"/>
-<instance part="J12" gate="G1" x="-160.02" y="-81.28" rot="R180"/>
-<instance part="J11" gate="G1" x="-132.08" y="-71.12"/>
-<instance part="J10" gate="G1" x="-132.08" y="-91.44"/>
-<instance part="J15" gate="G1" x="-81.28" y="-71.12" rot="R180"/>
-<instance part="J16" gate="G1" x="-81.28" y="-91.44" rot="R180"/>
 <instance part="X16" gate="-1" x="-22.86" y="175.26"/>
 <instance part="X16" gate="-2" x="-22.86" y="172.72"/>
 <instance part="X16" gate="-3" x="-22.86" y="170.18"/>
@@ -3756,6 +3750,12 @@ are used?</text>
 <instance part="SL2" gate="G$1" x="287.02" y="-115.57" rot="R180"/>
 <instance part="SL3" gate="G$1" x="287.02" y="-99.06" rot="R180"/>
 <instance part="J1" gate="G$1" x="304.8" y="-66.04"/>
+<instance part="J17" gate="G1" x="-193.04" y="-81.28"/>
+<instance part="J12" gate="G1" x="-157.48" y="-81.28" rot="R180"/>
+<instance part="J13" gate="G1" x="-81.28" y="-71.12" rot="R180"/>
+<instance part="J16" gate="G1" x="-81.28" y="-91.44" rot="R180"/>
+<instance part="J11" gate="G1" x="-132.08" y="-71.12"/>
+<instance part="J10" gate="G1" x="-132.08" y="-91.44"/>
 </instances>
 <busses>
 </busses>
@@ -5688,45 +5688,21 @@ are used?</text>
 <label x="-405.13" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="HE100_TX_TO_DIPLEX_SIG" class="0">
-<segment>
-<pinref part="J15" gate="G1" pin="1"/>
-<pinref part="J11" gate="G1" pin="1"/>
-<wire x1="-83.82" y1="-71.12" x2="-129.54" y2="-71.12" width="0.1524" layer="91"/>
-<label x="-127" y="-71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="HE100_RX_TO_DIPLEX_SIG" class="0">
-<segment>
-<pinref part="J16" gate="G1" pin="1"/>
-<pinref part="J10" gate="G1" pin="1"/>
-<wire x1="-83.82" y1="-91.44" x2="-129.54" y2="-91.44" width="0.1524" layer="91"/>
-<label x="-127" y="-91.44" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="DIPLEX_TO_ANT_SIG" class="0">
-<segment>
-<pinref part="J12" gate="G1" pin="1"/>
-<pinref part="J17" gate="G1" pin="1"/>
-<wire x1="-162.56" y1="-81.28" x2="-193.04" y2="-81.28" width="0.1524" layer="91"/>
-<label x="-190.5" y="-81.28" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="-327.66" y1="154.94" x2="-368.3" y2="154.94" width="0.1524" layer="91"/>
 <label x="-363.22" y="154.94" size="1.778" layer="95"/>
 <pinref part="J18" gate="G1" pin="1"/>
 <pinref part="J19" gate="G1" pin="1"/>
 </segment>
+<segment>
+<pinref part="J17" gate="G1" pin="1"/>
+<pinref part="J12" gate="G1" pin="1"/>
+<wire x1="-190.5" y1="-81.28" x2="-160.02" y2="-81.28" width="0.1524" layer="91"/>
+<label x="-190.5" y="-81.28" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DIPLEX_TO_ANT_GND" class="0">
-<segment>
-<pinref part="J12" gate="G1" pin="2"/>
-<wire x1="-162.56" y1="-78.74" x2="-177.8" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-177.8" y1="-78.74" x2="-177.8" y2="-83.82" width="0.1524" layer="91"/>
-<pinref part="J17" gate="G1" pin="2"/>
-<wire x1="-177.8" y1="-83.82" x2="-193.04" y2="-83.82" width="0.1524" layer="91"/>
-<label x="-190.5" y="-83.82" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="-347.98" y1="152.4" x2="-368.3" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="-347.98" y1="152.4" x2="-347.98" y2="157.48" width="0.1524" layer="91"/>
@@ -5735,15 +5711,23 @@ are used?</text>
 <label x="-363.22" y="152.4" size="1.778" layer="95"/>
 <pinref part="J19" gate="G1" pin="2"/>
 </segment>
+<segment>
+<pinref part="J17" gate="G1" pin="2"/>
+<wire x1="-190.5" y1="-83.82" x2="-165.1" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="-83.82" x2="-165.1" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="J12" gate="G1" pin="2"/>
+<wire x1="-165.1" y1="-78.74" x2="-160.02" y2="-78.74" width="0.1524" layer="91"/>
+<label x="-190.5" y="-83.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="HE100_TX_TO_DIPLEX_GND" class="0">
 <segment>
 <pinref part="J11" gate="G1" pin="2"/>
 <wire x1="-129.54" y1="-73.66" x2="-93.98" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="-73.66" x2="-93.98" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="J15" gate="G1" pin="2"/>
+<pinref part="J13" gate="G1" pin="2"/>
 <wire x1="-93.98" y1="-68.58" x2="-83.82" y2="-68.58" width="0.1524" layer="91"/>
-<label x="-127" y="-73.66" size="1.778" layer="95"/>
+<label x="-128.27" y="-73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HE100_RX_TO_DIPLEX_GND" class="0">
@@ -5871,6 +5855,22 @@ are used?</text>
 <segment>
 <pinref part="SL1" gate="G$1" pin="4"/>
 <pinref part="SL2" gate="G$1" pin="4"/>
+</segment>
+</net>
+<net name="HE100_TX_TO_DIPLEX_SIG" class="0">
+<segment>
+<pinref part="J11" gate="G1" pin="1"/>
+<pinref part="J13" gate="G1" pin="1"/>
+<wire x1="-129.54" y1="-71.12" x2="-83.82" y2="-71.12" width="0.1524" layer="91"/>
+<label x="-128.27" y="-71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="HE100_RX_TO_DIPLEX_SIG" class="0">
+<segment>
+<pinref part="J10" gate="G1" pin="1"/>
+<pinref part="J16" gate="G1" pin="1"/>
+<wire x1="-129.54" y1="-91.44" x2="-83.82" y2="-91.44" width="0.1524" layer="91"/>
+<label x="-127" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
