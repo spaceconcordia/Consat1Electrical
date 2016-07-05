@@ -4907,22 +4907,12 @@ are used?</text>
 </net>
 <net name="PC_PA3_RS232" class="0">
 <segment>
-<pinref part="H1" gate="G$1" pin="21"/>
-<wire x1="-15.24" y1="-71.12" x2="-43.18" y2="-71.12" width="0.1524" layer="91"/>
-<label x="-40.64" y="-71.12" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="J4" gate="G$1" pin="C43"/>
 <wire x1="-33.02" y1="73.66" x2="-55.88" y2="73.66" width="0.1524" layer="91"/>
 <label x="-55.88" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA3_PC_RS232" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="25"/>
-<wire x1="-15.24" y1="-76.2" x2="-43.18" y2="-76.2" width="0.1524" layer="91"/>
-<label x="-40.64" y="-76.2" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="C41"/>
 <wire x1="-33.02" y1="76.2" x2="-55.88" y2="76.2" width="0.1524" layer="91"/>
@@ -5545,12 +5535,6 @@ are used?</text>
 </net>
 <net name="Q6_PC_RS232" class="0">
 <segment>
-<pinref part="J4" gate="G$1" pin="C42"/>
-<wire x1="22.86" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
-<label x="41.91" y="76.2" size="1.778" layer="95"/>
-<label x="-135.89" y="205.74" size="1.778" layer="95"/>
-</segment>
-<segment>
 <label x="-303.53" y="205.74" size="1.778" layer="95"/>
 <label x="-394.97" y="220.98" size="1.778" layer="95"/>
 </segment>
@@ -5566,12 +5550,6 @@ are used?</text>
 </segment>
 </net>
 <net name="PC_Q6_RS232" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="C44"/>
-<label x="41.91" y="73.66" size="1.778" layer="95"/>
-<wire x1="22.86" y1="73.66" x2="59.69" y2="73.66" width="0.1524" layer="91"/>
-<label x="-135.89" y="200.66" size="1.778" layer="95"/>
-</segment>
 <segment>
 <label x="-303.53" y="200.66" size="1.778" layer="95"/>
 <label x="-394.97" y="223.52" size="1.778" layer="95"/>
@@ -5867,6 +5845,32 @@ are used?</text>
 <pinref part="J16" gate="G1" pin="1"/>
 <wire x1="-129.54" y1="-91.44" x2="-83.82" y2="-91.44" width="0.1524" layer="91"/>
 <label x="-127" y="-91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="Q6_MAX_RS232" class="0">
+<segment>
+<pinref part="H1" gate="G$1" pin="25"/>
+<wire x1="-15.24" y1="-76.2" x2="-43.18" y2="-76.2" width="0.1524" layer="91"/>
+<label x="-40.64" y="-76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="C42"/>
+<wire x1="22.86" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
+<label x="41.91" y="76.2" size="1.778" layer="95"/>
+<label x="-135.89" y="205.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MAX_Q6_RS232" class="0">
+<segment>
+<pinref part="H1" gate="G$1" pin="21"/>
+<wire x1="-15.24" y1="-71.12" x2="-43.18" y2="-71.12" width="0.1524" layer="91"/>
+<label x="-40.64" y="-71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="C44"/>
+<label x="41.91" y="73.66" size="1.778" layer="95"/>
+<wire x1="22.86" y1="73.66" x2="59.69" y2="73.66" width="0.1524" layer="91"/>
+<label x="-135.89" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

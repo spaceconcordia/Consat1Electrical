@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7850,7 +7850,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-187.96" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PC_Q6_RS232" class="0">
+<net name="MAX_Q6_RS232" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="21"/>
 <wire x1="-162.56" y1="-2.54" x2="-190.5" y2="-2.54" width="0.1524" layer="91"/>
@@ -7862,7 +7862,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-274.32" y="-63.5" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="Q6_PC_RS232" class="0">
+<net name="Q6_MAX_RS232" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="25"/>
 <wire x1="-162.56" y1="-7.62" x2="-190.5" y2="-7.62" width="0.1524" layer="91"/>

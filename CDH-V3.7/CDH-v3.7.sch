@@ -9109,7 +9109,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-63.5" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PC_Q6_RS232" class="0">
+<net name="MAX_Q6_RS232" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="C44"/>
 <wire x1="-76.2" y1="78.74" x2="-46.99" y2="78.74" width="0.1524" layer="91"/>
@@ -9121,7 +9121,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-139.7" y="-55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="Q6_PC_RS232" class="0">
+<net name="Q6_MAX_RS232" class="0">
 <segment>
 <pinref part="J4" gate="G$1" pin="C42"/>
 <wire x1="-46.99" y1="81.28" x2="-76.2" y2="81.28" width="0.1524" layer="91"/>
@@ -9236,6 +9236,11 @@ Block, Siemens and generic&lt;p&gt;
 <pinref part="H1" gate="G$1" pin="31"/>
 <wire x1="-114.3" y1="-68.58" x2="-142.24" y2="-68.58" width="0.1524" layer="91"/>
 <label x="-139.7" y="-68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="H1" gate="G$1" pin="30"/>
+<wire x1="-91.44" y1="-66.04" x2="-53.34" y2="-66.04" width="0.1524" layer="91"/>
+<label x="-81.28" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -9371,13 +9376,6 @@ Block, Siemens and generic&lt;p&gt;
 <pinref part="J3" gate="G$1" pin="X3"/>
 <wire x1="-237.49" y1="-24.13" x2="-195.58" y2="-24.13" width="0.1524" layer="91"/>
 <label x="-233.68" y="-24.13" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SLR_PNL_GND" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="30"/>
-<wire x1="-91.44" y1="-66.04" x2="-53.34" y2="-66.04" width="0.1524" layer="91"/>
-<label x="-81.28" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POW_9V" class="0">
