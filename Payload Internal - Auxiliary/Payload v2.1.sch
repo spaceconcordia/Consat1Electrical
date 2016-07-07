@@ -7178,7 +7178,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-137.16" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$90" class="0">
+<net name="Q6_SPI_SDO_MOSI" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="23"/>
 <wire x1="-162.56" y1="73.66" x2="-205.74" y2="73.66" width="0.1524" layer="91"/>
@@ -7383,7 +7383,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-187.96" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="Q6_SPI_SDO_MOSI" class="0">
+<net name="N$4" class="0">
 <segment>
 <wire x1="-139.7" y1="93.98" x2="-106.68" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="H2" gate="G$1" pin="8"/>
@@ -7392,14 +7392,14 @@ Block, Siemens and generic&lt;p&gt;
 </net>
 <net name="Q6_SPI_CS1" class="0">
 <segment>
-<wire x1="-139.7" y1="88.9" x2="-107.95" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="H2" gate="G$1" pin="12"/>
-<label x="-137.16" y="88.9" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="-332.74" y1="7.62" x2="-327.66" y2="7.62" width="0.1524" layer="91"/>
 <label x="-325.12" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-139.7" y1="88.9" x2="-107.95" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="H2" gate="G$1" pin="12"/>
+<label x="-137.16" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="Q6_GPIO_7" class="0">
@@ -7552,21 +7552,21 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-137.16" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$89." class="0">
+<net name="Q6_SPI_SCLK" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="21"/>
 <wire x1="-205.74" y1="76.2" x2="-162.56" y2="76.2" width="0.1524" layer="91"/>
 <label x="-203.2" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="Q6_SPI_SCLK" class="0">
+<net name="N$1" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="6"/>
 <wire x1="-109.22" y1="96.52" x2="-139.7" y2="96.52" width="0.1524" layer="91"/>
 <label x="-137.16" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="Q6_SPI_SDI_MISO" class="0">
+<net name="N$6" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="10"/>
 <wire x1="-139.7" y1="91.44" x2="-106.68" y2="91.44" width="0.1524" layer="91"/>
@@ -7618,7 +7618,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-203.2" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="POW_RADIO_3.3V" class="0">
+<net name="POW_RADIO_3V3SYS" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="27"/>
 <wire x1="-162.56" y1="68.58" x2="-205.74" y2="68.58" width="0.1524" layer="91"/>
@@ -7930,14 +7930,14 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-203.2" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="Q6_SPI_SDI_MISO" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="35"/>
 <wire x1="-162.56" y1="58.42" x2="-205.74" y2="58.42" width="0.1524" layer="91"/>
 <label x="-203.2" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="EXTERNAL_POWER_GND" class="0">
+<net name="EXTERNAL_POWER_+V" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="52"/>
 <wire x1="-139.7" y1="38.1" x2="-104.14" y2="38.1" width="0.1524" layer="91"/>
@@ -7951,7 +7951,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-187.96" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="EXTERNAL_POWER_+V" class="0">
+<net name="EXTERNAL_POWER_GND" class="0">
 <segment>
 <pinref part="H2" gate="G$1" pin="51"/>
 <wire x1="-162.56" y1="38.1" x2="-205.74" y2="38.1" width="0.1524" layer="91"/>
@@ -8021,7 +8021,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-259.08" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="THERMALGND" class="0">
+<net name="THERMALGND1" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="5"/>
 <wire x1="-190.5" y1="17.78" x2="-162.56" y2="17.78" width="0.1524" layer="91"/>
@@ -8045,7 +8045,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-259.08" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="9V" class="0">
+<net name="POW_9V" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="22"/>
 <wire x1="-139.7" y1="-2.54" x2="-93.98" y2="-2.54" width="0.1524" layer="91"/>
@@ -8062,7 +8062,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-259.08" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6546" class="0">
+<net name="N$654643543" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="14"/>
 <wire x1="-139.7" y1="7.62" x2="-93.98" y2="7.62" width="0.1524" layer="91"/>
@@ -8093,7 +8093,7 @@ Block, Siemens and generic&lt;p&gt;
 <label x="-327.66" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BATTERY_THERMSTOR_2+" class="0">
+<net name="BATTERY_THRMSTOR2_+V" class="0">
 <segment>
 <pinref part="H1" gate="G$1" pin="12"/>
 <wire x1="-139.7" y1="10.16" x2="-93.98" y2="10.16" width="0.1524" layer="91"/>
