@@ -7500,6 +7500,10 @@ Block, Siemens and generic&lt;p&gt;
 <wire x1="-236.22" y1="-17.78" x2="-236.22" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="VCC"/>
 <junction x="-236.22" y="-20.32"/>
+<pinref part="U$8" gate="G$1" pin="~FORCEOFF"/>
+<wire x1="-302.26" y1="-45.72" x2="-302.26" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-302.26" y1="-53.34" x2="-236.22" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-236.22" y1="-53.34" x2="-236.22" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-342.9" y1="7.62" x2="-342.9" y2="10.16" width="0.1524" layer="91"/>
