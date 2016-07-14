@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2557,7 +2557,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -2643,6 +2643,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="8mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -2861,7 +2864,7 @@ design rules under a new name.</description>
 <element name="U$1" library="space-concordia-power" package="EPS_PCB_THRM_PAD" value="EPS_PCB_THRM_PAD" x="40" y="4"/>
 </elements>
 <signals>
-<signal name="N$1">
+<signal name="N$172">
 <contactref element="Q1" pad="P$4-G"/>
 <contactref element="IC4" pad="P$5"/>
 <wire x1="83.9606125" y1="50.09126875" x2="83.9606125" y2="52.961996875" width="0.4064" layer="1"/>
@@ -2880,7 +2883,7 @@ design rules under a new name.</description>
 <wire x1="78.793753125" y1="45.190128125" x2="78.7771375" y2="45.20674375" width="0.4064" layer="1"/>
 <wire x1="78.7771375" y1="45.20674375" x2="78.7771375" y2="47.886309375" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$9">
+<signal name="N$973">
 <contactref element="R4" pad="2"/>
 <contactref element="C2" pad="1"/>
 <contactref element="IC4" pad="P$2"/>
@@ -2888,7 +2891,7 @@ design rules under a new name.</description>
 <wire x1="82.6606125" y1="47.47126875" x2="82.6606125" y2="44.3575875" width="0.4064" layer="1"/>
 <wire x1="82.6606125" y1="44.3575875" x2="83.507021875" y2="43.511178125" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$17">
+<signal name="N$173">
 <contactref element="C7" pad="1"/>
 <contactref element="IC3" pad="P$7"/>
 <wire x1="82.5762375" y1="18.7283" x2="82.5762375" y2="20.077259375" width="0.4064" layer="1"/>
@@ -2945,7 +2948,7 @@ design rules under a new name.</description>
 <wire x1="67.625309375" y1="10.503021875" x2="64.119890625" y2="10.503021875" width="1.27" layer="1"/>
 <wire x1="64.119890625" y1="10.503021875" x2="64.116115625" y2="10.506796875" width="1.27" layer="1"/>
 </signal>
-<signal name="N$5">
+<signal name="Q6_GPIO_13">
 <contactref element="Q8" pad="P$4-G"/>
 <contactref element="R6" pad="1"/>
 <contactref element="H1" pad="36"/>
@@ -2966,7 +2969,7 @@ design rules under a new name.</description>
 <wire x1="53.884378125" y1="16.05365" x2="54.747890625" y2="15.1901375" width="0.4064" layer="1"/>
 <wire x1="54.747890625" y1="15.1901375" x2="54.747890625" y2="14.0367625" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$13">
+<signal name="Q6_GPIO_15">
 <contactref element="H1" pad="40"/>
 <contactref element="IC8" pad="3"/>
 <wire x1="41.115278125" y1="75.50165" x2="40.03813125" y2="75.50165" width="0.4064" layer="1"/>
@@ -2981,7 +2984,7 @@ design rules under a new name.</description>
 <wire x1="61.39736875" y1="87.06645" x2="61.39736875" y2="85.108978125" width="0.4064" layer="16"/>
 <wire x1="61.39736875" y1="85.108978125" x2="62.644359375" y2="83.8619875" width="0.4064" layer="16"/>
 </signal>
-<signal name="N$15">
+<signal name="SOLAR_PANEL_2_4">
 <contactref element="IC1" pad="P$5"/>
 <contactref element="IC1" pad="P$6"/>
 <contactref element="H1" pad="2"/>
@@ -3021,7 +3024,7 @@ design rules under a new name.</description>
 <via x="40.4465125" y="18.579159375" extent="1-16" drill="0.6"/>
 <wire x1="40.4465125" y1="18.579159375" x2="42.51031875" y2="18.58678125" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$27">
+<signal name="N$271">
 <contactref element="R18" pad="1"/>
 <contactref element="R19" pad="2"/>
 <contactref element="IC2" pad="P$1"/>
@@ -3501,7 +3504,7 @@ design rules under a new name.</description>
 <wire x1="26.9828125" y1="14.11751875" x2="31.3330375" y2="14.11751875" width="0.3048" layer="1"/>
 <wire x1="31.3330375" y1="14.11751875" x2="31.3330375" y2="15.3762625" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$34">
+<signal name="SOLAR_PANEL_1_3">
 <contactref element="IC2" pad="P$5"/>
 <contactref element="IC2" pad="P$6"/>
 <contactref element="H1" pad="29"/>
@@ -3614,7 +3617,7 @@ design rules under a new name.</description>
 <wire x1="81.5819" y1="23.93086875" x2="81.5819" y2="25.32586875" width="0.4064" layer="1"/>
 <wire x1="81.5819" y1="23.93086875" x2="81.564840625" y2="23.93086875" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$11">
+<signal name="POW_9V">
 <contactref element="R9" pad="2"/>
 <contactref element="C8" pad="+"/>
 <contactref element="D2" pad="P$1-CATHODE"/>
@@ -3665,7 +3668,7 @@ design rules under a new name.</description>
 <wire x1="28.238190625" y1="78.18428125" x2="27.14006875" y2="77.086159375" width="0.8128" layer="1"/>
 <wire x1="39.82236875" y1="79.27376875" x2="39.824759375" y2="79.27776875" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$18">
+<signal name="POW_5V">
 <contactref element="H1" pad="26"/>
 <contactref element="H1" pad="28"/>
 <contactref element="R25" pad="2"/>
@@ -3752,7 +3755,7 @@ design rules under a new name.</description>
 <wire x1="28.898409375" y1="36.43721875" x2="28.919121875" y2="36.436834375" width="0" layer="19" extent="1-1"/>
 <wire x1="26.0888125" y1="36.430290625" x2="26.084559375" y2="36.43721875" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$22">
+<signal name="MECH_DEPLOY_SWITCH_+V">
 <contactref element="H2" pad="31"/>
 <contactref element="H1" pad="31"/>
 <wire x1="52.484359375" y1="81.3219875" x2="52.484359375" y2="81.34728125" width="0.4064" layer="16"/>
@@ -3763,7 +3766,7 @@ design rules under a new name.</description>
 <wire x1="52.49518125" y1="81.300759375" x2="49.944359375" y2="83.8619875" width="1.27" layer="16"/>
 <wire x1="52.486759375" y1="86.39555" x2="49.944359375" y2="83.8619875" width="1.27" layer="16"/>
 </signal>
-<signal name="N$36">
+<signal name="Q6_GPIO_14">
 <contactref element="R24" pad="1"/>
 <contactref element="Q6" pad="P$4-G"/>
 <contactref element="H1" pad="38"/>
@@ -3777,7 +3780,7 @@ design rules under a new name.</description>
 <wire x1="6.655909375" y1="80.358765625" x2="3.4717625" y2="80.358765625" width="0.4064" layer="1"/>
 <wire x1="3.4717625" y1="80.358765625" x2="3.455415625" y2="80.34241875" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$12">
+<signal name="ANTENNA_DEPLOYMENT_+V">
 <contactref element="Q6" pad="P$6-D"/>
 <contactref element="Q6" pad="P$9-D"/>
 <contactref element="Q6" pad="P$5-D"/>
@@ -3844,7 +3847,7 @@ design rules under a new name.</description>
 <wire x1="45.676846875" y1="67.881509375" x2="49.64505625" y2="67.881509375" width="0.4064" layer="1"/>
 <wire x1="49.64505625" y1="67.881509375" x2="49.64505625" y2="67.93228125" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$41">
+<signal name="Q6_I2C_SDA_1">
 <contactref element="IC5" pad="3"/>
 <via x="32.490359375" y="79.058890625" extent="1-16" drill="0.6"/>
 <wire x1="30.88983125" y1="89.60078125" x2="31.63475" y2="90.3457" width="0.4064" layer="16"/>
@@ -3866,7 +3869,7 @@ design rules under a new name.</description>
 <wire x1="31.63475" y1="90.3457" x2="33.296609375" y2="90.3457" width="0.4064" layer="16"/>
 <wire x1="33.296609375" y1="90.3457" x2="34.706759375" y2="88.93555" width="0.4064" layer="16"/>
 </signal>
-<signal name="N$42">
+<signal name="Q6_I2C_SCL_1">
 <contactref element="IC5" pad="4"/>
 <contactref element="IC9" pad="P$19"/>
 <wire x1="31.707228125" y1="87.6709375" x2="30.899090625" y2="86.8628" width="0.4064" layer="1"/>
@@ -3893,7 +3896,7 @@ design rules under a new name.</description>
 <wire x1="31.707228125" y1="87.6709375" x2="35.982146875" y2="87.6709375" width="0.4064" layer="1"/>
 <wire x1="35.982146875" y1="87.6709375" x2="37.246759375" y2="88.93555" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$44">
+<signal name="POW_3V3">
 <contactref element="H1" pad="20"/>
 <contactref element="H1" pad="16"/>
 <contactref element="IC8" pad="5"/>
@@ -3905,7 +3908,7 @@ design rules under a new name.</description>
 <wire x1="37.43793125" y1="73.60165" x2="35.720821875" y2="73.60165" width="0.4064" layer="1"/>
 <wire x1="33.43976875" y1="75.882703125" x2="35.720821875" y2="73.60165" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$50">
+<signal name="BATTERY_THRMSTOR_+V">
 <contactref element="H1" pad="8"/>
 <contactref element="R25" pad="1"/>
 <contactref element="IC6" pad="3"/>
@@ -3963,7 +3966,7 @@ design rules under a new name.</description>
 <wire x1="24.883871875" y1="28.61946875" x2="25.260125" y2="28.995721875" width="0.4064" layer="1"/>
 <wire x1="25.260125" y1="28.995721875" x2="27.910375" y2="28.995721875" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$4">
+<signal name="BATTERY_HEATER_-V">
 <contactref element="Q3" pad="P$7-D"/>
 <contactref element="Q3" pad="P$6-D"/>
 <contactref element="Q3" pad="P$9-D"/>
@@ -4037,7 +4040,7 @@ design rules under a new name.</description>
 <wire x1="42.107440625" y1="26.37665625" x2="42.107440625" y2="29.021328125" width="0.4064" layer="1"/>
 <wire x1="42.107440625" y1="29.021328125" x2="42.081234375" y2="29.047534375" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$2">
+<signal name="BATTERY_THRMSTOR2_+V">
 <contactref element="H1" pad="12"/>
 <contactref element="IC7" pad="3"/>
 <contactref element="R2" pad="1"/>
@@ -4068,7 +4071,7 @@ design rules under a new name.</description>
 <wire x1="52.345240625" y1="69.77988125" x2="52.345240625" y2="70.04813125" width="0.4064" layer="1"/>
 <wire x1="52.345240625" y1="70.04813125" x2="52.144040625" y2="70.04813125" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$46">
+<signal name="EXTERNAL_POWER_+V">
 <contactref element="H1" pad="35"/>
 <contactref element="R13" pad="1"/>
 <contactref element="R15" pad="2"/>
@@ -4319,7 +4322,7 @@ design rules under a new name.</description>
 <wire x1="74.851646875" y1="62.06933125" x2="66.73081875" y2="62.06933125" width="1.4224" layer="1"/>
 <wire x1="66.73081875" y1="62.06933125" x2="65.64866875" y2="63.15148125" width="1.4224" layer="1"/>
 </signal>
-<signal name="N$43">
+<signal name="BATTERY_HEATER_+V">
 <contactref element="IC11" pad="3"/>
 <contactref element="IC11" pad="1"/>
 <contactref element="H1" pad="4"/>
@@ -4434,7 +4437,7 @@ design rules under a new name.</description>
 <wire x1="72.1395" y1="76.00216875" x2="71.73688125" y2="75.59955" width="0.3048" layer="1"/>
 <wire x1="71.73688125" y1="75.59955" x2="71.73688125" y2="74.61695" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$49">
+<signal name="Q6_GPIO_10">
 <contactref element="IC10" pad="P$8"/>
 <contactref element="R38" pad="1"/>
 <contactref element="H1" pad="50"/>
@@ -4489,6 +4492,210 @@ design rules under a new name.</description>
 <via x="25.37" y="14.26" extent="1-16" drill="0.6"/>
 <via x="41.88" y="14.05" extent="1-16" drill="0.6"/>
 <via x="42.47" y="12.75" extent="1-16" drill="0.6"/>
+</signal>
+<signal name="TOP_TEMP_SOLAR_PANEL-1">
+<contactref element="H2" pad="1"/>
+</signal>
+<signal name="TOP_TEMP_SOLAR_PANEL-2">
+<contactref element="H2" pad="3"/>
+</signal>
+<signal name="TOP_TEMP_SOLAR_PANEL-3">
+<contactref element="H2" pad="5"/>
+</signal>
+<signal name="TOP_TEMP_SOLAR_PANEL-4">
+<contactref element="H2" pad="7"/>
+</signal>
+<signal name="BOTTOM_TEMP_SOLAR_PANEL-1">
+<contactref element="H2" pad="9"/>
+</signal>
+<signal name="BOTTOM_TEMP_SOLAR_PANEL-2">
+<contactref element="H2" pad="11"/>
+</signal>
+<signal name="BOTTOM_TEMP_SOLAR_PANEL-3">
+<contactref element="H2" pad="13"/>
+</signal>
+<signal name="BOTTOM_TEMP_SOLAR_PANEL-4">
+<contactref element="H2" pad="15"/>
+</signal>
+<signal name="Q6_SPI_SCLK">
+<contactref element="H2" pad="21"/>
+</signal>
+<signal name="Q6_SPI_SDO_MOSI">
+<contactref element="H2" pad="23"/>
+</signal>
+<signal name="Q6_SPI_CS1">
+<contactref element="H2" pad="25"/>
+</signal>
+<signal name="POW_RADIO_3V3SYS">
+<contactref element="H2" pad="27"/>
+</signal>
+<signal name="POW_RADIO_GND">
+<contactref element="H2" pad="29"/>
+</signal>
+<signal name="Q6_SPI_SDI_MISO">
+<contactref element="H2" pad="35"/>
+</signal>
+<signal name="Q6_SPI_CS0">
+<contactref element="H2" pad="37"/>
+</signal>
+<signal name="N$78">
+<contactref element="H2" pad="39"/>
+</signal>
+<signal name="N$79">
+<contactref element="H2" pad="41"/>
+</signal>
+<signal name="N$80">
+<contactref element="H2" pad="43"/>
+</signal>
+<signal name="POW_RADIO_VBATT">
+<contactref element="H2" pad="45"/>
+</signal>
+<signal name="N$15">
+<contactref element="H2" pad="47"/>
+</signal>
+<signal name="N$13">
+<contactref element="H2" pad="49"/>
+</signal>
+<signal name="ELEC_BAY_TEMP_1">
+<contactref element="H2" pad="50"/>
+</signal>
+<signal name="N$5">
+<contactref element="H2" pad="48"/>
+</signal>
+<signal name="N$811">
+<contactref element="H2" pad="46"/>
+</signal>
+<signal name="N$27">
+<contactref element="H2" pad="44"/>
+</signal>
+<signal name="N$82">
+<contactref element="H2" pad="42"/>
+</signal>
+<signal name="N$81">
+<contactref element="H2" pad="40"/>
+</signal>
+<signal name="N$85">
+<contactref element="H2" pad="38"/>
+</signal>
+<signal name="N$22">
+<contactref element="H2" pad="34"/>
+</signal>
+<signal name="N$87">
+<contactref element="H2" pad="32"/>
+</signal>
+<signal name="N$88">
+<contactref element="H2" pad="30"/>
+</signal>
+<signal name="N$89">
+<contactref element="H2" pad="28"/>
+</signal>
+<signal name="N$90">
+<contactref element="H2" pad="26"/>
+</signal>
+<signal name="Q6_GPIO_2">
+<contactref element="H2" pad="24"/>
+</signal>
+<signal name="N$92">
+<contactref element="H2" pad="22"/>
+</signal>
+<signal name="N$93">
+<contactref element="H2" pad="16"/>
+</signal>
+<signal name="N$17">
+<contactref element="H2" pad="14"/>
+</signal>
+<signal name="N$9">
+<contactref element="H2" pad="12"/>
+</signal>
+<signal name="N$6">
+<contactref element="H2" pad="10"/>
+</signal>
+<signal name="N$4">
+<contactref element="H2" pad="8"/>
+</signal>
+<signal name="N$1">
+<contactref element="H2" pad="6"/>
+</signal>
+<signal name="N$99">
+<contactref element="H2" pad="4"/>
+</signal>
+<signal name="N$11">
+<contactref element="H2" pad="2"/>
+</signal>
+<signal name="THERMALGND1">
+<contactref element="H1" pad="5"/>
+</signal>
+<signal name="Q6_GPIO_6">
+<contactref element="H1" pad="7"/>
+</signal>
+<signal name="Q6_GPIO_7">
+<contactref element="H1" pad="9"/>
+</signal>
+<signal name="Q6_GPIO_8">
+<contactref element="H1" pad="11"/>
+</signal>
+<signal name="Q6_GPIO_0">
+<contactref element="H1" pad="13"/>
+</signal>
+<signal name="N$106">
+<contactref element="H1" pad="15"/>
+</signal>
+<signal name="Q6_RADIO_UART_TX">
+<contactref element="H1" pad="17"/>
+</signal>
+<signal name="N$108">
+<contactref element="H1" pad="19"/>
+</signal>
+<signal name="MAX_Q6_RS232">
+<contactref element="H1" pad="21"/>
+</signal>
+<signal name="N$110">
+<contactref element="H1" pad="23"/>
+</signal>
+<signal name="Q6_MAX_RS232">
+<contactref element="H1" pad="25"/>
+</signal>
+<signal name="N$112">
+<contactref element="H1" pad="27"/>
+</signal>
+<signal name="Q6_AIN_0">
+<contactref element="H1" pad="39"/>
+</signal>
+<signal name="Q6_AIN_1">
+<contactref element="H1" pad="43"/>
+</signal>
+<signal name="Q6_AOUT_0">
+<contactref element="H1" pad="47"/>
+</signal>
+<signal name="Q6_AOUT_1">
+<contactref element="H1" pad="51"/>
+</signal>
+<signal name="N$117">
+<contactref element="H1" pad="52"/>
+</signal>
+<signal name="N$118">
+<contactref element="H1" pad="48"/>
+</signal>
+<signal name="N$83">
+<contactref element="H1" pad="46"/>
+</signal>
+<signal name="N$120">
+<contactref element="H1" pad="44"/>
+</signal>
+<signal name="N$2">
+<contactref element="H1" pad="42"/>
+</signal>
+<signal name="N$122">
+<contactref element="H1" pad="34"/>
+</signal>
+<signal name="N$491">
+<contactref element="H1" pad="32"/>
+</signal>
+<signal name="Q6_RADIO_UART_RX">
+<contactref element="H1" pad="18"/>
+</signal>
+<signal name="N$654643543">
+<contactref element="H1" pad="14"/>
 </signal>
 </signals>
 </board>
